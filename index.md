@@ -2,117 +2,53 @@
 layout: default
 title: Home
 nav_order: 1
-description: "Just the Docs is a responsive Jekyll theme with built-in search that is easily customizable and hosted on GitHub Pages."
+description: "This is a test website for C major documentation."
 permalink: /
 ---
 
-# Focus on writing good documentation.
-{: .fs-9 }
+# Welcome to Cmajor
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+The programming language for writing and developing audio software.
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/just-the-docs/just-the-docs){: .btn .fs-5 .mb-4 .mb-md-0 }
+<img src="https://haz-test.github.io/docs/docs/Assets/Cmajor-Word-Logo.png" width="450">
 
----
+If you're new to Cmajor, check out the getting started guide.
 
-{: .new }
-> **Pre-release version `0.4.0.rc2` is available!**
-> See [the CHANGELOG](https://github.com/just-the-docs/just-the-docs/blob/main/CHANGELOG.md) for a detailed breakdown.
+[Try the Playground (Coming Soon!)](){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View on GitHub](https://github.com/SoundStacks/cmajor){: .btn .btn-outline .fs-5 .mb-4 .mb-md-0 }
 
-{: .warning }
-> Specifying `gem "just-the-docs"` in your `Gemfile` uses the latest ***release*** (`v0.3.3`), ignoring all pre-releases!
-> To use this pre-release, pin it:
-> ```ruby
-> gem "just-the-docs", "0.4.0.rc2"
-> ```
-> and/or
-> ```yaml
-> remote_theme: just-the-docs/just-the-docs@v0.4.0.rc2
-> ```
+-------------------------------------------------------------------------------
 
-## Getting started
+## About
 
-### Dependencies
+Cmajor is an audio development platform created to improve the developer's workflow. It was developed to provide a safe environment for DSP development and fast implementation. Being able to go from an idea to a resulting output is key.
 
-Just the Docs is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [Jekyll quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special plugins and can run on GitHub Pages' standard Jekyll compiler. The [Jekyll SEO Tag plugin](https://github.com/jekyll/jekyll-seo-tag) is included by default (no need to run any special installation) to inject SEO and open graph metadata on docs pages. For information on how to configure SEO and open graph metadata visit the [Jekyll SEO Tag usage guide](https://jekyll.github.io/jekyll-seo-tag/usage/).
+Cmajor was designed with these main goals:
 
-### Quick start: Use as a GitHub Pages remote theme
+- To allow simple procedural DSP code to be easily composed into graph structures
+- To offer performance that *at least* matches C/C++
+- To make it impossible to write code that can crash or break real-time safety rules
+- To use a simple, familiar syntax which will be very easily learned by anyone who's dabbled with C/C++, javascript or other common languages
 
-1. Add Just the Docs to your Jekyll site's `_config.yml` as a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/)
+## Why use Cmajor?
 
-```yaml
-remote_theme: just-the-docs/just-the-docs
-```
+The purpose of Cmajor is to fufil all the criteria of a successful and great audio specific DSL. It is designed for all levels of developers.
 
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+For Beginners, it provides an environment and community to learn with great libraries and safety.
 
-### Local installation: Use the gem-based theme
+For Developers, Cmajor provides JIT compilation for C++ performance levels.
 
-1. Install the Ruby Gem
-  ```bash
-  $ gem install just-the-docs
-  ```
-  ```yaml
-  # .. or add it to your Jekyll site’s Gemfile
-  gem "just-the-docs"
-  ```
+## Working with Cmajor
 
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
-  ```yaml
-  theme: "just-the-docs"
-  ```
+There are two ways of working with the API. The high level format of Cmajor patches and the low level API.
 
-3. _Optional:_ Initialize search data (creates `search-data.json`)
-  ```bash
-  $ bundle exec just-the-docs rake search:init
-  ```
+### Cmajor Patch
 
-3. Run your local Jekyll server
-  ```bash
-  $ jekyll serve
-  ```
-  ```bash
-  # .. or if you're using a Gemfile (bundler)
-  $ bundle exec jekyll serve
-  ```
+A Cmajor patch is similar in nature to formats such as VST, AAX and AU plug-ins. It configures audio i/o bus configuration, MIDI handling and parameters in similar ways. Find more information about Cmajor patches [here](https://haz-test.github.io/docs/docs/GettingStarted#processors-and-graphs).
 
+### Low Level API
 
-4. Point your web browser to [http://localhost:4000](http://localhost:4000)
+The low level API is aimed toward developers wanting to delve deeper into Cmajor. More information [here]().
 
-If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
+## Why the Name?
 
-### Configure Just the Docs
-
-- [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
-
----
-
-## About the project
-
-Just the Docs is &copy; 2017-{{ "now" | date: "%Y" }} by [Patrick Marsceill](http://patrickmarsceill.com).
-
-### License
-
-Just the Docs is distributed by an [MIT license](https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt).
-
-### Contributing
-
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/just-the-docs/just-the-docs#contributing).
-
-#### Thank you to the contributors of Just the Docs!
-
-<ul class="list-style-none">
-{% for contributor in site.github.contributors %}
-  <li class="d-inline-block mr-1">
-     <a href="{{ contributor.html_url }}"><img src="{{ contributor.avatar_url }}" width="32" height="32" alt="{{ contributor.login }}"/></a>
-  </li>
-{% endfor %}
-</ul>
-
-### Code of Conduct
-
-Just the Docs is committed to fostering a welcoming community.
-
-[View our Code of Conduct](https://github.com/just-the-docs/just-the-docs/tree/main/CODE_OF_CONDUCT.md) on our GitHub repository.
+Cmajor is picked from the western musical world of keys. C major is arguably the simplest key. When you learn music theory, you start with no sharps or flats on your key signature. This idea of simplicity in audio development is what inspired the name and drives the platform. It also refers to the C style language syntax - neat!
