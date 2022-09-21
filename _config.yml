@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Cmajor Documentation
 description: Documentation for the Cmajor language
-baseurl: "/docs" # the subpath of your site, e.g. /blog
+baseurl: "/cmajor" # the subpath of your site, e.g. /blog
 url: "https://just-the-docs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
