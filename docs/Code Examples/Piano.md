@@ -18,4 +18,3 @@ To start this example, open the `Piano.cmajor` file. We'll explain what's happen
 ## A Brief Overview
 
 This is a MIDI Lo-Fi piano. It takes midi noteon & noteoff values to create a simplistic synth.
-

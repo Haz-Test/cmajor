@@ -20,7 +20,7 @@ To begin, you may want to follow this guide to setup Cmajor with command line to
 In this releases tab, you'll see zip files of the binaries for Mac, Windows and Linux builds. Download the binaries you require. Unzip the file and create a folder to store your binaries in a place of your choosing.
 
 <p align="left">
-  <img src="https://haz-test.github.io/docs/docs/Assets/Windows_Binary.gif" title="Cmajor Windows Binary Unzip">
+  <img src="https://haz-test.github.io/cmajor/docs/Assets/Windows_Binary.gif" title="Cmajor Windows Binary Unzip">
 </p>
 
 This sets you up with the `cmaj` executable file used to run command line tools and the dll `CmajPerformer.dll`. We will focus on the command line executable in this page.
@@ -139,7 +139,7 @@ Windows:
 This will open a patch window
 
 <p align="center">
-  <img src="https://haz-test.github.io/docs/docs/Assets/Hello_World_Patch.png" width=450 title="Hello World Patch">
+  <img src="https://haz-test.github.io/cmajor/docs/Assets/Hello_World_Patch.png" width=450 title="Hello World Patch">
 </p>
 
 While running, the patch will recompile when a change is detected.
@@ -179,7 +179,7 @@ The main high-level concepts in Cmaj that differ from most other languages are t
 Several `processor` nodes may `graph` together in clusters that are then fed into the main graph as one larger `processor` node.
 
 <p align="center">
-  <img src="https://haz-test.github.io/docs/docs/Assets/Graph_Structure.png" width=450 title="Graph Visualisation">
+  <img src="https://haz-test.github.io/cmajor/docs/Assets/Graph_Structure.png" width=450 title="Graph Visualisation">
 </p>
 
 ### A `processor` contains:
@@ -362,7 +362,7 @@ Windows:
 When you run the play command from the command line tool, you'll see a window pop up that looks like this:
 
 <p align="left">
-  <img src="https://haz-test.github.io/docs/docs/Assets/Cmajor_Patch_Controls_Example.png" width=450 title="Cmajor Patch Controls">
+  <img src="https://haz-test.github.io/cmajor/docs/Assets/Cmajor_Patch_Controls_Example.png" width=450 title="Cmajor Patch Controls">
 </p>
 
 And there you go, your first Cmajor patch using a graph and processor!
