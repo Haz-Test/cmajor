@@ -187,7 +187,7 @@ and
 
 ..but since there's nowhere to put the file's sample rate, that information will be discarded.
 
-## Patch GUIs
+##  Patch GUIs
 
 ### Specifying a custom GUI for a patch
 
