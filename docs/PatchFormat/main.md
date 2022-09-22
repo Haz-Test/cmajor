@@ -20,7 +20,7 @@ A Cmajor "patch" is essentially a bundle of files, including:
 - Some optional javascript control code for non-DSP housekeeping tasks
 - Optionally some sub-folders containing resources such as HTML/CSS/Javascript GUI, audio files, etc.
 
-### The `.cmajorpatch` manifest file
+## The `.cmajorpatch` manifest file
 
 The `.cmajorpatch` file contains JSON to describe the properties of the patch.
 
@@ -54,7 +54,7 @@ Other optional (but recommended properties) include:
 - `category` - hosts will be give this string, but how they choose to interpret it will be host-dependent
 - `isInstrument` - if specified, this marks the patch as being an instrument rather an effect. Some hosts may treat a plugin differently depending on this flag.
 
-### Cmajor source files
+## Cmajor source files
 
 The `source` property in the manifest tells the host which `.cmajor` files to compile for the Cmajor source code. This property can either be a single string containing a file path (relative to the folder containing the patch), or an array of string filenames if there are multiple files.
 
@@ -67,7 +67,7 @@ e.g.
 
 All the source files will be loaded and linked together as a single unit, so they can freely refer to definitions in the other files without needing to explicitly import them.
 
-### Selection of the patch's main processor
+## Selection of the patch's main processor
 
 One of the processors defined in your source files will be used as the patch's top-level processor. To help the host decide which one to use, you should decorate it with the `[[ main ]]` attribute, e.g.
 
@@ -76,7 +76,7 @@ processor HelloWorld  [[ main ]]
 {
 ```
 
-### Patch Parameters
+## Patch Parameters
 
 Patches are designed to be used as audio plugins, and an audio plugin generally has a list of "parameters" that the host can read and write to, so that a host/DAW can record and play back automated changes to these parameters.
 
@@ -117,7 +117,7 @@ The following properties can be added to the endpoint annotation in order to giv
 
     The `text` property can also contain a list of names separated by the pipe `|` character. In this mode, the names will be used as labels for the parameter values, and the host may choose to display them to the user in a drop-down menu or other list selector. For example `text: "low|med|high"` will map the strings "low", "med" and high to the value range 0, 1, 2. If a `max` range is specified then the values will be spread across the range, e.g. `max: 9` would map "low" to 0 -> 3, "med" to 3 -> 6, and "high" to 6 -> 9. If no `step` is provided, it will automatically be set based on the number of items.
 
-### External variable data
+## External variable data
 
 Cmajor code can declare `external` variables whose values are supplied by the runtime environment when the code is loaded. In a patch, you should add entries in the manifest file to supply the data or the resource file that should be loaded into these variables.
 
@@ -187,9 +187,9 @@ and
 
 ..but since there's nowhere to put the file's sample rate, that information will be discarded.
 
-### Patch GUIs
+## Patch GUIs
 
-#### Specifying a custom GUI for a patch
+### Specifying a custom GUI for a patch
 
 To add a custom GUI to your patch, your `.cmajorpatch` file should include a `view` property, e.g.
 
@@ -204,7 +204,7 @@ To add a custom GUI to your patch, your `.cmajorpatch` file should include a `vi
 
 The `view` property should contain a `html` property providing a relative URL to a HTML index page that can be displayed in an embedded browser view in the host.
 
-#### GUI-to-patch Communication
+### GUI-to-patch Communication
 
 ** TODO **
 
@@ -212,7 +212,7 @@ The `view` property should contain a `html` property providing a relative URL to
 
 A patch is just a folder containing some files that describe its DSP and GUI. To run one, you need a host that can load it. Some of the ways you can load and run a patch include:
 
-#### Using the command-line tool
+### Using the command-line tool
 
 Run the `cmaj` console app, giving it the location of the patch file to play:
 ```
@@ -221,19 +221,19 @@ Run the `cmaj` console app, giving it the location of the patch file to play:
 This will launch it in a window, and use the default audio and MIDI i/o devices on your machine to play it. If you modify any of the patch's files while it's running, the app should detect this and recompile it for you.
 While this is an easy way to run a patch, it's very limited in terms of what you can do with its inputs and outputs.
 
-#### Using the Cmajor loader plugin
+### Using the Cmajor loader plugin
 
 In your favourite DAW, just load the Cmajor plugin and point it at the patch that you want to run. This way, you can run a patch anywhere that you can run a standard VST or AU plugin, so you can set up the audio and MIDI input and output however you like. It will also recompile the patch if you change any code while it's running, so is handy for development.
 
 Something to watch out for when running the JIT plugin is that most DAWs don't expect VST/AU plugins to dynamically change their audio i/o or parameter lists while they're running, because this almost never happens in "normal" plugins. But while you're live-editing a Cmajor patch, the i/o and parameters may change whenever you change its endpoints, and this means that some DAWs may fail to respond correctly to these changes, or even crash.
 
-#### Using the online playground
+### Using the online playground
 
 (Coming soon!)
 
 When we finish building it (!), the cmajor.dev online playground will let you build and run a patch in your browser. This will be by far the simplest way to get things going without any setup required, but performance in a browser (using WASM) will always be slower than running the code natively on your machine.
 
-#### Building a native VST or AudioUnit from a patch
+### Building a native VST or AudioUnit from a patch
 
 The `cmaj` tool supports code-generation of a JUCE C++ project that can be used to natively compile a VST/AudioUnit/AAX plugin for a patch. The resulting code doesn't do any JIT compilation, it simply translates the Cmajor code to pure C++ so that it can be built statically.
 
