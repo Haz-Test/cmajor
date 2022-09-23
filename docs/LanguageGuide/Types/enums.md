@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Vectors
-permalink: /docs/LanguageReference#vectors
+title: Enums
+permalink: /docs/LanguageReference#enums
 parent: Types
 grand_parent: Language Reference
-nav_order: 7
+nav_order: 10
 ---
