@@ -1142,7 +1142,7 @@ Values also have a feature that allows an automatic ramp to be applied to scalar
 
 ### Event Endpoints
 
-When an input event is declared, the processor can define a handler function for it. These special functions are prefixed with the `event` keyword.
+When an input event is declared, a processor or graph can define a handler function for it. These special functions are prefixed with the `event` keyword.
 
 ```cpp
 processor P
@@ -1158,7 +1158,7 @@ processor P
 }
 ```
 
-If the event has multiple types, you should declare a handler for each type.
+If the event has multiple types, you should declare a handler for each type. Any endpoint type without an event handler defined will be ignored when written to.
 
 ```cpp
 processor P
@@ -1167,6 +1167,25 @@ processor P
 
     event myInput (string e) { ... }
     event myInput (float<2> e) { ... }
+}
+```
+
+Graph event handlers are more limited than processor event handlers because of the restriction that graphs do not contain state. However, graph event handlers can do useful work such as filtering what is forwarded, or scaling values
+
+```cpp
+graph G
+{
+    input event float paramIn;
+    output event float filteredOut;
+    output value float scaledOutput;
+    event paramIn (float f)
+    {
+        // Only send some param values through
+        if (paramIn > 0.5)
+            filteredOut <- paramIn;
+        // Scale the normalised parameter to the range 10 .. 100
+        scaledOutput <- 10.0f + (90.0f * f);
+    }
 }
 ```
 
