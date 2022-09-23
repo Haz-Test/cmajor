@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Using the Command Line Tool
+title: Using the command-line tool
 permalink: /docs/PatchFormat#using-the-command-line-tool
 parent: Playing a Patch
 grand_parent: Patch Format

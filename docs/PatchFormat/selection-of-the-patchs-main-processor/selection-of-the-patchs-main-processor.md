@@ -1,7 +1,7 @@
 ---
-title: Selection of `[[ main ]]` processor
+title: Selection of the patch's main processor
 permalink: /docs/PatchFormat#selection-of-the-patchs-main-processor
 parent: Patch Format
-has_children: false
+has_children: False
 nav_order: 3
 ---
