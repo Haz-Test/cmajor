@@ -180,20 +180,11 @@ The main high-level concepts in Cmaj that differ from most other languages are t
 
 Several `processor` nodes may `graph` together in clusters that are then fed into the main graph as one larger `processor` node.
 
-```
-                             Node
-                            /    \
-                         Node     Node
-                           \      /
-                            \    /
-                             \  /
-                             Node
-```
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
+    A(Node)-->B(Node);
+    A-->C(Node);
+    B(Node)-->D(Node);
     C-->D;
 ```
 
