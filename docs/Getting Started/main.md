@@ -21,8 +21,8 @@ In this releases tab, you'll see zip files of the binaries for Mac, Windows and 
 
 ```
 /path-to-your-exe/cmajor
-│_   cmaj.exe
-│_   CmajPerformer.dll    
+│_cmaj.exe
+│_CmajPerformer.dll    
 ```
 
 This sets you up with the `cmaj` executable file used to run command line tools and the dll `CmajPerformer.dll`. We will focus on the command line executable in this page.
@@ -184,12 +184,19 @@ Several `processor` nodes may `graph` together in clusters that are then fed int
                              Node
                             /    \
                          Node     Node
-                          \        /
                            \      /
                             \    /
                              \  /
                              Node
 ```
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 
 ### A `processor` contains:
 - A list of inputs and outputs
@@ -256,7 +263,7 @@ Windows:
 This creates a new Cmajor patch we can start writing in. We start with a simple graph that plays a sine wave:
 
 ```
-graph helloWorld  [[main]]
+graph HelloWorld  [[main]]
 {
     output stream float out;
 
@@ -273,7 +280,7 @@ Remove the connection line, we'll be adding this later!
 For this patch, we multiply the inputted sine wave with a gain control within a processor. Copy and paste this processor below the graph:
 
 ```
-processor gainProc
+processor GainProc
 {
     output stream float out;
     input stream float in;
@@ -300,7 +307,7 @@ input value float gain[[name: "Gain", min: 0, max: 0.9, init: 0.5, step: 0.01]];
 This creates an input value of type float. The parameters within the brackets are passed to the host to show parameters on screen. Play with these values to see how they work and change. Our graph should now look like this:
 
 ```
-graph helloWorld  [[main]]
+graph HelloWorld  [[main]]
 {
     output stream float out;
     input value float gain[[name: "Gain", min: 0, max: 0.9, init: 0.5, step: 0.01]];
@@ -316,10 +323,9 @@ The next step is to connect this slider to the 'gainProc' processor we made. The
 ```
     connection
     {
-        gain           -> gainProc.gainValue;
-
-        sine           -> gainProc.in;
-        gainProc.out   -> out;
+        gain         -> gainProc.gainValue;
+        sine         -> gainProc.in;
+        gainProc.out -> out;
     }
 ```
 
@@ -330,7 +336,7 @@ The next step is to connect this slider to the 'gainProc' processor we made. The
  Altogether, the helloWorld Cmajor program we have created looks like:
 
  ```
-graph helloWorld  [[main]]
+graph HelloWorld  [[main]]
 {
     output stream float out;
     input value float gain[[name: "Gain", min: 0, max: 0.9, init: 0.5, step: 0.01]];
@@ -338,14 +344,13 @@ graph helloWorld  [[main]]
     node sine = std::oscillators::Sine (float, 440);
     
     connection{
-        gain           -> gainProc.gainValue;
-
-        sine           -> gainProc.in;
-        gainProc.out   -> out;
+        gain         -> gainProc.gainValue;
+        sine         -> gainProc.in;
+        gainProc.out -> out;
     }
 }
 
-processor gainProc
+processor GainProc
 {
     output stream float out;
     input stream float in;
