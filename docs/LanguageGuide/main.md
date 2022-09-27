@@ -1171,18 +1171,19 @@ processor P
 ```
 
 Graph event handlers are more limited than processor event handlers because of the restriction that graphs do not contain state. However, graph event handlers can do useful work such as filtering what is forwarded, or scaling values
-
 ```cpp
 graph G
 {
     input event float paramIn;
     output event float filteredOut;
     output value float scaledOutput;
+
     event paramIn (float f)
     {
         // Only send some param values through
         if (paramIn > 0.5)
             filteredOut <- paramIn;
+
         // Scale the normalised parameter to the range 10 .. 100
         scaledOutput <- 10.0f + (90.0f * f);
     }
@@ -1438,7 +1439,7 @@ graph Test
     {
         n.out1       -> arrayElement;    // invalid - the node is an array, and the endpoint is also an array type
         n.out1[1]    -> arrayElement;    // invalid - as above, n.out1 is an invalid type, so you can't take an index
-        n[2].out1    -> instanceOut;     // valid - n[2] selects a node, so the type is float32[3] 
+        n[2].out1    -> instanceOut;     // valid - n[2] selects a node, so the type is float32[3]
         n[2].out1[2] -> out;             // valid - n[2] selects a node, out1[2] selects an array member, so type is float
 
         n.out2        -> arrayElement;   // valid - type is float[10]
@@ -1717,6 +1718,7 @@ Cmaj has a set of built-in intrinsic functions. float32, float64 and integers ty
 | `roundToInt()`    | Rounds a float to the closest integer         |
 | `floor()`         | Rounds a float down to closest integer        |
 | `ceil()`          | Rounds a float up to the closest integer      |
+| `rint()`          | Rounds a float to the closest integer         |
 | `log10()`         | Returns a base 10 logarithm of value          |
 | `log()`           | Returns a natural logarithm of value          |
 | `exp()`           | exponential (e) raised by given value         |

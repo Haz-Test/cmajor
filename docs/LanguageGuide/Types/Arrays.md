@@ -4,5 +4,5 @@ title: Arrays
 permalink: /docs/LanguageReference#arrays
 parent: Types
 grand_parent: Language Reference
-nav_order: 3
+nav_order: 4
 ---

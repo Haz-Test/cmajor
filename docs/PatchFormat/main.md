@@ -13,6 +13,7 @@ Cmajor patches are a format for bundling together code and other resources, so t
 
 ------------------------------------------------------------------------------
 
+
 A Cmajor "patch" is essentially a bundle of files, including:
 
 - A main "manifest" file, with the suffix `.cmajorpatch`. This file describes the patch's properties and contains links to the other files in the patch
@@ -187,7 +188,7 @@ and
 
 ..but since there's nowhere to put the file's sample rate, that information will be discarded.
 
-## Patch GUIs
+## Patch GUIs
 
 ### Specifying a custom GUI for a patch
 
