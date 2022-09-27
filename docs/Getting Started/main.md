@@ -19,9 +19,11 @@ To begin, you may want to follow this guide to setup Cmajor with command line to
 
 In this releases tab, you'll see zip files of the binaries for Mac, Windows and Linux builds. Download the binaries you require. Unzip the file and create a folder to store your binaries in a place of your choosing.
 
-<p align="left">
-  <img src="https://haz-test.github.io/cmajor/docs/Assets/Windows_Binary.gif" title="Cmajor Windows Binary Unzip">
-</p>
+```
+/path-to-your-exe/cmajor
+│_   cmaj.exe
+│_   CmajPerformer.dll    
+```
 
 This sets you up with the `cmaj` executable file used to run command line tools and the dll `CmajPerformer.dll`. We will focus on the command line executable in this page.
 
@@ -178,9 +180,16 @@ The main high-level concepts in Cmaj that differ from most other languages are t
 
 Several `processor` nodes may `graph` together in clusters that are then fed into the main graph as one larger `processor` node.
 
-<p align="center">
-  <img src="https://haz-test.github.io/cmajor/docs/Assets/Graph_Structure.png" width=450 title="Graph Visualisation">
-</p>
+```
+                             Node
+                            /    \
+                         Node     Node
+                          \        /
+                           \      /
+                            \    /
+                             \  /
+                             Node
+```
 
 ### A `processor` contains:
 - A list of inputs and outputs
@@ -264,7 +273,8 @@ Remove the connection line, we'll be adding this later!
 For this patch, we multiply the inputted sine wave with a gain control within a processor. Copy and paste this processor below the graph:
 
 ```
-processor gainProc{
+processor gainProc
+{
     output stream float out;
     input stream float in;
 
@@ -304,7 +314,8 @@ graph helloWorld  [[main]]
 The next step is to connect this slider to the 'gainProc' processor we made. The connection portion of the graph is the 'plumbing' of streams of data. The connection branch within the helloWorld graph will look like this:
 
 ```
-    connection{
+    connection
+    {
         gain           -> gainProc.gainValue;
 
         sine           -> gainProc.in;
@@ -334,7 +345,8 @@ graph helloWorld  [[main]]
     }
 }
 
-processor gainProc{
+processor gainProc
+{
     output stream float out;
     input stream float in;
 
