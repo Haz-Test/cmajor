@@ -182,9 +182,9 @@ Several `processor` nodes may `graph` together in clusters that are then fed int
 
 ```mermaid
 graph TD;
-    A([Node])-->B([Node]);
-    A-->C([Node]);
-    B([Node])-->D([Node]);
+    A(["Node"])-->B(["Node"]);
+    A-->C(["Node"]);
+    B(["Node"])-->D(["Node"]);
     C-->D;
 ```
 
