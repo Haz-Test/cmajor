@@ -48,13 +48,6 @@
     white-space: pre;
   }
   
-  nav {
-    flex: 0 1 18em;
-    background-color: rgba(61, 65, 85, 0.062);
-    padding: 0.5em 0.5em 5em 0.5em;
-    overflow-y: auto;
-  }
-  
   #content {
     flex: 4 1;
   }
