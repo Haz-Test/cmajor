@@ -40,7 +40,7 @@
     text-decoration: none;
   }
   
-  code_ident {
+  code {
     font-family: var(--code-font);
     font-size: 80%;
     font-style: normal;
