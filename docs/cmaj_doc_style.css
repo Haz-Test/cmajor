@@ -40,7 +40,7 @@
     text-decoration: none;
   }
   
-  code {
+  code_prim {
     font-family: var(--code-font);
     font-size: 80%;
     font-style: normal;
