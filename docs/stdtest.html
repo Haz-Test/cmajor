@@ -1,0 +1,168 @@
+---
+layout: test
+title: std test
+permalink: /docs/stdtest
+nav_order: 12
+has_children: true
+has_toc: false
+---
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+ <head>
+  <title>Cmajor</title>
+  <link rel="stylesheet" href="cmaj_doc_style.css"></link>
+ </head>
+ <body>
+  <div class="namespace" id="std">
+   <h2>namespace std</h2>
+   <div class="namespace" id="delay">
+    <h2>namespace std::delay</h2>
+    <div class="comment"><br>Module: std.delay
+<br>Utilities and processors for implementing delays. Note that you
+graph connections allow a delay to be added without needing to use
+an explicit processor - see the language guide for more details.
+<br></div>
+    <div class="processor" id="StreamDelay">
+     <h2>processor std::delay::StreamDelay</h2>
+     <div class="specialisations">
+      <h2>Specialisations</h2>
+      <div class="specialisation"><span class="code_ident">
+        <a href="#StreamType">StreamType</a></span>
+      </div>
+      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+      </div>
+     </div>
+     <div class="comment">A delay that acts on a pair of input/output streams
+</div>
+     <div class="endpoints"></div>
+     <div class="variables">
+      <h2>Variables</h2>
+      <div class="variable" id="buffer">
+       <div class="variable_name">buffer</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">StreamType</span><span class="code">[</span><span class="code_ident">delayLength</span><span class="code">]</span>
+       </div>
+      </div>
+      <div class="variable" id="pos">
+       <div class="variable_name">pos</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">delayLength</span><span class="code">&gt;</span>
+       </div>
+      </div>
+     </div>
+     <div class="functions">
+      <h2>Functions</h2>
+      <div class="function" id="main"><span class="function_name">main</span>
+       <div class="function_decl"><span class="code_prim">void</span><span class="code"> </span><span class="code_ident">main</span><span class="code">(</span><span class="code">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="processor" id="ValueDelay">
+     <h2>processor std::delay::ValueDelay</h2>
+     <div class="specialisations">
+      <h2>Specialisations</h2>
+      <div class="specialisation"><span class="code_ident">
+        <a href="#StreamType2">StreamType</a></span>
+      </div>
+      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+      </div>
+     </div>
+     <div class="comment">A delay that acts on a pair of input/output values
+</div>
+     <div class="endpoints"></div>
+     <div class="variables">
+      <h2>Variables</h2>
+      <div class="variable" id="buffer2">
+       <div class="variable_name">buffer</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">StreamType</span><span class="code">[</span><span class="code_ident">delayLength</span><span class="code">]</span>
+       </div>
+      </div>
+      <div class="variable" id="pos2">
+       <div class="variable_name">pos</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">delayLength</span><span class="code">&gt;</span>
+       </div>
+      </div>
+     </div>
+     <div class="functions">
+      <h2>Functions</h2>
+      <div class="function" id="main2"><span class="function_name">main</span>
+       <div class="function_decl"><span class="code_prim">void</span><span class="code"> </span><span class="code_ident">main</span><span class="code">(</span><span class="code">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="processor" id="EventDelay">
+     <h2>processor std::delay::EventDelay</h2>
+     <div class="specialisations">
+      <h2>Specialisations</h2>
+      <div class="specialisation"><span class="code_ident">
+        <a href="#EventType">EventType</a></span>
+      </div>
+      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+      </div>
+      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span>
+      </div>
+     </div>
+     <div class="comment">A delay that acts on a pair of input/output event endpoints
+</div>
+     <div class="endpoints"></div>
+     <div class="structs">
+      <h2>Structs</h2>
+      <div class="struct" id="DelayedEvent"><span class="code">struct </span><span class="struct_name">DelayedEvent</span>
+       <div class="struct_members">
+        <div class="struct_member">
+         <div class="struct_member_name">e</div> <span class="code_ident">EventType</span>
+        </div>
+        <div class="struct_member">
+         <div class="struct_member_name">eventTime</div> <span class="code_prim">int32</span>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="variables">
+      <h2>Variables</h2>
+      <div class="variable" id="eventBuffer">
+       <div class="variable_name">eventBuffer</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">DelayedEvent</span><span class="code">[</span><span class="code_ident">bufferSize</span><span class="code">]</span>
+       </div>
+      </div>
+      <div class="variable" id="readPos">
+       <div class="variable_name">readPos</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">bufferSize</span><span class="code">&gt;</span>
+       </div>
+      </div>
+      <div class="variable" id="writePos">
+       <div class="variable_name">writePos</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">bufferSize</span><span class="code">&gt;</span>
+       </div>
+      </div>
+      <div class="variable" id="bufferEntries">
+       <div class="variable_name">bufferEntries</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_prim">int32</span>
+       </div>
+      </div>
+      <div class="variable" id="currentTime">
+       <div class="variable_name">currentTime</div><span class="code">: </span>
+       <div class="variable_type"><span class="code_prim">int32</span>
+       </div>
+      </div>
+     </div>
+     <div class="functions">
+      <h2>Functions</h2>
+      <div class="function" id="in"><span class="function_name">in</span>
+       <div class="function_decl"><span class="code_keyword">event</span><span class="code"> </span><span class="code_ident">in</span><span class="code"> </span><span class="code">(</span><span class="code_ident">EventType</span><span class="code"> </span><span class="code_ident">e</span><span class="code">)</span>
+       </div>
+      </div>
+      <div class="function" id="emitEvents"><span class="function_name">emitEvents</span>
+       <div class="function_decl"><span class="code_prim">void</span><span class="code"> </span><span class="code_ident">emitEvents</span><span class="code">(</span><span class="code">)</span>
+       </div>
+      </div>
+      <div class="function" id="main3"><span class="function_name">main</span>
+       <div class="function_decl"><span class="code_prim">void</span><span class="code"> </span><span class="code_ident">main</span><span class="code">(</span><span class="code">)</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
