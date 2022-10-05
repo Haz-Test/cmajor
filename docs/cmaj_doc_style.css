@@ -47,7 +47,7 @@
     white-space: pre;
   }
 
-  .comment {
+  .namespace.comment {
     flex: 4 1;
     font-family: var(--code-font);
     font-size: 80%;
