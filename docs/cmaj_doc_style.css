@@ -46,6 +46,15 @@
     color: rgb(88, 88, 88);
     white-space: pre;
   }
+
+  comment {
+    flex: 4 1;
+    font-family: var(--code-font);
+    font-size: 80%;
+    font-style: normal;
+    color: rgb(88, 88, 88);
+    white-space: pre;
+  }
   
   #content {
     flex: 4 1;
