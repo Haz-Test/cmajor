@@ -4,7 +4,6 @@
   }
   
   body {
-    background-color: white;
     font-family: var(--serif-font);
     max-height: 100%;
     position: static;
