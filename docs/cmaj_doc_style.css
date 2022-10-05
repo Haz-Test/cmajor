@@ -19,10 +19,6 @@
     margin: 0;
   }
   
-  a {
-    color: rgb(64, 122, 197);
-  }
-  
   li.toc_module a:link {
     text-decoration: none;
   }
@@ -55,7 +51,23 @@
     color: rgb(88, 88, 88);
     white-space: pre;
   }
-
+  
+  .code_ident {
+  background: rgba(0, 0, 0, 0.027);
+  display: block;
+  overflow-x: auto;
+  color: #444444;
+  padding: .5em;
+  /* padding: 0.5em;
+  margin: 0;
+  white-space: pre;
+  display: block;
+  font-style: normal; */
+  }
+  
+#audio_data {
+	background: rgba(0, 0, 0, 0.027);
+}
   
   #content {
     flex: 4 1;
