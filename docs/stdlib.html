@@ -21,12 +21,10 @@ has_toc: false
  </ul>
  </nav>
  
- 
- 
  <body>
-  <div class="namespace" id="std">
-   <h1>The Cmajor Standard Library</h1>
-   <div class="namespace" id="audio_data" href="#">
+  <div class="namespace" id="std" href="#std">
+   <h2>namespace std</h2>
+   <div class="namespace" id="audio_data" href="#audio_data">
     <h2>namespace std::audio_data</h2>
     <div class="comment"><br>Module: std.audio_data
 <br>These structures are useful for representing chunks of audio data with a
@@ -134,7 +132,7 @@ of the audio data.
      </div>
     </div>
    </div>
-   <div class="namespace" id="delay">
+   <div class="namespace" id="delay" href="#delay">
     <h2>namespace std::delay</h2>
     <div class="comment"><br>Module: std.delay
 <br>Utilities and processors for implementing delays. Note that you
@@ -282,7 +280,7 @@ an explicit processor - see the language guide for more details.
      </div>
     </div>
    </div>
-   <div class="namespace" id="envelopes">
+   <div class="namespace" id="envelopes" href="#envelopes">
     <h2>namespace std::envelopes</h2>
     <div class="comment"><br>Module: std.envelopes
 <br>Utilities for calculating and applying gain levels.
@@ -332,7 +330,7 @@ be used to attenuate a voice.
      </div>
     </div>
    </div>
-   <div class="namespace" id="filters">
+   <div class="namespace" id="filters" href="#filters">
     <h2>namespace std::filters</h2>
     <div class="specialisations">
      <h2>Specialisations</h2>
@@ -354,7 +352,7 @@ from float64, but at the cost of higher computational cost.
 parameterUpdateRate specifying how often the updates are applied, to reduce the
 cost of recalculating coefficients
 <br></div>
-    <div class="namespace" id="tpt">
+    <div class="namespace" id="tpt" href="#tpt">
      <h2>namespace std::filters::tpt</h2>
      <div class="comment"><br>These filters are based on the designs outlined in The Art of VA Filter Design
 by Vadim Zavalishin, with help from Will Pirkle in Virtual Analog Filter Implementation.
@@ -364,12 +362,12 @@ modulation can be applied with minimal instability.
 computational cost, and the frames between updates can be altered using the
 parameterUpdateRate, smaller being more frequent.
 <br></div>
-     <div class="namespace" id="onepole">
+     <div class="namespace" id="onepole" href="#onepole">
       <h2>namespace std::filters::tpt::onepole</h2>
       <div class="comment">One pole filter implementation providing low and high pass options.
 The frequency and mode can be modulated at the parameterUpdateRate
 </div>
-      <div class="namespace" id="Mode">
+      <div class="namespace" id="Mode" href="#Mode">
        <h2>namespace std::filters::tpt::onepole::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
@@ -476,11 +474,11 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
      </div>
-     <div class="namespace" id="svf">
+     <div class="namespace" id="svf" href="#svf">
       <h2>namespace std::filters::tpt::svf</h2>
       <div class="comment">State variable filter implementation, suitable for modulation.
 </div>
-      <div class="namespace" id="Mode2">
+      <div class="namespace" id="Mode2" href="#Mode2">
        <h2>namespace std::filters::tpt::svf::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
@@ -662,7 +660,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
       </div>
      </div>
     </div>
-    <div class="namespace" id="dcblocker">
+    <div class="namespace" id="dcblocker" href="#dcblocker">
      <h2>namespace std::filters::dcblocker</h2>
      <div class="comment"><br>Highpass filter for blocking DC.
 An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html&#13;">https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
@@ -718,7 +716,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
       </div>
      </div>
     </div>
-    <div class="namespace" id="butterworth">
+    <div class="namespace" id="butterworth" href="#butterworth">
      <h2>namespace std::filters::butterworth</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
@@ -729,7 +727,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 <br>The order is set at compile time, but the type and frequency can be modulated
 at runtime.
 <br></div>
-     <div class="namespace" id="Mode3">
+     <div class="namespace" id="Mode3" href="#Mode3">
       <h2>namespace std::filters::butterworth::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
@@ -833,7 +831,7 @@ at runtime.
       </div>
      </div>
     </div>
-    <div class="namespace" id="crossover">
+    <div class="namespace" id="crossover" href="#crossover">
      <h2>namespace std::filters::crossover</h2>
      <div class="comment"><br>4th Order two band crossover filter
 <br>This filter is implemented using the StateVariableFilter and outputs two streams which can be
@@ -908,7 +906,7 @@ summed to produce a flat response. The crossover frequency can be modulated
       </div>
      </div>
     </div>
-    <div class="namespace" id="simper">
+    <div class="namespace" id="simper" href="#simper">
      <h2>namespace std::filters::simper</h2>
      <div class="comment"><br>Simper filter
 <br>This filter is based on the design by Andy Simper, and is an implementation
@@ -916,7 +914,7 @@ of the State Variable filter providing many different operational modes.
 It is documented here:
 <a href="https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf&#13;">https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
 </a><br></div>
-     <div class="namespace" id="Mode4">
+     <div class="namespace" id="Mode4" href="#Mode4">
       <h2>namespace std::filters::simper::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
@@ -1119,7 +1117,7 @@ It is documented here:
      </div>
     </div>
    </div>
-   <div class="namespace" id="frequency7">
+   <div class="namespace" id="frequency7" href="#frequency7">
     <h2>namespace std::frequency</h2>
     <div class="comment"><br>Module: std.frequency
 <br>Contains DFT implementations for complex and real numbers
@@ -1158,7 +1156,7 @@ and imaginary components, and the output array receives the real components.
      </div>
     </div>
    </div>
-   <div class="namespace" id="intrinsics">
+   <div class="namespace" id="intrinsics" href="#intrinsics">
     <h2>namespace std::intrinsics</h2>
     <div class="comment"><br>Module: std.intrinsics
 <br>Contains placeholders and reference implementations of basic functions.
@@ -1425,7 +1423,7 @@ If the index lies beyond the range of the array, it will be wrapped.
      </div>
     </div>
    </div>
-   <div class="namespace" id="smoothing">
+   <div class="namespace" id="smoothing" href="#smoothing">
     <h2>namespace std::smoothing</h2>
     <div class="comment">Utilities for smoothing non-audio signals, such as control parameters.
 </div>
@@ -1516,7 +1514,7 @@ to reach it.
      </div>
     </div>
    </div>
-   <div class="namespace" id="levels">
+   <div class="namespace" id="levels" href="#levels">
     <h2>namespace std::levels</h2>
     <div class="processor" id="ConstantGain">
      <h2>processor std::levels::ConstantGain</h2>
@@ -1643,7 +1641,7 @@ output stream of smoothed gain factors which can be applied to a signal.
      </div>
     </div>
    </div>
-   <div class="namespace" id="pan_law">
+   <div class="namespace" id="pan_law" href="#pan_law">
     <h2>namespace std::pan_law</h2>
     <div class="functions">
      <h2>Functions</h2>
@@ -1663,7 +1661,7 @@ using a 3dB-centre pan-law.
      </div>
     </div>
    </div>
-   <div class="namespace" id="midi">
+   <div class="namespace" id="midi" href="#midi">
     <h2>namespace std::midi</h2>
     <div class="comment"><br>Module: std.midi
 <br>Various utilities for handling raw MIDI data.
@@ -1897,7 +1895,7 @@ the natural order for a MIDI message.
      </div>
     </div>
    </div>
-   <div class="namespace" id="mixers">
+   <div class="namespace" id="mixers" href="#mixers">
     <h2>namespace std::mixers</h2>
     <div class="comment"><br>Module: std.mixers
 <br></div>
@@ -2016,7 +2014,7 @@ will act as a &quot;percentage wet&quot; control.
      </div>
     </div>
    </div>
-   <div class="namespace" id="noise">
+   <div class="namespace" id="noise" href="#noise">
     <h2>namespace std::noise</h2>
     <div class="comment"><br>Module: std.noise
 <br></div>
@@ -2135,7 +2133,7 @@ See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia
      </div>
     </div>
    </div>
-   <div class="namespace" id="notes">
+   <div class="namespace" id="notes" href="#notes">
     <h2>namespace std::notes</h2>
     <div class="comment"><br>Module: std.notes
 <br>These structs are used for events that model the start/stop/control of notes
@@ -2317,11 +2315,11 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
      </div>
     </div>
    </div>
-   <div class="namespace" id="oscillators">
+   <div class="namespace" id="oscillators" href="#oscillators">
     <h2>namespace std::oscillators</h2>
     <div class="comment"><br>Module: std.oscillators
 <br></div>
-    <div class="namespace" id="waveshape">
+    <div class="namespace" id="waveshape" href="#waveshape">
      <h2>namespace std::oscillators::waveshape</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
@@ -2722,7 +2720,7 @@ The FrameType parameter could be a float or a float vector.
       </div>
      </div>
     </div>
-    <div class="namespace" id="std_oscillators_waveshape_specialised__K0a57">
+    <div class="namespace" id="std_oscillators_waveshape_specialised__K0a57" href="#std_oscillators_waveshape_specialised__K0a57">
      <h2>namespace std::oscillators::waveshape</h2>
      <div class="functions">
       <h2>Functions</h2>
@@ -2906,7 +2904,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
    </div>
-   <div class="namespace" id="random">
+   <div class="namespace" id="random" href="#random">
     <h2>namespace std::random</h2>
     <div class="comment"><br>Module: std.random
 <br>If you&#39;re writing code that needs to be cryptographically secure, then this is not the
@@ -2982,7 +2980,7 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
      </div>
     </div>
    </div>
-   <div class="namespace" id="timeline">
+   <div class="namespace" id="timeline" href="#timeline">
     <h2>namespace std::timeline</h2>
     <div class="comment"><br>Module: std.timeline
 <br>This namespace contains various types and functions for dealing with tempos,
@@ -3109,7 +3107,7 @@ beats you are into the current bar.
      </div>
     </div>
    </div>
-   <div class="namespace" id="voices">
+   <div class="namespace" id="voices" href="#voices">
     <h2>namespace std::voices</h2>
     <div class="comment"><br>Module: std.voices
 <br>This module demonstrates a simple voice-allocation algorithm.
