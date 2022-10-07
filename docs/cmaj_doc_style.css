@@ -12,6 +12,9 @@ h2 {
     margin: 0px;
     background: rgba(0, 0, 0, 0.057);
 }
+.comment{
+    color:black;
+}
 
 .module_type {
     opacity: 70%;
@@ -21,7 +24,6 @@ h2 {
 
 .function_decl {
     display:flex;
-    
     font-family: var(--code-font);
     font-size: 80%;
     font-style: normal;
@@ -33,19 +35,9 @@ h2 {
 .code_prim{
     color: blue;
 }
+module,
 .code_ident {
-    /*background: rgba(0, 0, 0, 0.037);
-    display: block;
-    overflow-x: auto;
-    color: #444444;
-    padding: .5em;
-    /* padding: 0.5em;
-    margin: 0;
-    white-space: pre;
-    display: block;
-    font-style: normal; */
     font-family: var(--code-font);
-    /*padding: 5px;*/
     margin: 0;
     }
 
@@ -68,6 +60,5 @@ h2 {
     display:flex;
     font-family: var(--code-font);
     padding: 0;
-    padding-left: 1em;
     margin: 0 0 1em 0;  
 }
