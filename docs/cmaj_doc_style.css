@@ -14,6 +14,7 @@ h2 {
 }
 .comment{
     border-bottom: 1px solid rgba(0, 0, 0, 0.057);
+    color:rgb(88, 88, 88);
 }
 
 .module_type {
@@ -35,6 +36,13 @@ h2 {
 .code_prim{
     color: blue;
 }
+a {
+    text-decoration: none; 
+    font-family: var(--code-font);
+    margin: 0;
+    color:black;
+    }
+.code,
 module,
 .code_ident {
     font-family: var(--code-font);
@@ -50,8 +58,12 @@ module,
 }
 
 .variables{
+    color: #5c5962;
     padding: 5px;
     margin: 0;
+}
+.variable_type{
+    color: #5c5962;
 }
 .struct_member,
 .struct_name,
