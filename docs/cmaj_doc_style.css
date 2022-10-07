@@ -28,6 +28,10 @@ h2 {
     white-space: pre;
 }
 
+.code_prim{
+    color: blue;
+}
+
 .code_ident {
     /*background: rgba(0, 0, 0, 0.037);
     display: block;
@@ -54,4 +58,9 @@ h2 {
 
 .function_decl{
     margin: 10px;
+}
+
+.variables{
+    padding: 5px;
+    margin: 0;
 }
