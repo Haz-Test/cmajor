@@ -3,18 +3,18 @@
     --code-font: monaco, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.namespace{
+/*.namespace{
     background: rgba(0, 0, 0, 0.027);
-}
+}*/
 
 h2 {
     padding: 5px;
     margin: 0px;
-    background: rgba(0, 0, 0, 0.057);
+    background: rgba(0, 0, 0, 0.027);
 }
 .comment{
     color:black;
-    border-bottom: 1px solid #eeebee;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.057);
 }
 
 .module_type {
@@ -55,7 +55,8 @@ module,
     padding: 5px;
     margin: 0;
 }
-
+.struct_member,
+.struct_name,
 .variable_name,
 .variable{
     display:flex;
