@@ -48,6 +48,7 @@ module,
     font-family: var(--code-font);
     margin: 0;
     color:black;
+    display:contents;
     }
 .function_name{
     color:black;
