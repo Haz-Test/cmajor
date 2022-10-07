@@ -17,4 +17,23 @@ h2 {
     opacity: 70%;
     font-style: italic;
     padding-inline-end: 0.3em;
-  }
+}
+
+.code_ident {
+    background: rgba(0, 0, 0, 0.037);
+    display: block;
+    overflow-x: auto;
+    color: #444444;
+    padding: .5em;
+    /* padding: 0.5em;
+    margin: 0;
+    white-space: pre;
+    display: block;
+    font-style: normal; */
+    }
+
+.function_name{
+    font-family: var(--code-font);
+    padding: 0;
+    margin: 0;
+}
