@@ -14,6 +14,7 @@ h2 {
 }
 .comment{
     color:black;
+    border-bottom: 1px solid #eeebee;
 }
 
 .module_type {
@@ -60,5 +61,5 @@ module,
     display:flex;
     font-family: var(--code-font);
     padding: 0;
-    margin: 0 0 1em 0;  
+    margin: 0 0 .05em 0;  
 }
