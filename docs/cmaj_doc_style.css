@@ -40,12 +40,14 @@ h2 {
     display: block;
     font-style: normal; */
     font-family: var(--code-font);
-    padding: 0;
+    padding: 5px;
     margin: 0;
     }
 
 .function_name{
+    color:black;
+    font-size: 18;
     font-family: var(--code-font);
-    padding: 0;
+    padding: 2px;
     margin: 0;
 }
