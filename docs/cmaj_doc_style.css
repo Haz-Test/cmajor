@@ -13,7 +13,6 @@ h2 {
     background: rgba(0, 0, 0, 0.027);
 }
 .comment{
-    color:black;
     border-bottom: 1px solid rgba(0, 0, 0, 0.057);
 }
 
@@ -40,9 +39,8 @@ module,
 .code_ident {
     font-family: var(--code-font);
     margin: 0;
+    color:black;
     }
-
-
 .function_name{
     color:black;
     font-size: 18;
