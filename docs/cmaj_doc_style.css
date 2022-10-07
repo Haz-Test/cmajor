@@ -19,19 +19,20 @@ h2 {
     padding-inline-end: 0.3em;
 }
 
-.code {
-    flex: 4 1;
+.function_decl {
+    display:flex;
+    
     font-family: var(--code-font);
     font-size: 80%;
     font-style: normal;
     color: rgb(88, 88, 88);
     white-space: pre;
+    margin: 10px;
 }
 
 .code_prim{
     color: blue;
 }
-
 .code_ident {
     /*background: rgba(0, 0, 0, 0.037);
     display: block;
@@ -44,9 +45,10 @@ h2 {
     display: block;
     font-style: normal; */
     font-family: var(--code-font);
-    padding: 5px;
+    /*padding: 5px;*/
     margin: 0;
     }
+
 
 .function_name{
     color:black;
@@ -56,11 +58,16 @@ h2 {
     margin: 0;
 }
 
-.function_decl{
-    margin: 10px;
-}
-
 .variables{
     padding: 5px;
     margin: 0;
+}
+
+.variable_name,
+.variable{
+    display:flex;
+    font-family: var(--code-font);
+    padding: 0;
+    padding-left: 1em;
+    margin: 0 0 1em 0;  
 }
