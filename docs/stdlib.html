@@ -37,7 +37,7 @@ for audio data with more than 2 channels, you can just declare your own type
 using an appropriately-sized vector for the frames.
 <br></div>
     <div class="processor" id="SamplePlayer">
-     <h2>processor std::audio_data::SamplePlayer</h2>
+     <h2><span class = module_type>processor </span>std::audio_data::SamplePlayer</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -140,7 +140,7 @@ graph connections allow a delay to be added without needing to use
 an explicit processor - see the language guide for more details.
 <br></div>
     <div class="processor" id="StreamDelay">
-     <h2>processor std::delay::StreamDelay</h2>
+     <h2><span class = module_type>processor </span>std::delay::StreamDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -174,7 +174,7 @@ an explicit processor - see the language guide for more details.
      </div>
     </div>
     <div class="processor" id="ValueDelay">
-     <h2>processor std::delay::ValueDelay</h2>
+     <h2><span class = module_type>processor </span>std::delay::ValueDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -208,7 +208,7 @@ an explicit processor - see the language guide for more details.
      </div>
     </div>
     <div class="processor" id="EventDelay">
-     <h2>processor std::delay::EventDelay</h2>
+     <h2><span class = module_type>processor </span>std::delay::EventDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -286,7 +286,7 @@ an explicit processor - see the language guide for more details.
 <br>Utilities for calculating and applying gain levels.
 <br></div>
     <div class="processor" id="FixedASR">
-     <h2>processor std::envelopes::FixedASR</h2>
+     <h2><span class = module_type>processor </span>std::envelopes::FixedASR</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
@@ -385,7 +385,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
       <div class="processor" id="Processor">
-       <h2>processor std::filters::tpt::onepole::Processor</h2>
+       <h2><span class = module_type>processor </span>std::filters::tpt::onepole::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
@@ -500,7 +500,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
       <div class="processor" id="Processor2">
-       <h2>processor std::filters::tpt::svf::Processor</h2>
+       <h2><span class = module_type>processor </span>std::filters::tpt::svf::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
@@ -558,7 +558,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
       <div class="processor" id="MultimodeProcessor">
-       <h2>processor std::filters::tpt::svf::MultimodeProcessor</h2>
+       <h2><span class = module_type>processor </span>std::filters::tpt::svf::MultimodeProcessor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
@@ -669,7 +669,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 </code></pre>..where R is a parameter that is typically somewhere between 0.9 and 1
 <br></div>
      <div class="processor" id="Processor3">
-      <h2>processor std::filters::dcblocker::Processor</h2>
+      <h2><span class = module_type>processor </span>std::filters::dcblocker::Processor</h2>
       <div class="endpoints"></div>
       <div class="variables">
        <h2>Variables</h2>
@@ -744,7 +744,7 @@ at runtime.
       </div>
      </div>
      <div class="processor" id="Processor4">
-      <h2>processor std::filters::butterworth::Processor</h2>
+      <h2><span class = module_type>processor </span>std::filters::butterworth::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
@@ -838,7 +838,7 @@ at runtime.
 summed to produce a flat response. The crossover frequency can be modulated
 <br></div>
      <div class="processor" id="Processor5">
-      <h2>processor std::filters::crossover::Processor</h2>
+      <h2><span class = module_type>processor </span>std::filters::crossover::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
@@ -966,7 +966,7 @@ It is documented here:
       </div>
      </div>
      <div class="processor" id="Processor6">
-      <h2>processor std::filters::simper::Processor</h2>
+      <h2><span class = module_type>processor </span>std::filters::simper::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
@@ -1428,7 +1428,7 @@ If the index lies beyond the range of the array, it will be wrapped.
     <div class="comment">Utilities for smoothing non-audio signals, such as control parameters.
 </div>
     <div class="processor" id="SmoothedValueStream">
-     <h2>processor std::smoothing::SmoothedValueStream</h2>
+     <h2><span class = module_type>processor </span>std::smoothing::SmoothedValueStream</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
@@ -1517,7 +1517,7 @@ to reach it.
    <div class="namespace" id="levels" href="#levels">
     <h2><span class = module_type>namespace </span>std::levels</h2>
     <div class="processor" id="ConstantGain">
-     <h2>processor std::levels::ConstantGain</h2>
+     <h2><span class = module_type>processor </span>std::levels::ConstantGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -1541,7 +1541,7 @@ See: DynamicGain, SmoothedGain
      </div>
     </div>
     <div class="processor" id="DynamicGain">
-     <h2>processor std::levels::DynamicGain</h2>
+     <h2><span class = module_type>processor </span>std::levels::DynamicGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -1595,7 +1595,7 @@ level is exposed via the &#39;volume&#39; input.
      </div>
     </div>
     <div class="processor" id="SmoothedGainParameter">
-     <h2>processor std::levels::SmoothedGainParameter</h2>
+     <h2><span class = module_type>processor </span>std::levels::SmoothedGainParameter</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
@@ -1671,7 +1671,7 @@ for note-ons/offs, pitch-bends, etc, which are vastly more usable than a 3-byte
 code that was designed for a 1980s serial link.
 <br></div>
     <div class="processor" id="MPEConverter">
-     <h2>processor std::midi::MPEConverter</h2>
+     <h2><span class = module_type>processor </span>std::midi::MPEConverter</h2>
      <div class="comment"><br>Accepts an input stream of raw MIDI MPE events and converts them to a stream
 of note event objects which can be more easily used by synthesiser classes.
 </div>
@@ -1900,7 +1900,7 @@ the natural order for a MIDI message.
     <div class="comment"><br>Module: std.mixers
 <br></div>
     <div class="processor" id="StereoToMono">
-     <h2>processor std::mixers::StereoToMono</h2>
+     <h2><span class = module_type>processor </span>std::mixers::StereoToMono</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -1920,7 +1920,7 @@ its elements.
      </div>
     </div>
     <div class="processor" id="MonoToStereo">
-     <h2>processor std::mixers::MonoToStereo</h2>
+     <h2><span class = module_type>processor </span>std::mixers::MonoToStereo</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -1940,7 +1940,7 @@ size 2 which contains two copies of the input value
      </div>
     </div>
     <div class="processor" id="DynamicSum">
-     <h2>processor std::mixers::DynamicSum</h2>
+     <h2><span class = module_type>processor </span>std::mixers::DynamicSum</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -1961,7 +1961,7 @@ FrameType can be a float or float vector type.
      </div>
     </div>
     <div class="processor" id="ConstantSum">
-     <h2>processor std::mixers::ConstantSum</h2>
+     <h2><span class = module_type>processor </span>std::mixers::ConstantSum</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -1986,7 +1986,7 @@ FrameType can be a float or float vector type.
      </div>
     </div>
     <div class="processor" id="Interpolator">
-     <h2>processor std::mixers::Interpolator</h2>
+     <h2><span class = module_type>processor </span>std::mixers::Interpolator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -2019,7 +2019,7 @@ will act as a &quot;percentage wet&quot; control.
     <div class="comment"><br>Module: std.noise
 <br></div>
     <div class="processor" id="White">
-     <h2>processor std::noise::White</h2>
+     <h2><span class = module_type>processor </span>std::noise::White</h2>
      <div class="comment">Simple white noise generator.
 See <a href="https://en.wikipedia.org/wiki/White_noise&#13;">https://en.wikipedia.org/wiki/White_noise
 </a>
@@ -2047,7 +2047,7 @@ See <a href="https://en.wikipedia.org/wiki/White_noise&#13;">https://en.wikipedi
      </div>
     </div>
     <div class="processor" id="Brown">
-     <h2>processor std::noise::Brown</h2>
+     <h2><span class = module_type>processor </span>std::noise::Brown</h2>
      <div class="comment">Brown (a.k.a. Brownian) noise generator.
 See <a href="https://en.wikipedia.org/wiki/Brownian_noise&#13;">https://en.wikipedia.org/wiki/Brownian_noise
 </a>
@@ -2090,7 +2090,7 @@ See <a href="https://en.wikipedia.org/wiki/Brownian_noise&#13;">https://en.wikip
      </div>
     </div>
     <div class="processor" id="Pink">
-     <h2>processor std::noise::Pink</h2>
+     <h2><span class = module_type>processor </span>std::noise::Pink</h2>
      <div class="comment">Pink noise generator
 See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia.org/wiki/Pink_noise
 </a>
@@ -2445,7 +2445,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
      </div>
     </div>
     <div class="processor" id="Phasor">
-     <h2>processor std::oscillators::Phasor</h2>
+     <h2><span class = module_type>processor </span>std::oscillators::Phasor</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -2483,7 +2483,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="processor" id="Sine">
-     <h2>processor std::oscillators::Sine</h2>
+     <h2><span class = module_type>processor </span>std::oscillators::Sine</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -2521,7 +2521,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="processor" id="PolyblepOscillator">
-     <h2>processor std::oscillators::PolyblepOscillator</h2>
+     <h2><span class = module_type>processor </span>std::oscillators::PolyblepOscillator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">
@@ -2569,7 +2569,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="processor" id="LFO">
-     <h2>processor std::oscillators::LFO</h2>
+     <h2><span class = module_type>processor </span>std::oscillators::LFO</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sine</span>
@@ -3119,7 +3119,7 @@ them together, and take care of ensuring that each target voice only receives
 the events from one channel at a time.
 <br></div>
     <div class="processor" id="VoiceAllocator">
-     <h2>processor std::voices::VoiceAllocator</h2>
+     <h2><span class = module_type>processor </span>std::voices::VoiceAllocator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">numVoices</span>
