@@ -25,7 +25,7 @@ has_toc: false
  <body>
    <h1>The Cmajor Standard Library</h1>
    <div class="namespace" id="audio_data" href="#audio_data">
-    <h2>namespace std::audio_data</h2>
+    <h2><span class = module_type>namespace </span>std::audio_data</h2>
     <div class="comment"><br><module>Module: std.audio_data</module>
 <br>These structures are useful for representing chunks of audio data with a
 known sample-rate. They&#39;re useful types when you&#39;re declaring an external
@@ -133,7 +133,7 @@ of the audio data.
     </div>
    </div>
    <div class="namespace" id="delay" href="#delay">
-    <h2>namespace std::delay</h2>
+    <h2><span class = module_type>namespace</span> std::delay</h2>
     <div class="comment"><br>Module: std.delay
 <br>Utilities and processors for implementing delays. Note that you
 graph connections allow a delay to be added without needing to use
@@ -281,7 +281,7 @@ an explicit processor - see the language guide for more details.
     </div>
    </div>
    <div class="namespace" id="envelopes" href="#envelopes">
-    <h2>namespace std::envelopes</h2>
+    <h2><span class = module_type>namespace</span> std::envelopes</h2>
     <div class="comment"><br>Module: std.envelopes
 <br>Utilities for calculating and applying gain levels.
 <br></div>
@@ -331,7 +331,7 @@ be used to attenuate a voice.
     </div>
    </div>
    <div class="namespace" id="filters" href="#filters">
-    <h2>namespace std::filters</h2>
+    <h2><span class = module_type>namespace </span>std::filters</h2>
     <div class="specialisations">
      <h2>Specialisations</h2>
      <div class="specialisation"><span class="code_prim">float32</span>
@@ -353,7 +353,7 @@ parameterUpdateRate specifying how often the updates are applied, to reduce the
 cost of recalculating coefficients
 <br></div>
     <div class="namespace" id="tpt" href="#tpt">
-     <h2>namespace std::filters::tpt</h2>
+     <h2><span class = module_type>namespace </span>std::filters::tpt</h2>
      <div class="comment"><br>These filters are based on the designs outlined in The Art of VA Filter Design
 by Vadim Zavalishin, with help from Will Pirkle in Virtual Analog Filter Implementation.
 The topology-preserving transform approach leads to designs where parameter
@@ -363,12 +363,12 @@ computational cost, and the frames between updates can be altered using the
 parameterUpdateRate, smaller being more frequent.
 <br></div>
      <div class="namespace" id="onepole" href="#onepole">
-      <h2>namespace std::filters::tpt::onepole</h2>
+      <h2><span class = module_type>namespace </span>std::filters::tpt::onepole</h2>
       <div class="comment">One pole filter implementation providing low and high pass options.
 The frequency and mode can be modulated at the parameterUpdateRate
 </div>
       <div class="namespace" id="Mode" href="#Mode">
-       <h2>namespace std::filters::tpt::onepole::Mode</h2>
+       <h2><span class = module_type>namespace </span>std::filters::tpt::onepole::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
         <div class="variable" id="lowPass">
@@ -475,11 +475,11 @@ The frequency and mode can be modulated at the parameterUpdateRate
       </div>
      </div>
      <div class="namespace" id="svf" href="#svf">
-      <h2>namespace std::filters::tpt::svf</h2>
+      <h2><span class = module_type>namespace </span>std::filters::tpt::svf</h2>
       <div class="comment">State variable filter implementation, suitable for modulation.
 </div>
       <div class="namespace" id="Mode2" href="#Mode2">
-       <h2>namespace std::filters::tpt::svf::Mode</h2>
+       <h2><span class = module_type>namespace </span>std::filters::tpt::svf::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
         <div class="variable" id="lowPass2">
@@ -661,7 +661,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
      </div>
     </div>
     <div class="namespace" id="dcblocker" href="#dcblocker">
-     <h2>namespace std::filters::dcblocker</h2>
+     <h2><span class = module_type>namespace </span>std::filters::dcblocker</h2>
      <div class="comment"><br>Highpass filter for blocking DC.
 An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html&#13;">https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 </a><br>The DC blocker is a small recursive filter specified by the difference equation:
@@ -717,7 +717,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
      </div>
     </div>
     <div class="namespace" id="butterworth" href="#butterworth">
-     <h2>namespace std::filters::butterworth</h2>
+     <h2><span class = module_type>namespace </span>std::filters::butterworth</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
@@ -728,7 +728,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 at runtime.
 <br></div>
      <div class="namespace" id="Mode3" href="#Mode3">
-      <h2>namespace std::filters::butterworth::Mode</h2>
+      <h2><span class = module_type>namespace </span>std::filters::butterworth::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
        <div class="variable" id="lowPass3">
@@ -832,7 +832,7 @@ at runtime.
      </div>
     </div>
     <div class="namespace" id="crossover" href="#crossover">
-     <h2>namespace std::filters::crossover</h2>
+     <h2><span class = module_type>namespace </span>std::filters::crossover</h2>
      <div class="comment"><br>4th Order two band crossover filter
 <br>This filter is implemented using the StateVariableFilter and outputs two streams which can be
 summed to produce a flat response. The crossover frequency can be modulated
@@ -907,7 +907,7 @@ summed to produce a flat response. The crossover frequency can be modulated
      </div>
     </div>
     <div class="namespace" id="simper" href="#simper">
-     <h2>namespace std::filters::simper</h2>
+     <h2><span class = module_type>namespace </span>std::filters::simper</h2>
      <div class="comment"><br>Simper filter
 <br>This filter is based on the design by Andy Simper, and is an implementation
 of the State Variable filter providing many different operational modes.
@@ -915,7 +915,7 @@ It is documented here:
 <a href="https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf&#13;">https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
 </a><br></div>
      <div class="namespace" id="Mode4" href="#Mode4">
-      <h2>namespace std::filters::simper::Mode</h2>
+      <h2><span class = module_type>namespace </span>std::filters::simper::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
        <div class="variable" id="lowPass4">
@@ -1118,7 +1118,7 @@ It is documented here:
     </div>
    </div>
    <div class="namespace" id="frequency7" href="#frequency7">
-    <h2>namespace std::frequency</h2>
+    <h2><span class = module_type>namespace </span>std::frequency</h2>
     <div class="comment"><br>Module: std.frequency
 <br>Contains DFT implementations for complex and real numbers
 <br>The buffers can be either float32 or float64 (or complex32/complex64).
@@ -1157,7 +1157,7 @@ and imaginary components, and the output array receives the real components.
     </div>
    </div>
    <div class="namespace" id="intrinsics" href="#intrinsics">
-    <h2>namespace std::intrinsics</h2>
+    <h2><span class = module_type>namespace </span>std::intrinsics</h2>
     <div class="comment"><br>Module: std.intrinsics
 <br>Contains placeholders and reference implementations of basic functions.
 <br>The compiler treats the <code>intrinsics</code> namespace as a special-case, allowing its
@@ -1424,7 +1424,7 @@ If the index lies beyond the range of the array, it will be wrapped.
     </div>
    </div>
    <div class="namespace" id="smoothing" href="#smoothing">
-    <h2>namespace std::smoothing</h2>
+    <h2><span class = module_type>namespace </span>std::smoothing</h2>
     <div class="comment">Utilities for smoothing non-audio signals, such as control parameters.
 </div>
     <div class="processor" id="SmoothedValueStream">
@@ -1515,7 +1515,7 @@ to reach it.
     </div>
    </div>
    <div class="namespace" id="levels" href="#levels">
-    <h2>namespace std::levels</h2>
+    <h2><span class = module_type>namespace </span>std::levels</h2>
     <div class="processor" id="ConstantGain">
      <h2>processor std::levels::ConstantGain</h2>
      <div class="specialisations">
@@ -1642,7 +1642,7 @@ output stream of smoothed gain factors which can be applied to a signal.
     </div>
    </div>
    <div class="namespace" id="pan_law" href="#pan_law">
-    <h2>namespace std::pan_law</h2>
+    <h2><span class = module_type>namespace </span>std::pan_law</h2>
     <div class="functions">
      <h2>Functions</h2>
      <div class="function" id="linear"><span class="function_name">linear</span>
@@ -1662,7 +1662,7 @@ using a 3dB-centre pan-law.
     </div>
    </div>
    <div class="namespace" id="midi" href="#midi">
-    <h2>namespace std::midi</h2>
+    <h2><span class = module_type>namespace </span>std::midi</h2>
     <div class="comment"><br>Module: std.midi
 <br>Various utilities for handling raw MIDI data.
 <br>The classes in the standard library which deal with synthesisers have been designed
@@ -1896,7 +1896,7 @@ the natural order for a MIDI message.
     </div>
    </div>
    <div class="namespace" id="mixers" href="#mixers">
-    <h2>namespace std::mixers</h2>
+    <h2><span class = module_type>namespace </span>std::mixers</h2>
     <div class="comment"><br>Module: std.mixers
 <br></div>
     <div class="processor" id="StereoToMono">
@@ -2015,7 +2015,7 @@ will act as a &quot;percentage wet&quot; control.
     </div>
    </div>
    <div class="namespace" id="noise" href="#noise">
-    <h2>namespace std::noise</h2>
+    <h2><span class = module_type>namespace </span>std::noise</h2>
     <div class="comment"><br>Module: std.noise
 <br></div>
     <div class="processor" id="White">
@@ -2134,7 +2134,7 @@ See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia
     </div>
    </div>
    <div class="namespace" id="notes" href="#notes">
-    <h2>namespace std::notes</h2>
+    <h2><span class = module_type>namespace </span>std::notes</h2>
     <div class="comment"><br>Module: std.notes
 <br>These structs are used for events that model the start/stop/control of notes
 that are playing in synthesisers.
@@ -2316,11 +2316,11 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
     </div>
    </div>
    <div class="namespace" id="oscillators" href="#oscillators">
-    <h2>namespace std::oscillators</h2>
+    <h2><span class = module_type>namespace </span>std::oscillators</h2>
     <div class="comment"><br>Module: std.oscillators
 <br></div>
     <div class="namespace" id="waveshape" href="#waveshape">
-     <h2>namespace std::oscillators::waveshape</h2>
+     <h2><span class = module_type>namespace </span>std::oscillators::waveshape</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="specialisation"><span class="code_prim">float32</span>
@@ -2721,7 +2721,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="namespace" id="std_oscillators_waveshape_specialised__K0a57" href="#std_oscillators_waveshape_specialised__K0a57">
-     <h2>namespace std::oscillators::waveshape</h2>
+     <h2><span class = module_type>namespace </span>std::oscillators::waveshape</h2>
      <div class="functions">
       <h2>Functions</h2>
       <div class="function" id="sine4"><span class="function_name">sine</span>
@@ -2905,7 +2905,7 @@ The FrameType parameter could be a float or a float vector.
     </div>
    </div>
    <div class="namespace" id="random" href="#random">
-    <h2>namespace std::random</h2>
+    <h2><span class = module_type>namespace </span>std::random</h2>
     <div class="comment"><br>Module: std.random
 <br>If you&#39;re writing code that needs to be cryptographically secure, then this is not the
 random number generation library that you want. The target audience for these classes
@@ -2981,7 +2981,7 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
     </div>
    </div>
    <div class="namespace" id="timeline" href="#timeline">
-    <h2>namespace std::timeline</h2>
+    <h2><span class = module_type>namespace </span>std::timeline</h2>
     <div class="comment"><br>Module: std.timeline
 <br>This namespace contains various types and functions for dealing with tempos,
 positions and events that describe DAW-style timelines.
@@ -3108,7 +3108,7 @@ beats you are into the current bar.
     </div>
    </div>
    <div class="namespace" id="voices" href="#voices">
-    <h2>namespace std::voices</h2>
+    <h2><span class = module_type>namespace </span>std::voices</h2>
     <div class="comment"><br>Module: std.voices
 <br>This module demonstrates a simple voice-allocation algorithm.
 <br>The way it&#39;s structured is that you pass an incoming stream of note events to

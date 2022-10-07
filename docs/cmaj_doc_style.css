@@ -11,3 +11,9 @@ h2 {
     margin: 0;
     background: rgba(0, 0, 0, 0.077);
 }
+
+.module_type {
+    opacity: 50%;
+    font-style: italic;
+    padding-inline-end: 0.3em;
+  }
