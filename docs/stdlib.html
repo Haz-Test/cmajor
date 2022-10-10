@@ -106,7 +106,7 @@ of the audio data.
     </div>
     <div class="structs">
      <h2>Structs</h2>
-     <table>
+     <table class = struct_table>
       <tr>
         <th>Struct Name</th>
         <th>Description</th>
@@ -115,7 +115,7 @@ of the audio data.
       <tr>
         <td>Mono</td>
         <td>Represents a chunk of mono floating-point audio data.</td>
-        <td>frames</div> <span class="code_ident">float32</span><span class="code">[]</span><br> sampleRate <span class="code_prim">float64</span></td>
+        <td>frames</div> <span class="code_prim">float32</span><span class="code">[]</span><br> sampleRate <span class="code_prim">float64</span></td>
       </tr>
       <tr>
         <td>Stereo</td>
@@ -144,6 +144,23 @@ an explicit processor - see the language guide for more details.
      </div>
      <div class="comment">A delay that acts on a pair of input/output streams
 </div>
+<table class = specialisation_table>
+  <tr class = hide_header>
+    <th>Specialisation</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>StreamType</td>
+    <td><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span></td>
+    <td>A delay that acts on a pair of input/output streams</td>
+  </tr>
+</table>
+
+
+
+
+
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>

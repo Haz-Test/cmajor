@@ -79,3 +79,10 @@ module,
     padding: 0;
     margin: 0 0 .05em 0;  
 }
+
+.specialisation_table{
+    border:none;
+}
+.hide_header{
+    visibility: collapse;
+}
