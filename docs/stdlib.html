@@ -40,6 +40,26 @@ using an appropriately-sized vector for the frames.
      <h2><span class = module_type>processor </span>std::audio_data::SamplePlayer</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
+
+      <table class = specialisation_table>
+        <tr class = hide_header>
+          <th>Specialisation</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>SampleContent</td>
+          <td>This processor will play chunks of audio sample data with a speed ratio applied.
+            <br>It provides input events to set the audio data, speed ratio and other properties
+            to control playback.
+            <br>The SampleContent type must be a struct containing a &#39;frames&#39; member, which
+            is an array of audio frames, and a &#39;sampleRate&#39; member with the original rate
+            of the audio data.</td>
+        </tr>
+      </table>
+
+
+
+
       <div class="specialisation"><span class="code_ident">
         <a href="#SampleContent">SampleContent</a></span>
       </div>
@@ -149,11 +169,6 @@ an explicit processor - see the language guide for more details.
     <td>A delay that acts on a pair of input/output streams</td>
   </tr>
 </table>
-
-
-
-
-
 
      <div class="endpoints"></div>
      <div class="variables">
