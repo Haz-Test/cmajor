@@ -80,9 +80,9 @@ module,
     margin: 0 0 .05em 0;  
 }
 
-.table-wrapper.specialisation_table{
+.specialisation_table{
     border:none;
 }
-.table-wrapper.hide_header{
+.hide_header{
     visibility: collapse;
 }
