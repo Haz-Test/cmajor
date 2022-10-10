@@ -67,7 +67,9 @@ module,
 .variable_type{
     color: #5c5962;
 }
-
+.struct_member_name{
+    white-space: pre;
+}
 .struct_member,
 .struct_name,
 .variable_name,
