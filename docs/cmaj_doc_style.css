@@ -82,6 +82,12 @@ module,
 
 .specialisation_table{
     border:none;
+
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 .hide_header{
     visibility: collapse;
