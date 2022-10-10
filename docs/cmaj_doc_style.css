@@ -45,6 +45,7 @@ module,
     margin: 0;
     color:black;
     display:contents;
+    white-space: pre;
     }
 .function_name{
     color:black;
