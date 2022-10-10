@@ -80,6 +80,11 @@ module,
     margin: 0 0 .05em 0;  
 }
 
+.custom_table{
+    border-style : hidden!important;
+    box-shadow: none;
+}
+
 .specialisation_table{
     border:none;
 
