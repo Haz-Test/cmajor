@@ -69,7 +69,7 @@
     {%- if node.parent == nil -%}
       {%- unless node.nav_exclude -%}
       <li class="nav-list-item{% if page.collection == include.key and page.url == node.url or page.parent == node.title or page.grand_parent == node.title %} active{% endif %}">
-        {%- if node.has_children -%}
+        {%- if node.has_children or page.url == node.url -%}
           <a href="#" class="nav-list-expander" aria-label="toggle links in {{ node.title }} category">
             <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
           </a>
@@ -117,6 +117,9 @@
                 {%- endfor -%}
                 </ul>
               {%- endif -%}
+              {% if page.url == node.url %}
++          {% include toc.html html=content sanitize=true class="nav-list" item_class="nav-list-item" anchor_class="nav-list-link" h_min=2 h_max=2 %}
++        {% endif %}
             </li>
             {%- endunless -%}
           {%- endfor -%}
