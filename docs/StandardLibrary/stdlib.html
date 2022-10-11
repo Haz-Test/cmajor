@@ -137,7 +137,7 @@ an explicit processor - see the language guide for more details.
     <th>Description</th>
   </tr>
   <tr>
-    <td>StreamType<span class="code">[</span><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span><span class="code">]</span></td>
+    <td>StreamType<span class="code">[</span><span class="code_prim">int32</span><span class="code_ident">delayLength</span><span class="code">]</span></td>
     <td>A delay that acts on a pair of input/output streams</td>
   </tr>
 </table>
@@ -174,11 +174,10 @@ an explicit processor - see the language guide for more details.
           <th>Description</th>
         </tr>
         <tr>
-          <td>StreamType<span class="code">[</span><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span><span class="code">]</span></td>
+          <td>StreamType<span class="code">[</span><span class="code_prim">int32</span><span class="code_ident">delayLength</span><span class="code">]</span></td>
           <td>A delay that acts on a pair of input/output streams</td>
         </tr>
       </table>
-      
 
      <div class="endpoints"></div>
      <div class="variables">
@@ -237,21 +236,16 @@ an explicit processor - see the language guide for more details.
 
       <table class = struct_table>
         <tr>
-          <th>Struct Name</th>
+          <th>Struct</th>
           <th>Description</th>
-          <th>Struct Members</th>
         </tr>
         <tr>
-          <td>Delayed Event</td>
-          <td>Represents a chunk of mono floating-point audio data.</td>
-          <td>frames</div> <span class="code_prim">float32</span><span class="code">[]</span><br> sampleRate <span class="code_prim">float64</span></td>
-        </tr>
-        <tr>
-          <td>Stereo</td>
-          <td>Represents a chunk of stereo, interleaved floating-point audio data.</td>
-          <td>frames</div> <span class="code_prim">float32</span><span class="code">&lt;</span><span class="code_literal">2</span><span class="code">&gt;</span><span class="code">[]</span><br> sampleRate</div> <span class="code_prim">float64</span></td>
+          <td>DelayedEvent<br><span class="code">{</span><br><span class="code_prim">EventType</span> e <br> <span class="code_prim">int32</span> eventTime <br><span class="code">}</span></td>
         </tr>
       </table>
+
+
+
 
 
 
