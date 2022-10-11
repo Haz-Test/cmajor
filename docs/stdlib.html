@@ -181,14 +181,20 @@ an explicit processor - see the language guide for more details.
      <h2><span class = module_type>processor </span>std::delay::ValueDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#StreamType2">StreamType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
-      </div>
-     </div>
-     <div class="comment">A delay that acts on a pair of input/output values
-</div>
+      <table class = specialisation_table>
+        <tr class = hide_header>
+          <th>Specialisation</th>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>StreamType</td>
+          <td><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span></td>
+          <td>A delay that acts on a pair of input/output streams</td>
+        </tr>
+      </table>
+      
+
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
@@ -215,16 +221,21 @@ an explicit processor - see the language guide for more details.
      <h2><span class = module_type>processor </span>std::delay::EventDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#EventType">EventType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span>
-      </div>
-     </div>
-     <div class="comment">A delay that acts on a pair of input/output event endpoints
-</div>
+
+<table class = specialisation_table>
+  <tr class = hide_header>
+    <th>Specialisation</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>EventType</td>
+    <td><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span><br><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span></td>
+    <td>A delay that acts on a pair of input/output streams</td>
+  </tr>
+</table>
+
+
      <div class="endpoints"></div>
      <div class="structs">
       <h2>Structs</h2>
@@ -238,6 +249,27 @@ an explicit processor - see the language guide for more details.
         </div>
        </div>
       </div>
+
+      <table class = struct_table>
+        <tr>
+          <th>Struct Name</th>
+          <th>Description</th>
+          <th>Struct Members</th>
+        </tr>
+        <tr>
+          <td>Delayed Event</td>
+          <td>Represents a chunk of mono floating-point audio data.</td>
+          <td>frames</div> <span class="code_prim">float32</span><span class="code">[]</span><br> sampleRate <span class="code_prim">float64</span></td>
+        </tr>
+        <tr>
+          <td>Stereo</td>
+          <td>Represents a chunk of stereo, interleaved floating-point audio data.</td>
+          <td>frames</div> <span class="code_prim">float32</span><span class="code">&lt;</span><span class="code_literal">2</span><span class="code">&gt;</span><span class="code">[]</span><br> sampleRate</div> <span class="code_prim">float64</span></td>
+        </tr>
+      </table>
+
+
+
      </div>
      <div class="variables">
       <h2>Variables</h2>
