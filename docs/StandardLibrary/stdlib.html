@@ -346,9 +346,9 @@ an explicit processor - see the language guide for more details.
     <th>Description</th>
   </tr>
   <tr>
-    <td><div class="specialisation"><span class="code_using">using</span><span class="code_ident">FrameType =</span><span class="code_prim">float32</span>
+    <td><div class="specialisation"><span class="code_using">using </span><span class="code_ident">FrameType = </span><span class="code_prim">float32</span>
     </div>
-    <div class="specialisation"><span class="code_using">using</span><span class="code_ident">CoefficientType =</span><span class="code_prim">float32</span>
+    <div class="specialisation"><span class="code_using">using </span><span class="code_ident">CoefficientType = </span><span class="code_prim">float32</span>
     </div>
     <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
     </div></td>
@@ -405,10 +405,22 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2><span class = module_type>processor </span>std::filters::tpt::onepole::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
-        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-        </div>
+
+
+        <table class = specialisation_table>
+          <tr class = hide_header>
+            <th>Specialisation</th>
+
+          </tr>
+          <tr>
+            <td><div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+            </div>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+            </div></td>
+          </tr>
+        </table>
+
+
        </div>
        <div class="endpoints"></div>
        <div class="variables">
