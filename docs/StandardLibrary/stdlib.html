@@ -410,7 +410,6 @@ The frequency and mode can be modulated at the parameterUpdateRate
         <table class = specialisation_table>
           <tr class = hide_header>
             <th>Specialisation</th>
-
           </tr>
           <tr>
             <td><div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
@@ -529,12 +528,21 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2><span class = module_type>processor </span>std::filters::tpt::svf::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
-        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
-        </div>
+
+        <table class = specialisation_table>
+          <tr class = hide_header>
+            <th>Specialisation</th>
+          </tr>
+          <tr>
+            <td><div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+            </div>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+            </div>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+            </div></td>
+          </tr>
+        </table>
+
        </div>
        <div class="endpoints"></div>
        <div class="variables">
@@ -587,10 +595,19 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2><span class = module_type>processor </span>std::filters::tpt::svf::MultimodeProcessor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
-        </div>
+
+        <table class = specialisation_table>
+          <tr class = hide_header>
+            <th>Specialisation</th>
+          </tr>
+          <tr>
+            <td><div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+            </div>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+            </div>></td>
+          </tr>
+        </table>
+
        </div>
        <div class="endpoints"></div>
        <div class="variables">
@@ -737,8 +754,18 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
      <h2><span class = module_type>namespace </span>std::filters::butterworth</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
-      </div>
+      
+      <table class = specialisation_table>
+        <tr class = hide_header>
+          <th>Specialisation</th>
+        </tr>
+        <tr>
+          <td><div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
+          </div></td>
+        </tr>
+      </table>
+
+  
      </div>
      <div class="comment"><br>Butterworth filter, built from cascaded tpt filters.
 <br>The order is set at compile time, but the type and frequency can be modulated
