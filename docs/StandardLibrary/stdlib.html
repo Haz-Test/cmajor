@@ -296,6 +296,26 @@ an explicit processor - see the language guide for more details.
 and NoteOff objects, it will emit a stream of output gain levels that can
 be used to attenuate a voice.
 <br></div>
+
+<table class = specialisation_table>
+  <tr class = hide_header>
+    <th>Specialisation</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
+    </div>
+    <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span></td>
+    <td><div class="comment">A very minimal, fixed-length, attack-sustain-release envelope generator.
+      <br>This has fixed-length attach and release times. Given input events of NoteOn
+      and NoteOff objects, it will emit a stream of output gain levels that can
+      be used to attenuate a voice.
+      <br></div></td>
+  </tr>
+</table>
+
+
+
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
