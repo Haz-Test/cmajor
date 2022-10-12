@@ -303,9 +303,9 @@ be used to attenuate a voice.
     <th>Description</th>
   </tr>
   <tr>
-    <td><div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
+    <td><div class="specialisation"><span class="code_prim">float32</span><span class="code"></span><span class="code_ident">attackSeconds</span>
     </div>
-    <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span></td>
+    <div class="specialisation"><span class="code_prim">float32</span><span class="code"></span><span class="code_ident">releaseSeconds</span></td>
     <td><div class="comment">A very minimal, fixed-length, attack-sustain-release envelope generator.
       <br>This has fixed-length attach and release times. Given input events of NoteOn
       and NoteOff objects, it will emit a stream of output gain levels that can
@@ -313,8 +313,6 @@ be used to attenuate a voice.
       <br></div></td>
   </tr>
 </table>
-
-
 
      <div class="endpoints"></div>
      <div class="variables">
@@ -351,9 +349,9 @@ be used to attenuate a voice.
     <h2><span class = module_type>namespace </span>std::filters</h2>
     <div class="specialisations">
      <h2>Specialisations</h2>
-     <div class="specialisation"><span class="code_prim">float32</span>
+     <div class="specialisation"><span class="code_using">using</span><span class="code_ident">FrameType =</span><span class="code_prim">float32</span>
      </div>
-     <div class="specialisation"><span class="code_prim">float32</span>
+     <div class="specialisation"><span class="code_using">using</span><span class="code_ident">CoefficientType =</span><span class="code_prim">float32</span>
      </div>
      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
      </div>
@@ -369,6 +367,29 @@ from float64, but at the cost of higher computational cost.
 parameterUpdateRate specifying how often the updates are applied, to reduce the
 cost of recalculating coefficients
 <br></div>
+
+<table class = specialisation_table>
+  <tr class = hide_header>
+    <th>Specialisation</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><div class="specialisation"><span class="code_using">using</span><span class="code_ident">FrameType =</span><span class="code_prim">float32</span>
+    </div>
+    <div class="specialisation"><span class="code_using">using</span><span class="code_ident">CoefficientType =</span><span class="code_prim">float32</span>
+    </div>
+    <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
+    </div></td>
+    <td><div class="comment">A very minimal, fixed-length, attack-sustain-release envelope generator.
+      <br>This has fixed-length attach and release times. Given input events of NoteOn
+      and NoteOff objects, it will emit a stream of output gain levels that can
+      be used to attenuate a voice.
+      <br></div></td>
+  </tr>
+</table>
+
+
+
     <div class="namespace" id="tpt" href="#tpt">
      <h2><span class = module_type>namespace </span>std::filters::tpt</h2>
      <div class="comment"><br>These filters are based on the designs outlined in The Art of VA Filter Design
