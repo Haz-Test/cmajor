@@ -32,7 +32,9 @@ h2 {
     white-space: pre;
     margin: 10px;
 }
-
+.code_using{
+    color: green;
+}
 .code_prim{
     color: blue;
 }
