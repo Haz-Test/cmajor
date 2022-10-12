@@ -286,16 +286,6 @@ an explicit processor - see the language guide for more details.
      <h2><span class = module_type>processor </span>std::envelopes::FixedASR</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span>
-      </div>
-     </div>
-     <div class="comment">A very minimal, fixed-length, attack-sustain-release envelope generator.
-<br>This has fixed-length attach and release times. Given input events of NoteOn
-and NoteOff objects, it will emit a stream of output gain levels that can
-be used to attenuate a voice.
-<br></div>
 
 <table class = specialisation_table>
   <tr class = hide_header>
@@ -349,24 +339,6 @@ be used to attenuate a voice.
     <h2><span class = module_type>namespace </span>std::filters</h2>
     <div class="specialisations">
      <h2>Specialisations</h2>
-     <div class="specialisation"><span class="code_using">using</span><span class="code_ident">FrameType =</span><span class="code_prim">float32</span>
-     </div>
-     <div class="specialisation"><span class="code_using">using</span><span class="code_ident">CoefficientType =</span><span class="code_prim">float32</span>
-     </div>
-     <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
-     </div>
-    </div>
-    <div class="comment"><br><module>Module: std.filters</module>
-<br>Contains implementations of some common filters.
-<br>The module is parameterised with the FrameType, which can be a float32/64 primitive
-or vector, and represents the data which is being filtered.
-<br>The CoefficientType is the internal data type used for calculating the filter
-coefficients, and can be float32 or float64, with increased precision and accuracy
-from float64, but at the cost of higher computational cost.
-<br>When filters are modulated, the filter parameters are updated intermittently, with the
-parameterUpdateRate specifying how often the updates are applied, to reduce the
-cost of recalculating coefficients
-<br></div>
 
 <table class = specialisation_table>
   <tr class = hide_header>
@@ -380,15 +352,22 @@ cost of recalculating coefficients
     </div>
     <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
     </div></td>
-    <td><div class="comment">A very minimal, fixed-length, attack-sustain-release envelope generator.
-      <br>This has fixed-length attach and release times. Given input events of NoteOn
-      and NoteOff objects, it will emit a stream of output gain levels that can
-      be used to attenuate a voice.
+    <td><div class="comment">Contains implementations of some common filters.
+      <br>The module is parameterised with the FrameType, which can be a float32/64 primitive
+      or vector, and represents the data which is being filtered.
+      <br>The CoefficientType is the internal data type used for calculating the filter
+      coefficients, and can be float32 or float64, with increased precision and accuracy
+      from float64, but at the cost of higher computational cost.
+      <br>When filters are modulated, the filter parameters are updated intermittently, with the
+      parameterUpdateRate specifying how often the updates are applied, to reduce the
+      cost of recalculating coefficients
       <br></div></td>
   </tr>
 </table>
 
-
+<div class="comment"><br><module>Module: std.filters</module>
+  <br>Contains implementations of some common filters.
+  </div>
 
     <div class="namespace" id="tpt" href="#tpt">
      <h2><span class = module_type>namespace </span>std::filters::tpt</h2>
