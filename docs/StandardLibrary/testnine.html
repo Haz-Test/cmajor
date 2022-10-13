@@ -1791,11 +1791,11 @@ of note event objects which can be more easily used by synthesiser classes.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">message</div> <td></td>
-          <div class="comment">This contains 3 packed bytes, arranged as (byte2 | (byte1 &lt;&lt; 8) | (byte0 &lt;&lt; 16)).
+          <div class="struct_member_name">message</div> <div class="comment">
+           <td>This contains 3 packed bytes, arranged as (byte2 | (byte1 &lt;&lt; 8) | (byte0 &lt;&lt; 16)).
 This layout means that when you view the value in hex in your debugger, it reads in
 the natural order for a MIDI message.
-</div>
+</td></div>
          </td>
         </tr>
        </table>
@@ -2254,27 +2254,27 @@ being played.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">channel</div> <td></td>
-          <div class="comment">This channel ID is used to associate events which act on a particular voice.
+          <div class="struct_member_name">channel</div> <div class="comment">
+           <td>This channel ID is used to associate events which act on a particular voice.
 When a NoteOn object is sent, the sender will create a unique ID, and
 use the same ID for any subsequent pitch and control events, and for the
 final matching NoteOff event.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">pitch</div> <td></td>
-          <div class="comment">The pitch uses the same semitone scale as MIDI note numbers, between
+          <div class="struct_member_name">pitch</div> <div class="comment">
+           <td>The pitch uses the same semitone scale as MIDI note numbers, between
 0 and 127, where middle C = 60.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">velocity</div> <td></td>
-          <div class="comment">Velocity is between 0 and 1
-</div>
+          <div class="struct_member_name">velocity</div> <div class="comment">
+           <td>Velocity is between 0 and 1
+</td></div>
          </td>
         </tr>
        </table>
@@ -2287,25 +2287,25 @@ final matching NoteOff event.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">channel</div> <td></td>
-          <div class="comment">This channel ID can be used to associate this NoteOff event with the earlier
+          <div class="struct_member_name">channel</div> <div class="comment">
+           <td>This channel ID can be used to associate this NoteOff event with the earlier
 NoteOn to which it applies.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">pitch</div> <td></td>
-          <div class="comment">You may not care exactly what the pitch is when a note is released, but
+          <div class="struct_member_name">pitch</div> <div class="comment">
+           <td>You may not care exactly what the pitch is when a note is released, but
 in case it&#39;s needed, it&#39;s included here.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">velocity</div> <td></td>
-          <div class="comment">Indicates how quickly the key was released: range is 0 to 1.
-</div>
+          <div class="struct_member_name">velocity</div> <div class="comment">
+           <td>Indicates how quickly the key was released: range is 0 to 1.
+</td></div>
          </td>
         </tr>
        </table>
@@ -2318,17 +2318,17 @@ in case it&#39;s needed, it&#39;s included here.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">channel</div> <td></td>
-          <div class="comment">This channel ID can be used to associate this event with the earlier
+          <div class="struct_member_name">channel</div> <div class="comment">
+           <td>This channel ID can be used to associate this event with the earlier
 NoteOn to which it applies.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">bendSemitones</div> <td></td>
-          <div class="comment">The number of semitones to bend up from the original note-on pitch.
-</div>
+          <div class="struct_member_name">bendSemitones</div> <div class="comment">
+           <td>The number of semitones to bend up from the original note-on pitch.
+</td></div>
          </td>
         </tr>
        </table>
@@ -2341,17 +2341,17 @@ NoteOn to which it applies.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">channel</div> <td></td>
-          <div class="comment">This channel ID can be used to associate this event with the earlier
+          <div class="struct_member_name">channel</div> <div class="comment">
+           <td>This channel ID can be used to associate this event with the earlier
 NoteOn to which it applies.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">pressure</div> <td></td>
-          <div class="comment">Key pressure is in the range 0 to 1
-</div>
+          <div class="struct_member_name">pressure</div> <div class="comment">
+           <td>Key pressure is in the range 0 to 1
+</td></div>
          </td>
         </tr>
        </table>
@@ -2367,18 +2367,18 @@ NoteOn to which it applies.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">channel</div> <td></td>
-          <div class="comment">This channel ID can be used to associate this event with the earlier
+          <div class="struct_member_name">channel</div> <div class="comment">
+           <td>This channel ID can be used to associate this event with the earlier
 NoteOn to which it applies.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">slide</div> <td></td>
-          <div class="comment">The slide position ranges from 0 to 1. Exactly what you choose to do
+          <div class="struct_member_name">slide</div> <div class="comment">
+           <td>The slide position ranges from 0 to 1. Exactly what you choose to do
 with it depends on the instrument.
-</div>
+</td></div>
          </td>
         </tr>
        </table>
@@ -2391,25 +2391,25 @@ with it depends on the instrument.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">channel</div> <td></td>
-          <div class="comment">This channel ID can be used to associate this event with the earlier
+          <div class="struct_member_name">channel</div> <div class="comment">
+           <td>This channel ID can be used to associate this event with the earlier
 NoteOn to which it applies.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">control</div> <td></td>
-          <div class="comment">This could be used for any kind of controller index, but is probably
+          <div class="struct_member_name">control</div> <div class="comment">
+           <td>This could be used for any kind of controller index, but is probably
 best used for MIDI controller numbers.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">value</div> <td></td>
-          <div class="comment">The normalised value of the controller, between 0 and 1
-</div>
+          <div class="struct_member_name">value</div> <div class="comment">
+           <td>The normalised value of the controller, between 0 and 1
+</td></div>
          </td>
         </tr>
        </table>
@@ -3109,9 +3109,9 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int64</span>
-          <div class="struct_member_name">state</div> <td></td>
-          <div class="comment">The Lehmer algorithm uses a simple 64-bit state which mutates each time a number is generated.
-</div>
+          <div class="struct_member_name">state</div> <div class="comment">
+           <td>The Lehmer algorithm uses a simple 64-bit state which mutates each time a number is generated.
+</td></div>
          </td>
         </tr>
        </table>
@@ -3172,9 +3172,9 @@ positions and events that describe DAW-style timelines.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">float32</span>
-          <div class="struct_member_name">bpm</div> <td></td>
-          <div class="comment">BPM = beats per minute :)
-</div>
+          <div class="struct_member_name">bpm</div> <div class="comment">
+           <td>BPM = beats per minute :)
+</td></div>
          </td>
         </tr>
        </table>
@@ -3209,12 +3209,12 @@ to tell it when the host&#39;s playback state changes.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int32</span>
-          <div class="struct_member_name">flags</div> <td></td>
-          <div class="comment">This is used as a bit-field, where
+          <div class="struct_member_name">flags</div> <div class="comment">
+           <td>This is used as a bit-field, where
 bit 0 = playing
 bit 1 = recording
 bit 2 = looping
-</div>
+</td></div>
          </td>
         </tr>
        </table>
@@ -3230,28 +3230,28 @@ update it with various measurements of positions along its timeline.
         <th>Comment</th>
         <tr>
          <td><span class="code_prim">int64</span>
-          <div class="struct_member_name">frameIndex</div> <td></td>
-          <div class="comment">The frame index, from the start of the host&#39;s timeline.
-</div>
+          <div class="struct_member_name">frameIndex</div> <div class="comment">
+           <td>The frame index, from the start of the host&#39;s timeline.
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float64</span>
-          <div class="struct_member_name">quarterNote</div> <td></td>
-          <div class="comment">A floating-point count of quarter-notes from the start of the host&#39;s timeline.
+          <div class="struct_member_name">quarterNote</div> <div class="comment">
+           <td>A floating-point count of quarter-notes from the start of the host&#39;s timeline.
 If a host doesn&#39;t count time in terms of beats, then this could be left as 0.
-</div>
+</td></div>
          </td>
         </tr>
         <tr>
          <td><span class="code_prim">float64</span>
-          <div class="struct_member_name">barStartQuarterNote</div> <td></td>
-          <div class="comment">The position of the start of the current bar, measured as the number of
+          <div class="struct_member_name">barStartQuarterNote</div> <div class="comment">
+           <td>The position of the start of the current bar, measured as the number of
 quarter-notes from the start of the host&#39;s timeline.
 If a host doesn&#39;t count time in terms of beats, then this could be left as 0.
 This is useful in conjunction with quarterNote if you need to know e.g. how many
 beats you are into the current bar.
-</div>
+</td></div>
          </td>
         </tr>
        </table>
