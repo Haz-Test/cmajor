@@ -1,5 +1,5 @@
 /* New */
-
+body{
 position: absolute;
 width: 1440px;
 height: 746px;
@@ -7,18 +7,18 @@ left: 0px;
 top: 0px;
 
 background: #FFFFFF;
-
+}
 
 /* Navigation */
-
+.side-bar{
 position: absolute;
 width: 264px;
 height: 657px;
 left: 188px;
 top: 89px;
+}
 
-
-
+.nav-list{
 /* Navigation-items */
 
 /* Auto layout */
@@ -32,9 +32,9 @@ width: 264px;
 height: 185px;
 left: 0px;
 top: 30px;
+}
 
-
-
+.nav-list-item{
 /* Item */
 
 width: 264px;
@@ -46,9 +46,20 @@ flex: none;
 order: 0;
 flex-grow: 0;
 
+/* Item */
+
+width: 264px;
+height: 32px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
 
 /* Home */
-
+.nav-list-item active{
 position: absolute;
 width: 40px;
 height: 17px;
@@ -64,20 +75,7 @@ line-height: 17px;
 
 /* Blue */
 color: #2C84FA;
-
-
-
-/* Item */
-
-width: 264px;
-height: 32px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+}
 
 /* Getting Started */
 
