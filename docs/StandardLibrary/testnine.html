@@ -10,7 +10,8 @@ has_toc: false
 <html lang="en-US">
  <head>
   <title>Cmajor</title>
-  <link rel="stylesheet" href="cmaj_doc_style.css"></link>
+  <link rel="stylesheet" href="../assets/css/just-the-docs-default.css"></link>
+  <link rel="stylesheet" href="../docs/StandardLibrary/cmaj_doc_style.css"></link>
  </head>
  <body>
   <div class="namespace" id="std" href="#std">
@@ -31,8 +32,17 @@ using an appropriately-sized vector for the frames.
      <h2>processor std::audio_data::SamplePlayer</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#SampleContent">SampleContent</a></span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#SampleContent">SampleContent</a></span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>This processor will play chunks of audio sample data with a speed ratio applied.
@@ -150,10 +160,23 @@ an explicit processor - see the language guide for more details.
      <h2>processor std::delay::StreamDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#StreamType">StreamType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#StreamType">StreamType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment">A delay that acts on a pair of input/output streams
@@ -184,10 +207,23 @@ an explicit processor - see the language guide for more details.
      <h2>processor std::delay::ValueDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#StreamType2">StreamType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#StreamType2">StreamType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment">A delay that acts on a pair of input/output values
@@ -218,12 +254,29 @@ an explicit processor - see the language guide for more details.
      <h2>processor std::delay::EventDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#EventType">EventType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#EventType">EventType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment">A delay that acts on a pair of input/output event endpoints
@@ -304,9 +357,22 @@ an explicit processor - see the language guide for more details.
      <h2>processor std::envelopes::FixedASR</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment">A very minimal, fixed-length, attack-sustain-release envelope generator.
@@ -349,11 +415,28 @@ be used to attenuate a voice.
     <h2>namespace std::filters</h2>
     <div class="specialisations">
      <h2>Specialisations</h2>
-     <div class="specialisation"><span class="code_prim">float32</span>
-     </div>
-     <div class="specialisation"><span class="code_prim">float32</span>
-     </div>
-     <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
+     <div class="spec_members">
+      <table class="specialisation_table">
+       <th>Struct Member</th>
+       <tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span>
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span>
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
+         </div>
+        </td>
+       </tr>
+      </table>
      </div>
     </div>
     <div class="comment"><br>Module: std.filters
@@ -402,9 +485,22 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2>processor std::filters::tpt::onepole::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
-        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+        <div class="spec_members">
+         <table class="specialisation_table">
+          <th>Struct Member</th>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+            </div>
+           </td>
+          </tr>
+         </table>
         </div>
        </div>
        <div class="endpoints"></div>
@@ -528,11 +624,28 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2>processor std::filters::tpt::svf::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
-        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+        <div class="spec_members">
+         <table class="specialisation_table">
+          <th>Struct Member</th>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+            </div>
+           </td>
+          </tr>
+         </table>
         </div>
        </div>
        <div class="endpoints"></div>
@@ -586,9 +699,22 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2>processor std::filters::tpt::svf::MultimodeProcessor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-        </div>
-        <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+        <div class="spec_members">
+         <table class="specialisation_table">
+          <th>Struct Member</th>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+            </div>
+           </td>
+          </tr>
+          <tr>
+           <td>
+            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+            </div>
+           </td>
+          </tr>
+         </table>
         </div>
        </div>
        <div class="endpoints"></div>
@@ -767,7 +893,16 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
      <h2>namespace std::filters::butterworth</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Butterworth filter, built from cascaded tpt filters.
@@ -794,9 +929,22 @@ at runtime.
       <h2>processor std::filters::butterworth::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
-       <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-       </div>
-       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+       <div class="spec_members">
+        <table class="specialisation_table">
+         <th>Struct Member</th>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+           </div>
+          </td>
+         </tr>
+        </table>
        </div>
       </div>
       <div class="endpoints"></div>
@@ -896,7 +1044,16 @@ summed to produce a flat response. The crossover frequency can be modulated
       <h2>processor std::filters::crossover::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
-       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+       <div class="spec_members">
+        <table class="specialisation_table">
+         <th>Struct Member</th>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+           </div>
+          </td>
+         </tr>
+        </table>
        </div>
       </div>
       <div class="endpoints"></div>
@@ -1030,13 +1187,34 @@ It is documented here:
       <h2>processor std::filters::simper::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
-       <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-       </div>
-       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-       </div>
-       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
-       </div>
-       <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialGain</span><span class="code"> = </span><span class="code_ident">defaultGain</span>
+       <div class="spec_members">
+        <table class="specialisation_table">
+         <th>Struct Member</th>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+           </div>
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialGain</span><span class="code"> = </span><span class="code_ident">defaultGain</span>
+           </div>
+          </td>
+         </tr>
+        </table>
        </div>
       </div>
       <div class="endpoints"></div>
@@ -1514,9 +1692,22 @@ If the index lies beyond the range of the array, it will be wrapped.
      <h2>processor std::smoothing::SmoothedValueStream</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialValue</span><span class="code"> = </span><span class="code_literal">0.0f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialValue</span><span class="code"> = </span><span class="code_literal">0.0f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Takes an input that receives floating point events, and produces a continuous
@@ -1615,10 +1806,23 @@ to reach it.
      <h2>processor std::levels::ConstantGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">gain</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">gain</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>This helper processor simply passes its input through to its output with a
@@ -1639,8 +1843,17 @@ See: DynamicGain, SmoothedGain
      <h2>processor std::levels::DynamicGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType2">FrameType</a></span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType2">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>This helper processor takes two input streams - one for data and the other
@@ -1661,10 +1874,23 @@ See: ConstantGain, SmoothedGain
      <h2>graph std::levels::SmoothedGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType3">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType3">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Takes an input stream of the given FrameType, and passes it through using
@@ -1693,7 +1919,16 @@ level is exposed via the &#39;volume&#39; input.
      <h2>processor std::levels::SmoothedGainParameter</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Takes input events which change the level in decibels, and produces an
@@ -2004,8 +2239,17 @@ the natural order for a MIDI message.
      <h2>processor std::mixers::StereoToMono</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#SampleType">SampleType</a></span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#SampleType">SampleType</a></span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Simple utility processor that takes a vector size 2 and outputs the sum of
@@ -2024,8 +2268,17 @@ its elements.
      <h2>processor std::mixers::MonoToStereo</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#SampleType2">SampleType</a></span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#SampleType2">SampleType</a></span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Simple utility processor that takes a scalar input and outputs a vector
@@ -2044,8 +2297,17 @@ size 2 which contains two copies of the input value
      <h2>processor std::mixers::DynamicSum</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType4">FrameType</a></span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType4">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Takes two input streams and two gain streams which it uses to attenuate the
@@ -2065,12 +2327,29 @@ FrameType can be a float or float vector type.
      <h2>processor std::mixers::ConstantSum</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType5">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain1</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain2</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType5">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain1</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain2</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Takes two input streams which it adds together after applying some optional
@@ -2090,10 +2369,23 @@ FrameType can be a float or float vector type.
      <h2>processor std::mixers::Interpolator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType6">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">mixRange</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType6">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">mixRange</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Takes two input streams and outputs a dynamic mix of their values, using a third
@@ -2478,7 +2770,16 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
      <h2>namespace std::oscillators::waveshape</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">float32</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="functions">
@@ -2603,10 +2904,23 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
      <h2>processor std::oscillators::Phasor</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType7">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1000</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType7">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1000</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>A processor which generates a unipolar ramp, and has an input to control its frequency.
@@ -2641,10 +2955,23 @@ The FrameType parameter could be a float or a float vector.
      <h2>processor std::oscillators::Sine</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType8">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType8">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>A basic sinewave generation processor with an input to control its frequency.
@@ -2679,12 +3006,29 @@ The FrameType parameter could be a float or a float vector.
      <h2>processor std::oscillators::PolyblepOscillator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">
-        <a href="#FrameType9">FrameType</a></span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sawtooth</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">
+            <a href="#FrameType9">FrameType</a></span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sawtooth</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>Uses a polyblep algorithm to generate a wave, with inputs to control its shape and frequency.
@@ -2727,13 +3071,34 @@ The FrameType parameter could be a float or a float vector.
      <h2>processor std::oscillators::LFO</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sine</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialAmplitude</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialOffset</span><span class="code"> = </span><span class="code_literal">0.0f</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sine</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialAmplitude</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialOffset</span><span class="code"> = </span><span class="code_literal">0.0f</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment"><br>A LFO processor with event inputs to control its parameters.
@@ -3329,9 +3694,22 @@ the events from one channel at a time.
      <h2>processor std::voices::VoiceAllocator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">numVoices</span>
-      </div>
-      <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">MPEMasterChannel</span><span class="code"> = </span><span class="code_literal">0</span>
+      <div class="spec_members">
+       <table class="specialisation_table">
+        <th>Struct Member</th>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">numVoices</span>
+          </div>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">MPEMasterChannel</span><span class="code"> = </span><span class="code_literal">0</span>
+          </div>
+         </td>
+        </tr>
+       </table>
       </div>
      </div>
      <div class="comment">A basic least-recently-used voice allocator.
