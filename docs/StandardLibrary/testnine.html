@@ -10,7 +10,8 @@ has_toc: false
 <html lang="en-US">
  <head>
   <title>Cmajor</title>
-  <link rel="stylesheet" href="cmaj_doc_style.css"></link>
+  <link rel="stylesheet" href="../assets/css/just-the-docs-default.css"></link>
+  <link rel="stylesheet" href="../docs/StandardLibrary/cmaj_doc_style.css"></link>
  </head>
  <body>
   <div class="namespace" id="std" href="#std">
@@ -54,80 +55,81 @@ of the audio data.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="currentContent">
-       <tr>
-        <td>
-         <div class="variable_name">currentContent</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="currentContent">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">SampleContent</span>
-          </div>
+          <div class="variable_name">currentContent</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">SampleContent</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="currentSpeed">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">currentSpeed</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentSpeed">
-       <tr>
-        <td>
-         <div class="variable_name">currentSpeed</div>
+        </tr>
+       </div>
+       <div class="variable" id="currentIndex">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
+          <div class="variable_name">currentIndex</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float64</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="indexDelta">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">indexDelta</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float64</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentIndex">
-       <tr>
-        <td>
-         <div class="variable_name">currentIndex</div>
+        </tr>
+       </div>
+       <div class="variable" id="isLooping">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">float64</span>
-          </div>
+          <div class="variable_name">isLooping</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">bool</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="indexDelta">
-       <tr>
-        <td>
-         <div class="variable_name">indexDelta</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float64</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="isLooping">
-       <tr>
-        <td>
-         <div class="variable_name">isLooping</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">bool</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -242,38 +244,39 @@ an explicit processor - see the language guide for more details.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="buffer">
-       <tr>
-        <td>
-         <div class="variable_name">buffer</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="buffer">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">StreamType</span><span class="code">[</span><span class="code_ident">delayLength</span><span class="code">]</span>
-          </div>
+          <div class="variable_name">buffer</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">StreamType</span><span class="code">[</span><span class="code_ident">delayLength</span><span class="code">]</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="pos">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">pos</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">delayLength</span><span class="code">&gt;</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="pos">
-       <tr>
-        <td>
-         <div class="variable_name">pos</div>
-         <td>
-          <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">delayLength</span><span class="code">&gt;</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -311,38 +314,39 @@ an explicit processor - see the language guide for more details.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="buffer2">
-       <tr>
-        <td>
-         <div class="variable_name">buffer</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="buffer2">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">StreamType</span><span class="code">[</span><span class="code_ident">delayLength</span><span class="code">]</span>
-          </div>
+          <div class="variable_name">buffer</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">StreamType</span><span class="code">[</span><span class="code_ident">delayLength</span><span class="code">]</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="pos2">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">pos</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">delayLength</span><span class="code">&gt;</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="pos2">
-       <tr>
-        <td>
-         <div class="variable_name">pos</div>
-         <td>
-          <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">delayLength</span><span class="code">&gt;</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -412,80 +416,81 @@ an explicit processor - see the language guide for more details.
      </div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="eventBuffer">
-       <tr>
-        <td>
-         <div class="variable_name">eventBuffer</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="eventBuffer">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">DelayedEvent</span><span class="code">[</span><span class="code_ident">bufferSize</span><span class="code">]</span>
-          </div>
+          <div class="variable_name">eventBuffer</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">DelayedEvent</span><span class="code">[</span><span class="code_ident">bufferSize</span><span class="code">]</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="readPos">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">readPos</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">bufferSize</span><span class="code">&gt;</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="readPos">
-       <tr>
-        <td>
-         <div class="variable_name">readPos</div>
+        </tr>
+       </div>
+       <div class="variable" id="writePos">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">bufferSize</span><span class="code">&gt;</span>
-          </div>
+          <div class="variable_name">writePos</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">bufferSize</span><span class="code">&gt;</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="bufferEntries">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">bufferEntries</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">int32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="writePos">
-       <tr>
-        <td>
-         <div class="variable_name">writePos</div>
+        </tr>
+       </div>
+       <div class="variable" id="currentTime">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">wrap</span><span class="code">&lt;</span><span class="code_ident">bufferSize</span><span class="code">&gt;</span>
-          </div>
+          <div class="variable_name">currentTime</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">int32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="bufferEntries">
-       <tr>
-        <td>
-         <div class="variable_name">bufferEntries</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">int32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentTime">
-       <tr>
-        <td>
-         <div class="variable_name">currentTime</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">int32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -539,38 +544,39 @@ be used to attenuate a voice.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="keyDownVelocity">
-       <tr>
-        <td>
-         <div class="variable_name">keyDownVelocity</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="keyDownVelocity">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
+          <div class="variable_name">keyDownVelocity</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="currentLevel">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">currentLevel</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentLevel">
-       <tr>
-        <td>
-         <div class="variable_name">currentLevel</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -647,38 +653,39 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2>namespace std::filters::tpt::onepole::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
-        <table class="variable_table"></table>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Comment</th>
-        <div class="variable" id="lowPass">
-         <tr>
-          <td>
-           <div class="variable_name">lowPass</div>
+        <table class="variable_table">
+         <th>Variable</th>
+         <th>Type</th>
+         <th>Comment</th>
+         <div class="variable" id="lowPass">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
+            <div class="variable_name">lowPass</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
+          </tr>
+         </div>
+         <div class="variable" id="highpass">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">highpass</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="highpass">
-         <tr>
-          <td>
-           <div class="variable_name">highpass</div>
-           <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
-           </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
+          </tr>
+         </div>
+        </table>
        </div>
       </div>
       <div class="processor" id="Processor">
@@ -706,62 +713,63 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <div class="endpoints"></div>
        <div class="variables">
         <h2>Variables</h2>
-        <table class="variable_table"></table>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Comment</th>
-        <div class="variable" id="filter">
-         <tr>
-          <td>
-           <div class="variable_name">filter</div>
+        <table class="variable_table">
+         <th>Variable</th>
+         <th>Type</th>
+         <th>Comment</th>
+         <div class="variable" id="filter">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filter</div>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="updateFilter">
-         <tr>
-          <td>
-           <div class="variable_name">updateFilter</div>
+          </tr>
+         </div>
+         <div class="variable" id="updateFilter">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">bool</span>
-            </div>
+            <div class="variable_name">updateFilter</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">bool</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
+          </tr>
+         </div>
+         <div class="variable" id="filterFrequency">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filterFrequency</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">float32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterFrequency">
-         <tr>
-          <td>
-           <div class="variable_name">filterFrequency</div>
+          </tr>
+         </div>
+         <div class="variable" id="filterMode">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">float32</span>
-            </div>
+            <div class="variable_name">filterMode</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterMode">
-         <tr>
-          <td>
-           <div class="variable_name">filterMode</div>
-           <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
-           </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
+          </tr>
+         </div>
+        </table>
        </div>
        <div class="functions">
         <h2>Functions</h2>
@@ -848,52 +856,53 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <h2>namespace std::filters::tpt::svf::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
-        <table class="variable_table"></table>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Comment</th>
-        <div class="variable" id="lowPass2">
-         <tr>
-          <td>
-           <div class="variable_name">lowPass</div>
+        <table class="variable_table">
+         <th>Variable</th>
+         <th>Type</th>
+         <th>Comment</th>
+         <div class="variable" id="lowPass2">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
+            <div class="variable_name">lowPass</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
+          </tr>
+         </div>
+         <div class="variable" id="highPass">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">highPass</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="highPass">
-         <tr>
-          <td>
-           <div class="variable_name">highPass</div>
+          </tr>
+         </div>
+         <div class="variable" id="bandPass">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
+            <div class="variable_name">bandPass</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="bandPass">
-         <tr>
-          <td>
-           <div class="variable_name">bandPass</div>
-           <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
-           </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
+          </tr>
+         </div>
+        </table>
        </div>
       </div>
       <div class="processor" id="Processor2">
@@ -927,76 +936,77 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <div class="endpoints"></div>
        <div class="variables">
         <h2>Variables</h2>
-        <table class="variable_table"></table>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Comment</th>
-        <div class="variable" id="filter2">
-         <tr>
-          <td>
-           <div class="variable_name">filter</div>
+        <table class="variable_table">
+         <th>Variable</th>
+         <th>Type</th>
+         <th>Comment</th>
+         <div class="variable" id="filter2">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filter</div>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="updateFilter2">
-         <tr>
-          <td>
-           <div class="variable_name">updateFilter</div>
+          </tr>
+         </div>
+         <div class="variable" id="updateFilter2">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">bool</span>
-            </div>
+            <div class="variable_name">updateFilter</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">bool</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
+          </tr>
+         </div>
+         <div class="variable" id="filterFrequency2">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filterFrequency</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">float32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterFrequency2">
-         <tr>
-          <td>
-           <div class="variable_name">filterFrequency</div>
+          </tr>
+         </div>
+         <div class="variable" id="filterMode2">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">float32</span>
-            </div>
+            <div class="variable_name">filterMode</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">int32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
+          </tr>
+         </div>
+         <div class="variable" id="filterQ">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filterQ</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">float32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterMode2">
-         <tr>
-          <td>
-           <div class="variable_name">filterMode</div>
-           <td>
-            <div class="variable_type"><span class="code_prim">int32</span>
-            </div>
-           </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterQ">
-         <tr>
-          <td>
-           <div class="variable_name">filterQ</div>
-           <td>
-            <div class="variable_type"><span class="code_prim">float32</span>
-            </div>
-           </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
+          </tr>
+         </div>
+        </table>
        </div>
        <div class="functions">
         <h2>Functions</h2>
@@ -1043,62 +1053,63 @@ The frequency and mode can be modulated at the parameterUpdateRate
        <div class="endpoints"></div>
        <div class="variables">
         <h2>Variables</h2>
-        <table class="variable_table"></table>
-        <th>Variable</th>
-        <th>Type</th>
-        <th>Comment</th>
-        <div class="variable" id="filter3">
-         <tr>
-          <td>
-           <div class="variable_name">filter</div>
+        <table class="variable_table">
+         <th>Variable</th>
+         <th>Type</th>
+         <th>Comment</th>
+         <div class="variable" id="filter3">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filter</div>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="updateFilter3">
-         <tr>
-          <td>
-           <div class="variable_name">updateFilter</div>
+          </tr>
+         </div>
+         <div class="variable" id="updateFilter3">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">bool</span>
-            </div>
+            <div class="variable_name">updateFilter</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">bool</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
+          </tr>
+         </div>
+         <div class="variable" id="filterFrequency3">
+          <tr>
            <td>
-            <tr></tr>
+            <div class="variable_name">filterFrequency</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">float32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterFrequency3">
-         <tr>
-          <td>
-           <div class="variable_name">filterFrequency</div>
+          </tr>
+         </div>
+         <div class="variable" id="filterQ2">
+          <tr>
            <td>
-            <div class="variable_type"><span class="code_prim">float32</span>
-            </div>
+            <div class="variable_name">filterQ</div>
+            <td>
+             <div class="variable_type"><span class="code_prim">float32</span>
+             </div>
+            </td>
+            <td>
+             <tr></tr>
+            </td>
            </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
-        <div class="variable" id="filterQ2">
-         <tr>
-          <td>
-           <div class="variable_name">filterQ</div>
-           <td>
-            <div class="variable_type"><span class="code_prim">float32</span>
-            </div>
-           </td>
-           <td>
-            <tr></tr>
-           </td>
-          </td>
-         </tr>
-        </div>
+          </tr>
+         </div>
+        </table>
        </div>
        <div class="functions">
         <h2>Functions</h2>
@@ -1210,20 +1221,21 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
       <div class="endpoints"></div>
       <div class="variables">
        <h2>Variables</h2>
-       <table class="variable_table"></table>
-       <th>Variable</th>
-       <th>Type</th>
-       <th>Comment</th>
-       <div class="variable" id="filter4">
-        <tr>
-         <td>
-          <div class="variable_name">filter</div>
+       <table class="variable_table">
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Comment</th>
+        <div class="variable" id="filter4">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filter</div>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
+         </tr>
+        </div>
+       </table>
       </div>
       <div class="functions">
        <h2>Functions</h2>
@@ -1301,38 +1313,39 @@ at runtime.
       <h2>namespace std::filters::butterworth::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
-       <table class="variable_table"></table>
-       <th>Variable</th>
-       <th>Type</th>
-       <th>Comment</th>
-       <div class="variable" id="lowPass3">
-        <tr>
-         <td>
-          <div class="variable_name">lowPass</div>
+       <table class="variable_table">
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Comment</th>
+        <div class="variable" id="lowPass3">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">lowPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="highPass2">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">highPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="highPass2">
-        <tr>
-         <td>
-          <div class="variable_name">highPass</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
+         </tr>
+        </div>
+       </table>
       </div>
      </div>
      <div class="processor" id="Processor4">
@@ -1360,62 +1373,63 @@ at runtime.
       <div class="endpoints"></div>
       <div class="variables">
        <h2>Variables</h2>
-       <table class="variable_table"></table>
-       <th>Variable</th>
-       <th>Type</th>
-       <th>Comment</th>
-       <div class="variable" id="filter5">
-        <tr>
-         <td>
-          <div class="variable_name">filter</div>
+       <table class="variable_table">
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Comment</th>
+        <div class="variable" id="filter5">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filter</div>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="updateFilter4">
-        <tr>
-         <td>
-          <div class="variable_name">updateFilter</div>
+         </tr>
+        </div>
+        <div class="variable" id="updateFilter4">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">bool</span>
-           </div>
+           <div class="variable_name">updateFilter</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">bool</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="filterFrequency4">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filterFrequency</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">float32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterFrequency4">
-        <tr>
-         <td>
-          <div class="variable_name">filterFrequency</div>
+         </tr>
+        </div>
+        <div class="variable" id="filterMode3">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">float32</span>
-           </div>
+           <div class="variable_name">filterMode</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterMode3">
-        <tr>
-         <td>
-          <div class="variable_name">filterMode</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
+         </tr>
+        </div>
+       </table>
       </div>
       <div class="functions">
        <h2>Functions</h2>
@@ -1512,48 +1526,49 @@ summed to produce a flat response. The crossover frequency can be modulated
       <div class="endpoints"></div>
       <div class="variables">
        <h2>Variables</h2>
-       <table class="variable_table"></table>
-       <th>Variable</th>
-       <th>Type</th>
-       <th>Comment</th>
-       <div class="variable" id="filter6">
-        <tr>
-         <td>
-          <div class="variable_name">filter</div>
+       <table class="variable_table">
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Comment</th>
+        <div class="variable" id="filter6">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filter</div>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="updateFilter5">
-        <tr>
-         <td>
-          <div class="variable_name">updateFilter</div>
+         </tr>
+        </div>
+        <div class="variable" id="updateFilter5">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">bool</span>
-           </div>
+           <div class="variable_name">updateFilter</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">bool</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="filterFrequency5">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filterFrequency</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">float32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterFrequency5">
-        <tr>
-         <td>
-          <div class="variable_name">filterFrequency</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">float32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
+         </tr>
+        </div>
+       </table>
       </div>
       <div class="functions">
        <h2>Functions</h2>
@@ -1621,136 +1636,137 @@ It is documented here:
       <h2>namespace std::filters::simper::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
-       <table class="variable_table"></table>
-       <th>Variable</th>
-       <th>Type</th>
-       <th>Comment</th>
-       <div class="variable" id="lowPass4">
-        <tr>
-         <td>
-          <div class="variable_name">lowPass</div>
+       <table class="variable_table">
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Comment</th>
+        <div class="variable" id="lowPass4">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">lowPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="highPass3">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">highPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="highPass3">
-        <tr>
-         <td>
-          <div class="variable_name">highPass</div>
+         </tr>
+        </div>
+        <div class="variable" id="bandPass2">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">bandPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="notchPass">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">notchPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="bandPass2">
-        <tr>
-         <td>
-          <div class="variable_name">bandPass</div>
+         </tr>
+        </div>
+        <div class="variable" id="peakPass">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">peakPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="allPass">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">allPass</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="notchPass">
-        <tr>
-         <td>
-          <div class="variable_name">notchPass</div>
+         </tr>
+        </div>
+        <div class="variable" id="lowShelf">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">lowShelf</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="highShelf">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">highShelf</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="peakPass">
-        <tr>
-         <td>
-          <div class="variable_name">peakPass</div>
+         </tr>
+        </div>
+        <div class="variable" id="bell">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">bell</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="allPass">
-        <tr>
-         <td>
-          <div class="variable_name">allPass</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="lowShelf">
-        <tr>
-         <td>
-          <div class="variable_name">lowShelf</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="highShelf">
-        <tr>
-         <td>
-          <div class="variable_name">highShelf</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="bell">
-        <tr>
-         <td>
-          <div class="variable_name">bell</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
+         </tr>
+        </div>
+       </table>
       </div>
      </div>
      <div class="processor" id="Processor6">
@@ -1790,90 +1806,91 @@ It is documented here:
       <div class="endpoints"></div>
       <div class="variables">
        <h2>Variables</h2>
-       <table class="variable_table"></table>
-       <th>Variable</th>
-       <th>Type</th>
-       <th>Comment</th>
-       <div class="variable" id="filter7">
-        <tr>
-         <td>
-          <div class="variable_name">filter</div>
+       <table class="variable_table">
+        <th>Variable</th>
+        <th>Type</th>
+        <th>Comment</th>
+        <div class="variable" id="filter7">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filter</div>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="updateFilter6">
-        <tr>
-         <td>
-          <div class="variable_name">updateFilter</div>
+         </tr>
+        </div>
+        <div class="variable" id="updateFilter6">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">bool</span>
-           </div>
+           <div class="variable_name">updateFilter</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">bool</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="filterFrequency6">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filterFrequency</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">float32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterFrequency6">
-        <tr>
-         <td>
-          <div class="variable_name">filterFrequency</div>
+         </tr>
+        </div>
+        <div class="variable" id="filterMode4">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">float32</span>
-           </div>
+           <div class="variable_name">filterMode</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">int32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
+         </tr>
+        </div>
+        <div class="variable" id="filterQ3">
+         <tr>
           <td>
-           <tr></tr>
+           <div class="variable_name">filterQ</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">float32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterMode4">
-        <tr>
-         <td>
-          <div class="variable_name">filterMode</div>
+         </tr>
+        </div>
+        <div class="variable" id="filterGain">
+         <tr>
           <td>
-           <div class="variable_type"><span class="code_prim">int32</span>
-           </div>
+           <div class="variable_name">filterGain</div>
+           <td>
+            <div class="variable_type"><span class="code_prim">float32</span>
+            </div>
+           </td>
+           <td>
+            <tr></tr>
+           </td>
           </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterQ3">
-        <tr>
-         <td>
-          <div class="variable_name">filterQ</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">float32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
-       <div class="variable" id="filterGain">
-        <tr>
-         <td>
-          <div class="variable_name">filterGain</div>
-          <td>
-           <div class="variable_type"><span class="code_prim">float32</span>
-           </div>
-          </td>
-          <td>
-           <tr></tr>
-          </td>
-         </td>
-        </tr>
-       </div>
+         </tr>
+        </div>
+       </table>
       </div>
       <div class="functions">
        <h2>Functions</h2>
@@ -2004,55 +2021,56 @@ It is documented here:
     </div>
     <div class="variables">
      <h2>Constants</h2>
-     <table class="variable_table"></table>
-     <th>Variable</th>
-     <th>Type</th>
-     <th>Comment</th>
-     <div class="variable" id="defaultFrequency">
-      <tr>
-       <td>
-        <div class="variable_name">defaultFrequency</div>
+     <table class="variable_table">
+      <th>Variable</th>
+      <th>Type</th>
+      <th>Comment</th>
+      <div class="variable" id="defaultFrequency">
+       <tr>
         <td>
-         <div class="variable_type"><span class="code_prim">float32</span>
-         </div>
-        </td>
-        <td>
-         <tr>
-          <div class="comment">Default values if not specified
+         <div class="variable_name">defaultFrequency</div>
+         <td>
+          <div class="variable_type"><span class="code_prim">float32</span>
+          </div>
+         </td>
+         <td>
+          <tr>
+           <div class="comment">Default values if not specified
 </div>
-         </tr>
+          </tr>
+         </td>
         </td>
-       </td>
-      </tr>
-     </div>
-     <div class="variable" id="defaultQ">
-      <tr>
-       <td>
-        <div class="variable_name">defaultQ</div>
+       </tr>
+      </div>
+      <div class="variable" id="defaultQ">
+       <tr>
         <td>
-         <div class="variable_type"><span class="code_prim">float32</span>
-         </div>
+         <div class="variable_name">defaultQ</div>
+         <td>
+          <div class="variable_type"><span class="code_prim">float32</span>
+          </div>
+         </td>
+         <td>
+          <tr></tr>
+         </td>
         </td>
+       </tr>
+      </div>
+      <div class="variable" id="defaultGain">
+       <tr>
         <td>
-         <tr></tr>
+         <div class="variable_name">defaultGain</div>
+         <td>
+          <div class="variable_type"><span class="code_prim">int32</span>
+          </div>
+         </td>
+         <td>
+          <tr></tr>
+         </td>
         </td>
-       </td>
-      </tr>
-     </div>
-     <div class="variable" id="defaultGain">
-      <tr>
-       <td>
-        <div class="variable_name">defaultGain</div>
-        <td>
-         <div class="variable_type"><span class="code_prim">int32</span>
-         </div>
-        </td>
-        <td>
-         <tr></tr>
-        </td>
-       </td>
-      </tr>
-     </div>
+       </tr>
+      </div>
+     </table>
     </div>
    </div>
    <div class="namespace" id="frequency7" href="#frequency7">
@@ -2394,24 +2412,25 @@ This is handy for smoothing plugin parameters
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="smoothedValue">
-       <tr>
-        <td>
-         <div class="variable_name">smoothedValue</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="smoothedValue">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">SmoothedValue</span>
-          </div>
+          <div class="variable_name">smoothedValue</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">SmoothedValue</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -2636,24 +2655,25 @@ output stream of smoothed gain factors which can be applied to a signal.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="smoothedGain">
-       <tr>
-        <td>
-         <div class="variable_name">smoothedGain</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="smoothedGain">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">std</span><span class="code">::</span><span class="code_ident">smoothing</span><span class="code">::</span><span class="code_ident">SmoothedValue</span>
-          </div>
+          <div class="variable_name">smoothedGain</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">std</span><span class="code">::</span><span class="code_ident">smoothing</span><span class="code">::</span><span class="code_ident">SmoothedValue</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -3136,25 +3156,26 @@ See <a href="https://en.wikipedia.org/wiki/White_noise&#13;">https://en.wikipedi
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="rng">
-       <tr>
-        <td>
-         <div class="variable_name">rng</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="rng">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">
-            <a href="#RNG">RNG</a></span>
-          </div>
+          <div class="variable_name">rng</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">
+             <a href="#RNG">RNG</a></span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -3177,67 +3198,68 @@ See <a href="https://en.wikipedia.org/wiki/Brownian_noise&#13;">https://en.wikip
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="rng2">
-       <tr>
-        <td>
-         <div class="variable_name">rng</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="rng2">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">
-            <a href="#RNG">RNG</a></span>
-          </div>
+          <div class="variable_name">rng</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">
+             <a href="#RNG">RNG</a></span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="lastLevel">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">lastLevel</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="lastLevel">
-       <tr>
-        <td>
-         <div class="variable_name">lastLevel</div>
+        </tr>
+       </div>
+       <div class="variable" id="filter8">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
+          <div class="variable_name">filter</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="scale">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">scale</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="filter8">
-       <tr>
-        <td>
-         <div class="variable_name">filter</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="scale">
-       <tr>
-        <td>
-         <div class="variable_name">scale</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -3260,67 +3282,68 @@ See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="rng3">
-       <tr>
-        <td>
-         <div class="variable_name">rng</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="rng3">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">
-            <a href="#RNG">RNG</a></span>
-          </div>
+          <div class="variable_name">rng</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">
+             <a href="#RNG">RNG</a></span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="values">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">values</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">float32</span><span class="code">[</span><span class="code_literal">12</span><span class="code">]</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="values">
-       <tr>
-        <td>
-         <div class="variable_name">values</div>
+        </tr>
+       </div>
+       <div class="variable" id="sampleCount">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">float32</span><span class="code">[</span><span class="code_literal">12</span><span class="code">]</span>
-          </div>
+          <div class="variable_name">sampleCount</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">int32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="lastLevel2">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">lastLevel</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="sampleCount">
-       <tr>
-        <td>
-         <div class="variable_name">sampleCount</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">int32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="lastLevel2">
-       <tr>
-        <td>
-         <div class="variable_name">lastLevel</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -3789,24 +3812,25 @@ The FrameType parameter could be a float or a float vector.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="phasor">
-       <tr>
-        <td>
-         <div class="variable_name">phasor</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="phasor">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">PhasorState</span>
-          </div>
+          <div class="variable_name">phasor</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">PhasorState</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -3853,24 +3877,25 @@ The FrameType parameter could be a float or a float vector.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="phasor2">
-       <tr>
-        <td>
-         <div class="variable_name">phasor</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="phasor2">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">PhasorState</span>
-          </div>
+          <div class="variable_name">phasor</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">PhasorState</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -3922,38 +3947,39 @@ The FrameType parameter could be a float or a float vector.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="polyblep2">
-       <tr>
-        <td>
-         <div class="variable_name">polyblep</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="polyblep2">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">PolyblepState</span>
-          </div>
+          <div class="variable_name">polyblep</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">PolyblepState</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="currentShape">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">currentShape</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">Shape</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentShape">
-       <tr>
-        <td>
-         <div class="variable_name">currentShape</div>
-         <td>
-          <div class="variable_type"><span class="code_ident">Shape</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -4014,192 +4040,193 @@ The FrameType parameter could be a float or a float vector.
      <div class="endpoints"></div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="currentShape2">
-       <tr>
-        <td>
-         <div class="variable_name">currentShape</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="currentShape2">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">Shape</span>
-          </div>
+          <div class="variable_name">currentShape</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">Shape</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="currentAmplitude">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">currentAmplitude</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">std</span><span class="code">::</span><span class="code_ident">levels</span><span class="code">::</span><span class="code_ident">SmoothedValue</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentAmplitude">
-       <tr>
-        <td>
-         <div class="variable_name">currentAmplitude</div>
+        </tr>
+       </div>
+       <div class="variable" id="currentOffset">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">std</span><span class="code">::</span><span class="code_ident">levels</span><span class="code">::</span><span class="code_ident">SmoothedValue</span>
-          </div>
+          <div class="variable_name">currentOffset</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="isUsingTempo">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">isUsingTempo</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">bool</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentOffset">
-       <tr>
-        <td>
-         <div class="variable_name">currentOffset</div>
+        </tr>
+       </div>
+       <div class="variable" id="isSyncActive">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
+          <div class="variable_name">isSyncActive</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">bool</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="isPlaying">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">isPlaying</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">bool</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="isUsingTempo">
-       <tr>
-        <td>
-         <div class="variable_name">isUsingTempo</div>
+        </tr>
+       </div>
+       <div class="variable" id="cyclesPerBeat">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">bool</span>
-          </div>
+          <div class="variable_name">cyclesPerBeat</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="lastQuarterNotePos">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">lastQuarterNotePos</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float64</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="isSyncActive">
-       <tr>
-        <td>
-         <div class="variable_name">isSyncActive</div>
+        </tr>
+       </div>
+       <div class="variable" id="currentPhase">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">bool</span>
-          </div>
+          <div class="variable_name">currentPhase</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="currentRandomValue">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">currentRandomValue</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="isPlaying">
-       <tr>
-        <td>
-         <div class="variable_name">isPlaying</div>
+        </tr>
+       </div>
+       <div class="variable" id="phaseIncrementHz">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">bool</span>
-          </div>
+          <div class="variable_name">phaseIncrementHz</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="phaseIncrementTempo">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">phaseIncrementTempo</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">float32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="cyclesPerBeat">
-       <tr>
-        <td>
-         <div class="variable_name">cyclesPerBeat</div>
+        </tr>
+       </div>
+       <div class="variable" id="rng4">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
+          <div class="variable_name">rng</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">std</span><span class="code">::</span><span class="code_ident">random</span><span class="code">::</span><span class="code_ident">RNG</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="lastQuarterNotePos">
-       <tr>
-        <td>
-         <div class="variable_name">lastQuarterNotePos</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float64</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentPhase">
-       <tr>
-        <td>
-         <div class="variable_name">currentPhase</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="currentRandomValue">
-       <tr>
-        <td>
-         <div class="variable_name">currentRandomValue</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="phaseIncrementHz">
-       <tr>
-        <td>
-         <div class="variable_name">phaseIncrementHz</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="phaseIncrementTempo">
-       <tr>
-        <td>
-         <div class="variable_name">phaseIncrementTempo</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">float32</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="rng4">
-       <tr>
-        <td>
-         <div class="variable_name">rng</div>
-         <td>
-          <div class="variable_type"><span class="code_ident">std</span><span class="code">::</span><span class="code_ident">random</span><span class="code">::</span><span class="code_ident">RNG</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
@@ -4834,80 +4861,81 @@ your own logic!
      </div>
      <div class="variables">
       <h2>Variables</h2>
-      <table class="variable_table"></table>
-      <th>Variable</th>
-      <th>Type</th>
-      <th>Comment</th>
-      <div class="variable" id="voiceState">
-       <tr>
-        <td>
-         <div class="variable_name">voiceState</div>
+      <table class="variable_table">
+       <th>Variable</th>
+       <th>Type</th>
+       <th>Comment</th>
+       <div class="variable" id="voiceState">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_ident">VoiceState</span><span class="code">[</span><span class="code_ident">numVoices</span><span class="code">]</span>
-          </div>
+          <div class="variable_name">voiceState</div>
+          <td>
+           <div class="variable_type"><span class="code_ident">VoiceState</span><span class="code">[</span><span class="code_ident">numVoices</span><span class="code">]</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="nextActiveTime">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">nextActiveTime</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">int32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="nextActiveTime">
-       <tr>
-        <td>
-         <div class="variable_name">nextActiveTime</div>
+        </tr>
+       </div>
+       <div class="variable" id="nextInactiveTime">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">int32</span>
-          </div>
+          <div class="variable_name">nextInactiveTime</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">int32</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
+        </tr>
+       </div>
+       <div class="variable" id="mpeMasterSustainActive">
+        <tr>
          <td>
-          <tr></tr>
+          <div class="variable_name">mpeMasterSustainActive</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">bool</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="nextInactiveTime">
-       <tr>
-        <td>
-         <div class="variable_name">nextInactiveTime</div>
+        </tr>
+       </div>
+       <div class="variable" id="perChannelSustainActive">
+        <tr>
          <td>
-          <div class="variable_type"><span class="code_prim">int32</span>
-          </div>
+          <div class="variable_name">perChannelSustainActive</div>
+          <td>
+           <div class="variable_type"><span class="code_prim">int64</span>
+           </div>
+          </td>
+          <td>
+           <tr></tr>
+          </td>
          </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="mpeMasterSustainActive">
-       <tr>
-        <td>
-         <div class="variable_name">mpeMasterSustainActive</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">bool</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
-      <div class="variable" id="perChannelSustainActive">
-       <tr>
-        <td>
-         <div class="variable_name">perChannelSustainActive</div>
-         <td>
-          <div class="variable_type"><span class="code_prim">int64</span>
-          </div>
-         </td>
-         <td>
-          <tr></tr>
-         </td>
-        </td>
-       </tr>
-      </div>
+        </tr>
+       </div>
+      </table>
      </div>
      <div class="functions">
       <h2>Functions</h2>
