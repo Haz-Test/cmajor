@@ -1,9 +1,9 @@
 ---
 layout: std_lib
-title: Standard Library Table Test
-permalink: /docs/StdTables
-nav_order: 13
-has_children: false
+title: Standard Library
+permalink: /docs/StandardLibrary
+nav_order: 12
+has_children: true
 has_toc: false
 ---
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
@@ -13,12 +13,13 @@ has_toc: false
   <link rel="stylesheet" href="../assets/css/just-the-docs-default.css"></link>
   <link rel="stylesheet" href="../docs/StandardLibrary/cmaj_doc_style.css"></link>
  </head>
- <body>
+<body>
+  <h1>The Cmajor Standard Library</h1>
   <div class="namespace" id="std" href="#std">
    <h2>namespace std</h2>
    <div class="namespace" id="audio_data" href="#audio_data">
     <h2>namespace std::audio_data</h2>
-    <div class="comment"><br>Module: std.audio_data
+    <div class="comment"><br><module>Module: std.audio_data</module>
 <br>These structures are useful for representing chunks of audio data with a
 known sample-rate. They&#39;re useful types when you&#39;re declaring an external
 variable which is going to hold audio file data or generated waveform data.
@@ -35,13 +36,16 @@ using an appropriately-sized vector for the frames.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#SampleContent">SampleContent</a></span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#SampleContent">SampleContent</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -211,7 +215,7 @@ of the audio data.
    </div>
    <div class="namespace" id="delay" href="#delay">
     <h2>namespace std::delay</h2>
-    <div class="comment"><br>Module: std.delay
+    <div class="comment"><br><module>Module: std.delay</module>
 <br>Utilities and processors for implementing delays. Note that you
 graph connections allow a delay to be added without needing to use
 an explicit processor - see the language guide for more details.
@@ -223,19 +227,24 @@ an explicit processor - see the language guide for more details.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#StreamType">StreamType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#StreamType">StreamType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -293,19 +302,24 @@ an explicit processor - see the language guide for more details.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#StreamType2">StreamType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#StreamType2">StreamType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -363,25 +377,32 @@ an explicit processor - see the language guide for more details.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#EventType">EventType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#EventType">EventType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">delayLength</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">bufferSize</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -511,7 +532,7 @@ an explicit processor - see the language guide for more details.
    </div>
    <div class="namespace" id="envelopes" href="#envelopes">
     <h2>namespace std::envelopes</h2>
-    <div class="comment"><br>Module: std.envelopes
+    <div class="comment"><br><module>Module: std.envelopes</module>
 <br>Utilities for calculating and applying gain levels.
 <br></div>
     <div class="processor" id="FixedASR">
@@ -521,18 +542,23 @@ an explicit processor - see the language guide for more details.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">attackSeconds</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">releaseSeconds</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -602,28 +628,35 @@ be used to attenuate a voice.
      <div class="spec_members">
       <table class="specialisation_table">
        <th>Specialisation</th>
-       <tr>
-        <td>
-         <div class="specialisation"><span class="code_prim">float32</span>
-         </div>
-        </td>
-       </tr>
-       <tr>
-        <td>
-         <div class="specialisation"><span class="code_prim">float32</span>
-         </div>
-        </td>
-       </tr>
-       <tr>
-        <td>
-         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
-         </div>
-        </td>
-       </tr>
+       <th>Comment</th>
+       <tr></tr>
+       <td>
+        <div class="specialisation"><span class="code_prim">float32</span>
+        </div>
+       </td>
+       <td>
+        <div class="comment"></div>
+       </td>
+       <tr></tr>
+       <td>
+        <div class="specialisation"><span class="code_prim">float32</span>
+        </div>
+       </td>
+       <td>
+        <div class="comment"></div>
+       </td>
+       <tr></tr>
+       <td>
+        <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">parameterUpdateRate</span><span class="code"> = </span><span class="code_literal">32</span>
+        </div>
+       </td>
+       <td>
+        <div class="comment"></div>
+       </td>
       </table>
      </div>
     </div>
-    <div class="comment"><br>Module: std.filters
+    <div class="comment"><br><module>Module: std.filters</module>
 <br>Contains implementations of some common filters.
 <br>The module is parameterised with the FrameType, which can be a float32/64 primitive
 or vector, and represents the data which is being filtered.
@@ -695,18 +728,23 @@ The frequency and mode can be modulated at the parameterUpdateRate
         <div class="spec_members">
          <table class="specialisation_table">
           <th>Specialisation</th>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-            </div>
-           </td>
-          </tr>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-            </div>
-           </td>
-          </tr>
+          <th>Comment</th>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
          </table>
         </div>
        </div>
@@ -912,24 +950,31 @@ The frequency and mode can be modulated at the parameterUpdateRate
         <div class="spec_members">
          <table class="specialisation_table">
           <th>Specialisation</th>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-            </div>
-           </td>
-          </tr>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-            </div>
-           </td>
-          </tr>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
-            </div>
-           </td>
-          </tr>
+          <th>Comment</th>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
          </table>
         </div>
        </div>
@@ -1035,18 +1080,23 @@ The frequency and mode can be modulated at the parameterUpdateRate
         <div class="spec_members">
          <table class="specialisation_table">
           <th>Specialisation</th>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-            </div>
-           </td>
-          </tr>
-          <tr>
-           <td>
-            <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
-            </div>
-           </td>
-          </tr>
+          <th>Comment</th>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
+          <tr></tr>
+          <td>
+           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+           </div>
+          </td>
+          <td>
+           <div class="comment"></div>
+          </td>
          </table>
         </div>
        </div>
@@ -1296,12 +1346,15 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">order</span><span class="code"> = </span><span class="code_literal">2</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -1355,18 +1408,23 @@ at runtime.
        <div class="spec_members">
         <table class="specialisation_table">
          <th>Specialisation</th>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-           </div>
-          </td>
-         </tr>
+         <th>Comment</th>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
         </table>
        </div>
       </div>
@@ -1514,12 +1572,15 @@ summed to produce a flat response. The crossover frequency can be modulated
        <div class="spec_members">
         <table class="specialisation_table">
          <th>Specialisation</th>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-           </div>
-          </td>
-         </tr>
+         <th>Comment</th>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
         </table>
        </div>
       </div>
@@ -1776,30 +1837,39 @@ It is documented here:
        <div class="spec_members">
         <table class="specialisation_table">
          <th>Specialisation</th>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
-           </div>
-          </td>
-         </tr>
-         <tr>
-          <td>
-           <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialGain</span><span class="code"> = </span><span class="code_ident">defaultGain</span>
-           </div>
-          </td>
-         </tr>
+         <th>Comment</th>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialMode</span><span class="code"> = </span><span class="code_ident">Mode</span><span class="code">::</span><span class="code_ident">lowPass</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_ident">defaultFrequency</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialQ</span><span class="code"> = </span><span class="code_ident">defaultQ</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
+         <tr></tr>
+         <td>
+          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialGain</span><span class="code"> = </span><span class="code_ident">defaultGain</span>
+          </div>
+         </td>
+         <td>
+          <div class="comment"></div>
+         </td>
         </table>
        </div>
       </div>
@@ -2075,7 +2145,7 @@ It is documented here:
    </div>
    <div class="namespace" id="frequency7" href="#frequency7">
     <h2>namespace std::frequency</h2>
-    <div class="comment"><br>Module: std.frequency
+    <div class="comment"><br><module>Module: std.frequency</module>
 <br>Contains DFT implementations for complex and real numbers
 <br>The buffers can be either float32 or float64 (or complex32/complex64).
 Buffer sizes must be a power of 2.
@@ -2114,7 +2184,7 @@ and imaginary components, and the output array receives the real components.
    </div>
    <div class="namespace" id="intrinsics" href="#intrinsics">
     <h2>namespace std::intrinsics</h2>
-    <div class="comment"><br>Module: std.intrinsics
+    <div class="comment"><br><module>Module: std.intrinsics</module>
 <br>Contains placeholders and reference implementations of basic functions.
 <br>The compiler treats the <code>intrinsics</code> namespace as a special-case, allowing its
 functions to act as if they&#39;re in the global namespace.
@@ -2390,18 +2460,23 @@ If the index lies beyond the range of the array, it will be wrapped.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialValue</span><span class="code"> = </span><span class="code_literal">0.0f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialValue</span><span class="code"> = </span><span class="code_literal">0.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -2527,19 +2602,24 @@ to reach it.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">gain</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">gain</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -2564,13 +2644,16 @@ See: DynamicGain, SmoothedGain
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType2">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType2">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -2595,19 +2678,24 @@ See: ConstantGain, SmoothedGain
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType3">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType3">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -2640,12 +2728,15 @@ level is exposed via the &#39;volume&#39; input.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">smoothingTimeSeconds</span><span class="code"> = </span><span class="code_literal">0.2f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -2725,7 +2816,7 @@ using a 3dB-centre pan-law.
    </div>
    <div class="namespace" id="midi" href="#midi">
     <h2>namespace std::midi</h2>
-    <div class="comment"><br>Module: std.midi
+    <div class="comment"><br><module>Module: std.midi</module>
 <br>Various utilities for handling raw MIDI data.
 <br>The classes in the standard library which deal with synthesisers have been designed
 to avoid raw MIDI messages, and instead to work with strongly-typed event objects
@@ -2969,7 +3060,7 @@ the natural order for a MIDI message.
    </div>
    <div class="namespace" id="mixers" href="#mixers">
     <h2>namespace std::mixers</h2>
-    <div class="comment"><br>Module: std.mixers
+    <div class="comment"><br><module>Module: std.mixers</module>
 <br></div>
     <div class="processor" id="StereoToMono">
      <h2>processor std::mixers::StereoToMono</h2>
@@ -2978,13 +3069,16 @@ the natural order for a MIDI message.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#SampleType">SampleType</a></span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#SampleType">SampleType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3007,13 +3101,16 @@ its elements.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#SampleType2">SampleType</a></span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#SampleType2">SampleType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3036,13 +3133,16 @@ size 2 which contains two copies of the input value
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType4">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType4">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3066,25 +3166,32 @@ FrameType can be a float or float vector type.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType5">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain1</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain2</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType5">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain1</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">inputGain2</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3108,19 +3215,24 @@ FrameType can be a float or float vector type.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType6">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">mixRange</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType6">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">mixRange</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3145,7 +3257,7 @@ will act as a &quot;percentage wet&quot; control.
    </div>
    <div class="namespace" id="noise" href="#noise">
     <h2>namespace std::noise</h2>
-    <div class="comment"><br>Module: std.noise
+    <div class="comment"><br><module>Module: std.noise</module>
 <br></div>
     <div class="processor" id="White">
      <h2>processor std::noise::White</h2>
@@ -3360,7 +3472,7 @@ See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia
    </div>
    <div class="namespace" id="notes" href="#notes">
     <h2>namespace std::notes</h2>
-    <div class="comment"><br>Module: std.notes
+    <div class="comment"><br><module>Module: std.notes</module>
 <br>These structs are used for events that model the start/stop/control of notes
 that are playing in synthesisers.
 <br>Unlike sending raw MIDI around, these are strongly typed and use floating point
@@ -3647,7 +3759,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
    </div>
    <div class="namespace" id="oscillators" href="#oscillators">
     <h2>namespace std::oscillators</h2>
-    <div class="comment"><br>Module: std.oscillators
+    <div class="comment"><br><module>Module: std.oscillators</module>
 <br></div>
     <div class="namespace" id="waveshape" href="#waveshape">
      <h2>namespace std::oscillators::waveshape</h2>
@@ -3656,12 +3768,15 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3790,19 +3905,24 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType7">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1000</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType7">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1000</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3855,19 +3975,24 @@ The FrameType parameter could be a float or a float vector.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType8">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType8">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -3920,25 +4045,32 @@ The FrameType parameter could be a float or a float vector.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">
-            <a href="#FrameType9">FrameType</a></span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sawtooth</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">
+           <a href="#FrameType9">FrameType</a></span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sawtooth</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">440.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -4008,30 +4140,39 @@ The FrameType parameter could be a float or a float vector.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sine</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialAmplitude</span><span class="code"> = </span><span class="code_literal">1.0f</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialOffset</span><span class="code"> = </span><span class="code_literal">0.0f</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">initialShape</span><span class="code"> = </span><span class="code_ident">Shape</span><span class="code">::</span><span class="code_ident">sine</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialFrequency</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialAmplitude</span><span class="code"> = </span><span class="code_literal">1.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">initialOffset</span><span class="code"> = </span><span class="code_literal">0.0f</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
@@ -4508,7 +4649,7 @@ The FrameType parameter could be a float or a float vector.
    </div>
    <div class="namespace" id="random" href="#random">
     <h2>namespace std::random</h2>
-    <div class="comment"><br>Module: std.random
+    <div class="comment"><br><module>Module: std.random</module>
 <br>If you&#39;re writing code that needs to be cryptographically secure, then this is not the
 random number generation library that you want. The target audience for these classes
 are those who need quick-and-dirty RNGs for noise generation and similar non-critical
@@ -4594,7 +4735,7 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
    </div>
    <div class="namespace" id="timeline" href="#timeline">
     <h2>namespace std::timeline</h2>
-    <div class="comment"><br>Module: std.timeline
+    <div class="comment"><br><module>Module: std.timeline</module>
 <br>This namespace contains various types and functions for dealing with tempos,
 positions and events that describe DAW-style timelines.
 <br></div>
@@ -4611,7 +4752,7 @@ positions and events that describe DAW-style timelines.
           <div class="struct_member_name">bpm</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
-           <td>BPM = beats per minute &#128578;
+           <td>BPM = beats per minute :)
 </td>
           </div>
          </td>
@@ -4774,7 +4915,7 @@ beats you are into the current bar.
    </div>
    <div class="namespace" id="voices" href="#voices">
     <h2>namespace std::voices</h2>
-    <div class="comment"><br>Module: std.voices
+    <div class="comment"><br><module>Module: std.voices</module>
 <br>This module demonstrates a simple voice-allocation algorithm.
 <br>The way it&#39;s structured is that you pass an incoming stream of note events to
 the voice allocator processor, and it redirects them to an array of destination
@@ -4790,18 +4931,23 @@ the events from one channel at a time.
       <div class="spec_members">
        <table class="specialisation_table">
         <th>Specialisation</th>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">numVoices</span>
-          </div>
-         </td>
-        </tr>
-        <tr>
-         <td>
-          <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">MPEMasterChannel</span><span class="code"> = </span><span class="code_literal">0</span>
-          </div>
-         </td>
-        </tr>
+        <th>Comment</th>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">numVoices</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
+        <tr></tr>
+        <td>
+         <div class="specialisation"><span class="code_prim">int32</span><span class="code"> </span><span class="code_ident">MPEMasterChannel</span><span class="code"> = </span><span class="code_literal">0</span>
+         </div>
+        </td>
+        <td>
+         <div class="comment"></div>
+        </td>
        </table>
       </div>
      </div>
