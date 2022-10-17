@@ -14,7 +14,7 @@ h2 {
 }
 .function,
 .comment{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.057);
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.057);*/
     color:rgb(88, 88, 88);
 }
 
@@ -29,7 +29,7 @@ h2 {
     font-size: 80%;
     font-style: normal;
     color: rgb(88, 88, 88);
-    white-space: pre;
+    /*white-space: pre;*/
     margin: 10px;
 }
 .code_using{
@@ -46,7 +46,6 @@ module,
     margin: 0;
     color:black;
     display:contents;
-    white-space: pre;
     }
 .function_name{
     color:black;
@@ -67,7 +66,11 @@ module,
 .struct_member_name{
     white-space: pre;
 }
-.specialisation,
+.specialisation{
+    vertical-align: top!important;
+    text-align: left!important;
+    padding: 0;
+}
 .struct_member,
 .struct_name,
 .variable_name,
