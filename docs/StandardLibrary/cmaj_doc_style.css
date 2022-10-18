@@ -106,7 +106,10 @@ module,
     vertical-align: baseline;
     background: transparent;
     text-align: left;
+    empty-cells: hide;
 }
+th:empty, td:empty, .comment:empty { visibility: hidden; display: none;}
+.comment:empty::before {visibility: hidden; display: none}
 .hide_header{
     visibility: collapse;
 }
