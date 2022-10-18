@@ -16,12 +16,14 @@ h2 {
 .comment{
     /*border-bottom: 1px solid rgba(0, 0, 0, 0.057);*/
     color:rgb(88, 88, 88);
+    font-family: --serif-font;
 }
 
 .module_type {
     opacity: 70%;
     font-style: italic;
     padding-inline-end: 0.3em;
+    font-family: --serif-font;
 }
 
 .function_decl {
@@ -38,7 +40,9 @@ h2 {
 .code_prim{
     color: blue;
 }
-
+.namespace{
+    font-family: var(--code-font);
+}
 .code,
 module,
 .code_ident {
@@ -47,6 +51,10 @@ module,
     color:black;
     display:contents;
     }
+.specialisations,
+.functions{
+    font-family: --serif-font;
+}
 .function_name{
     color:black;
     font-size: 18;
@@ -56,11 +64,13 @@ module,
 }
 
 .variables{
+    font-family: --serif-font;
     color: #5c5962;
     padding: 5px;
     margin: 0;
 }
 .variable_type{
+    
     color: #5c5962;
 }
 .struct_member_name{
@@ -75,7 +85,6 @@ module,
 .struct_name,
 .variable_name,
 .variable{
-    display:flex;
     font-family: var(--code-font);
     padding: 0;
     margin: 0 0 .05em 0;  
