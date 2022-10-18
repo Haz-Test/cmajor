@@ -16,7 +16,7 @@ h2 {
 .comment{
     /*border-bottom: 1px solid rgba(0, 0, 0, 0.057);*/
     color:rgb(88, 88, 88);
-    font-family: --serif-font;
+    font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
 }
 
 .module_type {
