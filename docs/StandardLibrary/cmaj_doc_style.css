@@ -40,6 +40,7 @@ h2 {
 .code_prim{
     color: blue;
 }
+
 .namespace{
     font-family: var(--code-font);
 }
@@ -53,7 +54,7 @@ module,
     }
 .specialisations,
 .functions{
-    font-family: --serif-font;
+    font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
 }
 .function_name{
     color:black;
@@ -64,7 +65,7 @@ module,
 }
 
 .variables{
-    font-family: --serif-font;
+    font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
     color: #5c5962;
     padding: 5px;
     margin: 0;
@@ -93,8 +94,10 @@ module,
 .custom_table{
     border-style : hidden!important;
     box-shadow: none;
+    text-align: left;
 }
-
+.struct_table,
+.variable_table,
 .specialisation_table{
     border:none;
     border: 0;
@@ -102,6 +105,7 @@ module,
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    text-align: left;
 }
 .hide_header{
     visibility: collapse;
