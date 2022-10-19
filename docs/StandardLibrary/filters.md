@@ -1,7 +1,7 @@
 ---
-title: std::filters
+title: filters
 permalink: /docs/StandardLibrary#filters
 parent: Standard Library
-has_children: False
-nav_order: 3
+has_children: false
+nav_order: {navOrder}
 ---
