@@ -3,5 +3,5 @@ title: Mode4
 permalink: /docs/StandardLibrary#Mode4
 parent: Standard Library
 has_children: false
-nav_order: 13
+nav_order: 16
 ---
