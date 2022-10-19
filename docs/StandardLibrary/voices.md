@@ -3,5 +3,5 @@ title: voices
 permalink: /docs/StandardLibrary#voices
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 30
 ---

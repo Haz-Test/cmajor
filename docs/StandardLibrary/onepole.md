@@ -3,5 +3,5 @@ title: onepole
 permalink: /docs/StandardLibrary#onepole
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 5
 ---

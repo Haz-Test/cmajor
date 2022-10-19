@@ -3,5 +3,5 @@ title: butterworth
 permalink: /docs/StandardLibrary#butterworth
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 11
 ---

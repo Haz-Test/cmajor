@@ -3,5 +3,5 @@ title: envelopes
 permalink: /docs/StandardLibrary#envelopes
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 3
 ---

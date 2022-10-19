@@ -3,5 +3,5 @@ title: notes
 permalink: /docs/StandardLibrary#notes
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 24
 ---

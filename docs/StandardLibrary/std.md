@@ -3,5 +3,5 @@ title: std
 permalink: /docs/StandardLibrary#std
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 31
 ---

@@ -3,5 +3,5 @@ title: oscillators
 permalink: /docs/StandardLibrary#oscillators
 parent: Standard Library
 has_children: false
-nav_order: {navOrder}
+nav_order: 27
 ---
