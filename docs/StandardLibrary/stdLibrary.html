@@ -19,7 +19,7 @@ has_toc: false
    <h2><span class="keyword">namespace </span>std</h2>
    <div class="namespace" id="audio_data" href="#audio_data">
     <h2><span class="keyword">namespace </span>std::audio_data</h2>
-    <div class="comment"><br>Module: std.audio_data
+    <div class="comment">Module: std.audio_data
 <br>These structures are useful for representing chunks of audio data with a
 known sample-rate. They&#39;re useful types when you&#39;re declaring an external
 variable which is going to hold audio file data or generated waveform data.
@@ -45,7 +45,7 @@ using an appropriately-sized vector for the frames.
        </table>
       </div>
      </div>
-     <div class="comment"><br>This processor will play chunks of audio sample data with a speed ratio applied.
+     <div class="comment">This processor will play chunks of audio sample data with a speed ratio applied.
 <br>It provides input events to set the audio data, speed ratio and other properties
 to control playback.
 <br>The SampleContent type must be a struct containing a &#39;frames&#39; member, which
@@ -189,7 +189,7 @@ of the audio data.
    </div>
    <div class="namespace" id="delay" href="#delay">
     <h2><span class="keyword">namespace </span>std::delay</h2>
-    <div class="comment"><br>Module: std.delay
+    <div class="comment">Module: std.delay
 <br>Utilities and processors for implementing delays. Note that you
 graph connections allow a delay to be added without needing to use
 an explicit processor - see the language guide for more details.
@@ -449,7 +449,7 @@ an explicit processor - see the language guide for more details.
    </div>
    <div class="namespace" id="envelopes" href="#envelopes">
     <h2><span class="keyword">namespace </span>std::envelopes</h2>
-    <div class="comment"><br>Module: std.envelopes
+    <div class="comment">Module: std.envelopes
 <br>Utilities for calculating and applying gain levels.
 <br></div>
     <div class="processor" id="FixedASR">
@@ -549,7 +549,7 @@ be used to attenuate a voice.
       </table>
      </div>
     </div>
-    <div class="comment"><br>Module: std.filters
+    <div class="comment">Module: std.filters
 <br>Contains implementations of some common filters.
 <br>The module is parameterised with the FrameType, which can be a float32/64 primitive
 or vector, and represents the data which is being filtered.
@@ -562,7 +562,7 @@ cost of recalculating coefficients
 <br></div>
     <div class="namespace" id="tpt" href="#tpt">
      <h2><span class="keyword">namespace </span>std::filters::tpt</h2>
-     <div class="comment"><br>These filters are based on the designs outlined in The Art of VA Filter Design
+     <div class="comment">These filters are based on the designs outlined in The Art of VA Filter Design
 by Vadim Zavalishin, with help from Will Pirkle in Virtual Analog Filter Implementation.
 The topology-preserving transform approach leads to designs where parameter
 modulation can be applied with minimal instability.
@@ -1060,7 +1060,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
     </div>
     <div class="namespace" id="dcblocker" href="#dcblocker">
      <h2><span class="keyword">namespace </span>std::filters::dcblocker</h2>
-     <div class="comment"><br>Highpass filter for blocking DC.
+     <div class="comment">Highpass filter for blocking DC.
 An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html&#13;">https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 </a><br>The DC blocker is a small recursive filter specified by the difference equation:
 <br><pre><code>y(n) = x(n) - x(n-1) + Ry(n-1)
@@ -1147,7 +1147,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
        </table>
       </div>
      </div>
-     <div class="comment"><br>Butterworth filter, built from cascaded tpt filters.
+     <div class="comment">Butterworth filter, built from cascaded tpt filters.
 <br>The order is set at compile time, but the type and frequency can be modulated
 at runtime.
 <br></div>
@@ -1320,7 +1320,7 @@ at runtime.
     </div>
     <div class="namespace" id="crossover" href="#crossover">
      <h2><span class="keyword">namespace </span>std::filters::crossover</h2>
-     <div class="comment"><br>4th Order two band crossover filter
+     <div class="comment">4th Order two band crossover filter
 <br>This filter is implemented using the StateVariableFilter and outputs two streams which can be
 summed to produce a flat response. The crossover frequency can be modulated
 <br></div>
@@ -1430,7 +1430,7 @@ summed to produce a flat response. The crossover frequency can be modulated
     </div>
     <div class="namespace" id="simper" href="#simper">
      <h2><span class="keyword">namespace </span>std::filters::simper</h2>
-     <div class="comment"><br>Simper filter
+     <div class="comment">Simper filter
 <br>This filter is based on the design by Andy Simper, and is an implementation
 of the State Variable filter providing many different operational modes.
 It is documented here:
@@ -1818,7 +1818,7 @@ It is documented here:
    </div>
    <div class="namespace" id="frequency7" href="#frequency7">
     <h2><span class="keyword">namespace </span>std::frequency</h2>
-    <div class="comment"><br>Module: std.frequency
+    <div class="comment">Module: std.frequency
 <br>Contains DFT implementations for complex and real numbers
 <br>The buffers can be either float32 or float64 (or complex32/complex64).
 Buffer sizes must be a power of 2.
@@ -1844,7 +1844,7 @@ and imaginary components, and the output array receives the real components.
      <div class="function" id="complexFFT"><span class="function_name">complexFFT</span>
       <div class="function_decl"><span class="code_prim">void</span><span class="code"> </span><span class="code_ident">complexFFT</span><span class="code">&lt;</span><span class="code_ident">ComplexArray</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">ComplexArray</span><span class="code">&amp;</span><span class="code"> </span><span class="code_ident">data</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Performs an in-place forward FFT on complex data.
+      <div class="comment">Performs an in-place forward FFT on complex data.
 </div>
      </div>
      <div class="function" id="complexIFFT"><span class="function_name">complexIFFT</span>
@@ -1857,7 +1857,7 @@ and imaginary components, and the output array receives the real components.
    </div>
    <div class="namespace" id="intrinsics" href="#intrinsics">
     <h2><span class="keyword">namespace </span>std::intrinsics</h2>
-    <div class="comment"><br>Module: std.intrinsics
+    <div class="comment">Module: std.intrinsics
 <br>Contains placeholders and reference implementations of basic functions.
 <br>The compiler treats the <code>intrinsics</code> namespace as a special-case, allowing its
 functions to act as if they&#39;re in the global namespace.
@@ -1889,7 +1889,7 @@ is available.
      <div class="function" id="clamp"><span class="function_name">clamp</span>
       <div class="function_decl"><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">clamp</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">value</span><span class="code">, </span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">minimum</span><span class="code">, </span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">maximum</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Returns a value which has been clamped to fit within the given range (inclusive of the top).
+      <div class="comment">Returns a value which has been clamped to fit within the given range (inclusive of the top).
 </div>
      </div>
      <div class="function" id="wrap"><span class="function_name">wrap</span>
@@ -1914,7 +1914,7 @@ This is a common operation for tasks like incrementing the phase of an oscillato
      <div class="function" id="abs"><span class="function_name">abs</span>
       <div class="function_decl"><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">abs</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">n</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Returns the absolute value of a scalar or vector value.
+      <div class="comment">Returns the absolute value of a scalar or vector value.
 </div>
      </div>
      <div class="function" id="floor"><span class="function_name">floor</span>
@@ -1968,7 +1968,7 @@ This is a common operation for tasks like incrementing the phase of an oscillato
      <div class="function" id="sqrt"><span class="function_name">sqrt</span>
       <div class="function_decl"><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">sqrt</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">n</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Returns the square root of its argument.
+      <div class="comment">Returns the square root of its argument.
 </div>
      </div>
      <div class="function" id="pow"><span class="function_name">pow</span>
@@ -2010,7 +2010,7 @@ This is a common operation for tasks like incrementing the phase of an oscillato
      <div class="function" id="isinf"><span class="function_name">isinf</span>
       <div class="function_decl"><span class="code_prim">bool</span><span class="code"> </span><span class="code_ident">isinf</span><span class="code">&lt;</span><span class="code_ident">FloatType</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">FloatType</span><span class="code"> </span><span class="code_ident">value</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Checks whether the supplied argument is a floating point INF.
+      <div class="comment">Checks whether the supplied argument is a floating point INF.
 </div>
      </div>
      <div class="function" id="isnan"><span class="function_name">isnan</span>
@@ -2022,7 +2022,7 @@ This is a common operation for tasks like incrementing the phase of an oscillato
      <div class="function" id="sum"><span class="function_name">sum</span>
       <div class="function_decl"><span class="code_ident">ArrayType</span><span class="code">.</span><span class="code_ident">elementType</span><span class="code"> </span><span class="code_ident">sum</span><span class="code">&lt;</span><span class="code_ident">ArrayType</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">ArrayType</span><span class="code"> </span><span class="code_ident">array</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Calculates the sum of the elements in a vector or array.
+      <div class="comment">Calculates the sum of the elements in a vector or array.
 </div>
      </div>
      <div class="function" id="product"><span class="function_name">product</span>
@@ -2053,7 +2053,7 @@ If the index lies beyond the range of the array, it will be wrapped.
      <div class="function" id="anyTrue"><span class="function_name">anyTrue</span>
       <div class="function_decl"><span class="code_prim">bool</span><span class="code"> </span><span class="code_ident">anyTrue</span><span class="code">&lt;</span><span class="code_ident">BoolVector</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">BoolVector</span><span class="code"> </span><span class="code_ident">boolVector</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Takes a bool vector, and returns true if any of its elements are true.
+      <div class="comment">Takes a bool vector, and returns true if any of its elements are true.
 </div>
      </div>
      <div class="function" id="allTrue"><span class="function_name">allTrue</span>
@@ -2146,7 +2146,7 @@ If the index lies beyond the range of the array, it will be wrapped.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Takes an input that receives floating point events, and produces a continuous
+     <div class="comment">Takes an input that receives floating point events, and produces a continuous
 output stream of floats which are smoothed by a specified amount.
 This is handy for smoothing plugin parameters
 </div>
@@ -2188,7 +2188,7 @@ This is handy for smoothing plugin parameters
     <div class="structs">
      <h2>Structs</h2>
      <div class="struct" id="SmoothedValue"><span class="code">struct </span><span class="struct_name">SmoothedValue</span>
-      <div class="comment"><br>Holds a float value and is given a target to move towards over a given time.
+      <div class="comment">Holds a float value and is given a target to move towards over a given time.
 Call setTarget() to tell the object where to go and how many steps to take
 to get there, then repeatedly call getNext() to iterate to the target.
 </div>
@@ -2273,7 +2273,7 @@ to reach it.
        </table>
       </div>
      </div>
-     <div class="comment"><br>This helper processor simply passes its input through to its output with a
+     <div class="comment">This helper processor simply passes its input through to its output with a
 constant gain applied.
 The FrameType parameter could be a float, or a vector of floats.
 See: DynamicGain, SmoothedGain
@@ -2303,7 +2303,7 @@ See: DynamicGain, SmoothedGain
        </table>
       </div>
      </div>
-     <div class="comment"><br>This helper processor takes two input streams - one for data and the other
+     <div class="comment">This helper processor takes two input streams - one for data and the other
 for a gain level, and emits the input signal with the gain applied.
 The FrameType parameter could be a float, or a vector of floats.
 See: ConstantGain, SmoothedGain
@@ -2338,7 +2338,7 @@ See: ConstantGain, SmoothedGain
        </table>
       </div>
      </div>
-     <div class="comment"><br>Takes an input stream of the given FrameType, and passes it through using
+     <div class="comment">Takes an input stream of the given FrameType, and passes it through using
 a SmoothedGainParameter processor to apply a smoothed gain to it. The gain
 level is exposed via the &#39;volume&#39; input.
 </div>
@@ -2375,7 +2375,7 @@ level is exposed via the &#39;volume&#39; input.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Takes input events which change the level in decibels, and produces an
+     <div class="comment">Takes input events which change the level in decibels, and produces an
 output stream of smoothed gain factors which can be applied to a signal.
 </div>
      <div class="endpoints"></div>
@@ -2447,7 +2447,7 @@ using a 3dB-centre pan-law.
    </div>
    <div class="namespace" id="midi" href="#midi">
     <h2><span class="keyword">namespace </span>std::midi</h2>
-    <div class="comment"><br>Module: std.midi
+    <div class="comment">Module: std.midi
 <br>Various utilities for handling raw MIDI data.
 <br>The classes in the standard library which deal with synthesisers have been designed
 to avoid raw MIDI messages, and instead to work with strongly-typed event objects
@@ -2456,7 +2456,7 @@ code that was designed for a 1980s serial link.
 <br></div>
     <div class="processor" id="MPEConverter">
      <h2><span class="keyword">processor </span>std::midi::MPEConverter</h2>
-     <div class="comment"><br>Accepts an input stream of raw MIDI MPE events and converts them to a stream
+     <div class="comment">Accepts an input stream of raw MIDI MPE events and converts them to a stream
 of note event objects which can be more easily used by synthesiser classes.
 </div>
      <div class="endpoints"></div>
@@ -2691,7 +2691,7 @@ the natural order for a MIDI message.
    </div>
    <div class="namespace" id="mixers" href="#mixers">
     <h2><span class="keyword">namespace </span>std::mixers</h2>
-    <div class="comment"><br>Module: std.mixers
+    <div class="comment">Module: std.mixers
 <br></div>
     <div class="processor" id="StereoToMono">
      <h2><span class="keyword">processor </span>std::mixers::StereoToMono</h2>
@@ -2709,7 +2709,7 @@ the natural order for a MIDI message.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Simple utility processor that takes a vector size 2 and outputs the sum of
+     <div class="comment">Simple utility processor that takes a vector size 2 and outputs the sum of
 its elements.
 </div>
      <div class="endpoints"></div>
@@ -2737,7 +2737,7 @@ its elements.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Simple utility processor that takes a scalar input and outputs a vector
+     <div class="comment">Simple utility processor that takes a scalar input and outputs a vector
 size 2 which contains two copies of the input value
 </div>
      <div class="endpoints"></div>
@@ -2765,7 +2765,7 @@ size 2 which contains two copies of the input value
        </table>
       </div>
      </div>
-     <div class="comment"><br>Takes two input streams and two gain streams which it uses to attenuate the
+     <div class="comment">Takes two input streams and two gain streams which it uses to attenuate the
 inputs. Their result is then emitted.
 FrameType can be a float or float vector type.
 </div>
@@ -2804,7 +2804,7 @@ FrameType can be a float or float vector type.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Takes two input streams which it adds together after applying some optional
+     <div class="comment">Takes two input streams which it adds together after applying some optional
 constant gains.
 FrameType can be a float or float vector type.
 </div>
@@ -2838,7 +2838,7 @@ FrameType can be a float or float vector type.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Takes two input streams and outputs a dynamic mix of their values, using a third
+     <div class="comment">Takes two input streams and outputs a dynamic mix of their values, using a third
 stream to control the mix.
 <br>mixRange determines the range of values that the mix stream will take. So the
 mix input is expected to be between 0 and mixRange, where mix = 0 will cause 100% of
@@ -2859,7 +2859,7 @@ will act as a &quot;percentage wet&quot; control.
    </div>
    <div class="namespace" id="noise" href="#noise">
     <h2><span class="keyword">namespace </span>std::noise</h2>
-    <div class="comment"><br>Module: std.noise
+    <div class="comment">Module: std.noise
 <br></div>
     <div class="processor" id="White">
      <h2><span class="keyword">processor </span>std::noise::White</h2>
@@ -3044,7 +3044,7 @@ See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia
    </div>
    <div class="namespace" id="notes" href="#notes">
     <h2><span class="keyword">namespace </span>std::notes</h2>
-    <div class="comment"><br>Module: std.notes
+    <div class="comment">Module: std.notes
 <br>These structs are used for events that model the start/stop/control of notes
 that are playing in synthesisers.
 <br>Unlike sending raw MIDI around, these are strongly typed and use floating point
@@ -3280,7 +3280,7 @@ best used for MIDI controller numbers.
      <div class="function" id="frequencyToNote"><span class="function_name">frequencyToNote</span>
       <div class="function_decl"><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">frequencyToNote</span><span class="code"> </span><span class="code">(</span><span class="code_prim">float32</span><span class="code"> </span><span class="code_ident">frequency</span><span class="code">)</span>
       </div>
-      <div class="comment"><br>Returns the MIDI note equivalent for a frequency in Hz.
+      <div class="comment">Returns the MIDI note equivalent for a frequency in Hz.
 This uses the standard A = 440Hz reference tuning.
 See: noteToFrequency
 </div>
@@ -3331,7 +3331,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
    </div>
    <div class="namespace" id="oscillators" href="#oscillators">
     <h2><span class="keyword">namespace </span>std::oscillators</h2>
-    <div class="comment"><br>Module: std.oscillators
+    <div class="comment">Module: std.oscillators
 <br></div>
     <div class="namespace" id="waveshape" href="#waveshape">
      <h2><span class="keyword">namespace </span>std::oscillators::waveshape</h2>
@@ -3353,7 +3353,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="function" id="sine"><span class="function_name">sine</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">sine</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a sine wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a sine wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="sine2"><span class="function_name">sine</span>
@@ -3371,7 +3371,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="function" id="square"><span class="function_name">square</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">square</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar square wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar square wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="square2"><span class="function_name">square</span>
@@ -3389,7 +3389,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="function" id="triangle"><span class="function_name">triangle</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">triangle</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar triangle wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar triangle wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="triangle2"><span class="function_name">triangle</span>
@@ -3407,7 +3407,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="function" id="sawtoothUp"><span class="function_name">sawtoothUp</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">sawtoothUp</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar upwards sawtooth wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar upwards sawtooth wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="sawtoothUp2"><span class="function_name">sawtoothUp</span>
@@ -3425,7 +3425,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="function" id="sawtoothDown"><span class="function_name">sawtoothDown</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">sawtoothDown</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar downwards sawtooth wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar downwards sawtooth wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="sawtoothDown2"><span class="function_name">sawtoothDown</span>
@@ -3455,7 +3455,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
       <div class="function" id="generate"><span class="function_name">generate</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">generate</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">waveShapeType</span><span class="code">, </span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a wave of the shape type passed in as an argument, where phase is in the range 0 to 1
+       <div class="comment">Returns a wave of the shape type passed in as an argument, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="generate2"><span class="function_name">generate</span>
@@ -3487,7 +3487,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
        </table>
       </div>
      </div>
-     <div class="comment"><br>A processor which generates a unipolar ramp, and has an input to control its frequency.
+     <div class="comment">A processor which generates a unipolar ramp, and has an input to control its frequency.
 The FrameType parameter could be a float or a float vector.
 </div>
      <div class="endpoints"></div>
@@ -3546,7 +3546,7 @@ The FrameType parameter could be a float or a float vector.
        </table>
       </div>
      </div>
-     <div class="comment"><br>A basic sinewave generation processor with an input to control its frequency.
+     <div class="comment">A basic sinewave generation processor with an input to control its frequency.
 The FrameType parameter could be a float or a float vector.
 </div>
      <div class="endpoints"></div>
@@ -3610,7 +3610,7 @@ The FrameType parameter could be a float or a float vector.
        </table>
       </div>
      </div>
-     <div class="comment"><br>Uses a polyblep algorithm to generate a wave, with inputs to control its shape and frequency.
+     <div class="comment">Uses a polyblep algorithm to generate a wave, with inputs to control its shape and frequency.
 </div>
      <div class="endpoints"></div>
      <div class="variables">
@@ -3692,7 +3692,7 @@ The FrameType parameter could be a float or a float vector.
        </table>
       </div>
      </div>
-     <div class="comment"><br>A LFO processor with event inputs to control its parameters.
+     <div class="comment">A LFO processor with event inputs to control its parameters.
 </div>
      <div class="endpoints"></div>
      <div class="variables">
@@ -3920,7 +3920,7 @@ The FrameType parameter could be a float or a float vector.
       <div class="function" id="sine4"><span class="function_name">sine</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">sine</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a sine wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a sine wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="sine5"><span class="function_name">sine</span>
@@ -3938,7 +3938,7 @@ The FrameType parameter could be a float or a float vector.
       <div class="function" id="square4"><span class="function_name">square</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">square</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar square wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar square wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="square5"><span class="function_name">square</span>
@@ -3956,7 +3956,7 @@ The FrameType parameter could be a float or a float vector.
       <div class="function" id="triangle4"><span class="function_name">triangle</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">triangle</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar triangle wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar triangle wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="triangle5"><span class="function_name">triangle</span>
@@ -3974,7 +3974,7 @@ The FrameType parameter could be a float or a float vector.
       <div class="function" id="sawtoothUp4"><span class="function_name">sawtoothUp</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">sawtoothUp</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar upwards sawtooth wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar upwards sawtooth wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="sawtoothUp5"><span class="function_name">sawtoothUp</span>
@@ -3992,7 +3992,7 @@ The FrameType parameter could be a float or a float vector.
       <div class="function" id="sawtoothDown4"><span class="function_name">sawtoothDown</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">sawtoothDown</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a bipolar downwards sawtooth wave, where phase is in the range 0 to 1
+       <div class="comment">Returns a bipolar downwards sawtooth wave, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="sawtoothDown5"><span class="function_name">sawtoothDown</span>
@@ -4022,7 +4022,7 @@ The FrameType parameter could be a float or a float vector.
       <div class="function" id="generate3"><span class="function_name">generate</span>
        <div class="function_decl"><span class="code_ident">SampleType</span><span class="code"> </span><span class="code_ident">generate</span><span class="code">&lt;</span><span class="code_ident">T</span><span class="code">&gt;</span><span class="code"> </span><span class="code">(</span><span class="code_ident">Shape</span><span class="code"> </span><span class="code_ident">waveShapeType</span><span class="code">, </span><span class="code_ident">T</span><span class="code"> </span><span class="code_ident">phase</span><span class="code">)</span>
        </div>
-       <div class="comment"><br>Returns a wave of the shape type passed in as an argument, where phase is in the range 0 to 1
+       <div class="comment">Returns a wave of the shape type passed in as an argument, where phase is in the range 0 to 1
 </div>
       </div>
       <div class="function" id="generate4"><span class="function_name">generate</span>
@@ -4036,7 +4036,7 @@ The FrameType parameter could be a float or a float vector.
     <div class="structs">
      <h2>Structs</h2>
      <div class="struct" id="PhasorState"><span class="code">struct </span><span class="struct_name">PhasorState</span>
-      <div class="comment"><br>A class to manage a phase and increment that loops between 0 and 1.
+      <div class="comment">A class to manage a phase and increment that loops between 0 and 1.
 </div>
       <div class="struct_members">
        <table class="struct_table">
@@ -4119,7 +4119,7 @@ The FrameType parameter could be a float or a float vector.
    </div>
    <div class="namespace" id="random" href="#random">
     <h2><span class="keyword">namespace </span>std::random</h2>
-    <div class="comment"><br>Module: std.random
+    <div class="comment">Module: std.random
 <br>If you&#39;re writing code that needs to be cryptographically secure, then this is not the
 random number generation library that you want. The target audience for these classes
 are those who need quick-and-dirty RNGs for noise generation and similar non-critical
@@ -4205,7 +4205,7 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
    </div>
    <div class="namespace" id="timeline" href="#timeline">
     <h2><span class="keyword">namespace </span>std::timeline</h2>
-    <div class="comment"><br>Module: std.timeline
+    <div class="comment">Module: std.timeline
 <br>This namespace contains various types and functions for dealing with tempos,
 positions and events that describe DAW-style timelines.
 <br></div>
@@ -4251,7 +4251,7 @@ positions and events that describe DAW-style timelines.
       </div>
      </div>
      <div class="struct" id="TransportState"><span class="code">struct </span><span class="struct_name">TransportState</span>
-      <div class="comment"><br>Indicates whether a host is currently playing or recording.
+      <div class="comment">Indicates whether a host is currently playing or recording.
 This struct is intended for purposes like sending as an event into a plugin
 to tell it when the host&#39;s playback state changes.
 </div>
@@ -4277,7 +4277,7 @@ bit 2 = looping
       </div>
      </div>
      <div class="struct" id="Position"><span class="code">struct </span><span class="struct_name">Position</span>
-      <div class="comment"><br>This struct holds data that a host may want to send as an event to a plugin to
+      <div class="comment">This struct holds data that a host may want to send as an event to a plugin to
 update it with various measurements of positions along its timeline.
 </div>
       <div class="struct_members">
@@ -4382,7 +4382,7 @@ beats you are into the current bar.
    </div>
    <div class="namespace" id="voices" href="#voices">
     <h2><span class="keyword">namespace </span>std::voices</h2>
-    <div class="comment"><br>Module: std.voices
+    <div class="comment">Module: std.voices
 <br>This module demonstrates a simple voice-allocation algorithm.
 <br>The way it&#39;s structured is that you pass an incoming stream of note events to
 the voice allocator processor, and it redirects them to an array of destination
