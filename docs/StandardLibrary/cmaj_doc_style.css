@@ -66,7 +66,6 @@ module,
 
 .variables{
     font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
-    color: #5c5962;
     padding: 5px;
     margin: 0;
 }
@@ -83,6 +82,8 @@ module,
     padding: 0;
 }
 .keyword{
+    font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
+    font-size: 30px;
     color:rgba(0, 0, 0, 0.455);
 }
 .struct_member,
