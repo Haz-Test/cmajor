@@ -33,6 +33,7 @@ h2 {
     color: rgb(88, 88, 88);
     /*white-space: pre;*/
     margin: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.057);
 }
 .code_using{
     color: green;
