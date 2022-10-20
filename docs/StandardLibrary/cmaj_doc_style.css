@@ -28,7 +28,7 @@ h2 {
 
 .function_decl {
     font-family: var(--code-font);
-    font-size: 80%;
+    font-size: 14px; 
     font-style: normal;
     color: rgb(88, 88, 88);
     /*white-space: pre;*/
@@ -52,7 +52,7 @@ module,
     color:black;
     display:contents;
     }
-    
+
 .structs,
 .specialisations,
 .functions{
@@ -60,7 +60,7 @@ module,
 }
 .function_name{
     color:black;
-    font-size: 18;
+    font-size: 20px;
     font-family: var(--code-font);
     padding: 2px;
     margin: 0;
