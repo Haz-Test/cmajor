@@ -82,7 +82,7 @@ module,
     text-align: left!important;
     padding: 0;
 }
-keyword{
+.keyword{
     color:rgba(0, 0, 0, 0.455);
 }
 .struct_member,
