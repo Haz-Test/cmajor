@@ -52,6 +52,8 @@ module,
     color:black;
     display:contents;
     }
+    
+.structs,
 .specialisations,
 .functions{
     font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
@@ -83,8 +85,8 @@ module,
 }
 .keyword{
     font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
-    font-size: 30px;
-    color:rgba(0, 0, 0, 0.455);
+    font-size: 22px;
+    color:rgba(0, 0, 0, 0.494);
 }
 .struct_member,
 .struct_name,
@@ -112,8 +114,7 @@ module,
     text-align: left;
     empty-cells: hide;
 }
-th:empty, td:empty, .comment:empty { visibility: hidden; display: none;}
-.comment:empty::before {visibility: hidden; display: none}
+
 .hide_header{
     visibility: collapse;
 }
