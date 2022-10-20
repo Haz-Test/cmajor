@@ -82,6 +82,9 @@ module,
     text-align: left!important;
     padding: 0;
 }
+.keyword{
+    color:rgba(0, 0, 0, 0.027);
+}
 .struct_member,
 .struct_name,
 .variable_name,

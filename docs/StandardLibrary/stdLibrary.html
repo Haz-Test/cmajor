@@ -8,17 +8,19 @@ has_toc: false
 ---
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en-US">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  <head>
   <title>Cmajor</title>
+  <link rel="stylesheet" href="cmaj_doc_style.css"></link>
   <link rel="stylesheet" href="../assets/css/just-the-docs-default.css"></link>
   <link rel="stylesheet" href="../docs/StandardLibrary/cmaj_doc_style.css"></link>
  </head>
-<body>
+ <body>
   <h1>The Cmajor Standard Library</h1>
+  <div class="namespace" id="std" href="#std">
+   <h2><span class="keyword">namespace </span>std</h2>
    <div class="namespace" id="audio_data" href="#audio_data">
-    <h2>namespace std::audio_data</h2>
-    <div class="comment"><br><module>Module: std.audio_data</module>
+    <h2><span class="keyword">namespace </span>std::audio_data</h2>
+    <div class="comment"><br>Module: std.audio_data
 <br>These structures are useful for representing chunks of audio data with a
 known sample-rate. They&#39;re useful types when you&#39;re declaring an external
 variable which is going to hold audio file data or generated waveform data.
@@ -29,7 +31,7 @@ for audio data with more than 2 channels, you can just declare your own type
 using an appropriately-sized vector for the frames.
 <br></div>
     <div class="processor" id="SamplePlayer">
-     <h2>processor std::audio_data::SamplePlayer</h2>
+     <h2><span class="keyword">processor </span>std::audio_data::SamplePlayer</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -169,14 +171,14 @@ of the audio data.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_ident">float32</span><span class="code">[]</span>
           <div class="struct_member_name">frames</div> <td>
            <div class="type"></div><span class="code_ident">float32</span><span class="code">[]</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float64</span>
           <div class="struct_member_name">sampleRate</div> <td>
            <div class="type"></div><span class="code_prim">float64</span></td>
           <td></td>
@@ -194,14 +196,14 @@ of the audio data.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span><span class="code">&lt;</span><span class="code_literal">2</span><span class="code">&gt;</span><span class="code">[]</span>
           <div class="struct_member_name">frames</div> <td>
            <div class="type"></div><span class="code_prim">float32</span><span class="code">&lt;</span><span class="code_literal">2</span><span class="code">&gt;</span><span class="code">[]</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float64</span>
           <div class="struct_member_name">sampleRate</div> <td>
            <div class="type"></div><span class="code_prim">float64</span></td>
           <td></td>
@@ -213,14 +215,14 @@ of the audio data.
     </div>
    </div>
    <div class="namespace" id="delay" href="#delay">
-    <h2>namespace std::delay</h2>
-    <div class="comment"><br><module>Module: std.delay</module>
+    <h2><span class="keyword">namespace </span>std::delay</h2>
+    <div class="comment"><br>Module: std.delay
 <br>Utilities and processors for implementing delays. Note that you
 graph connections allow a delay to be added without needing to use
 an explicit processor - see the language guide for more details.
 <br></div>
     <div class="processor" id="StreamDelay">
-     <h2>processor std::delay::StreamDelay</h2>
+     <h2><span class="keyword">processor </span>std::delay::StreamDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -295,7 +297,7 @@ an explicit processor - see the language guide for more details.
      </div>
     </div>
     <div class="processor" id="ValueDelay">
-     <h2>processor std::delay::ValueDelay</h2>
+     <h2><span class="keyword">processor </span>std::delay::ValueDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -370,7 +372,7 @@ an explicit processor - see the language guide for more details.
      </div>
     </div>
     <div class="processor" id="EventDelay">
-     <h2>processor std::delay::EventDelay</h2>
+     <h2><span class="keyword">processor </span>std::delay::EventDelay</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -417,14 +419,14 @@ an explicit processor - see the language guide for more details.
          <th>Type</th>
          <th>Comment</th>
          <tr>
-          <td>
+          <td><span class="code_ident">EventType</span>
            <div class="struct_member_name">e</div> <td>
             <div class="type"></div><span class="code_ident">EventType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_prim">int32</span>
            <div class="struct_member_name">eventTime</div> <td>
             <div class="type"></div><span class="code_prim">int32</span></td>
            <td></td>
@@ -530,12 +532,12 @@ an explicit processor - see the language guide for more details.
     </div>
    </div>
    <div class="namespace" id="envelopes" href="#envelopes">
-    <h2>namespace std::envelopes</h2>
-    <div class="comment"><br><module>Module: std.envelopes</module>
+    <h2><span class="keyword">namespace </span>std::envelopes</h2>
+    <div class="comment"><br>Module: std.envelopes
 <br>Utilities for calculating and applying gain levels.
 <br></div>
     <div class="processor" id="FixedASR">
-     <h2>processor std::envelopes::FixedASR</h2>
+     <h2><span class="keyword">processor </span>std::envelopes::FixedASR</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -621,7 +623,7 @@ be used to attenuate a voice.
     </div>
    </div>
    <div class="namespace" id="filters" href="#filters">
-    <h2>namespace std::filters</h2>
+    <h2><span class="keyword">namespace </span>std::filters</h2>
     <div class="specialisations">
      <h2>Specialisations</h2>
      <div class="spec_members">
@@ -655,7 +657,7 @@ be used to attenuate a voice.
       </table>
      </div>
     </div>
-    <div class="comment"><br><module>Module: std.filters</module>
+    <div class="comment"><br>Module: std.filters
 <br>Contains implementations of some common filters.
 <br>The module is parameterised with the FrameType, which can be a float32/64 primitive
 or vector, and represents the data which is being filtered.
@@ -667,7 +669,7 @@ parameterUpdateRate specifying how often the updates are applied, to reduce the
 cost of recalculating coefficients
 <br></div>
     <div class="namespace" id="tpt" href="#tpt">
-     <h2>namespace std::filters::tpt</h2>
+     <h2><span class="keyword">namespace </span>std::filters::tpt</h2>
      <div class="comment"><br>These filters are based on the designs outlined in The Art of VA Filter Design
 by Vadim Zavalishin, with help from Will Pirkle in Virtual Analog Filter Implementation.
 The topology-preserving transform approach leads to designs where parameter
@@ -677,12 +679,12 @@ computational cost, and the frames between updates can be altered using the
 parameterUpdateRate, smaller being more frequent.
 <br></div>
      <div class="namespace" id="onepole" href="#onepole">
-      <h2>namespace std::filters::tpt::onepole</h2>
+      <h2><span class="keyword">namespace </span>std::filters::tpt::onepole</h2>
       <div class="comment">One pole filter implementation providing low and high pass options.
 The frequency and mode can be modulated at the parameterUpdateRate
 </div>
       <div class="namespace" id="Mode" href="#Mode">
-       <h2>namespace std::filters::tpt::onepole::Mode</h2>
+       <h2><span class="keyword">namespace </span>std::filters::tpt::onepole::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
         <table class="variable_table">
@@ -721,7 +723,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
       <div class="processor" id="Processor">
-       <h2>processor std::filters::tpt::onepole::Processor</h2>
+       <h2><span class="keyword">processor </span>std::filters::tpt::onepole::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
         <div class="spec_members">
@@ -833,21 +835,21 @@ The frequency and mode can be modulated at the parameterUpdateRate
           <th>Type</th>
           <th>Comment</th>
           <tr>
-           <td>
+           <td><span class="code_ident">CoefficientType</span>
             <div class="struct_member_name">b</div> <td>
              <div class="type"></div><span class="code_ident">CoefficientType</span></td>
             <td></td>
            </td>
           </tr>
           <tr>
-           <td>
+           <td><span class="code_ident">FrameType</span>
             <div class="struct_member_name">z1</div> <td>
              <div class="type"></div><span class="code_ident">FrameType</span></td>
             <td></td>
            </td>
           </tr>
           <tr>
-           <td>
+           <td><span class="code_prim">int32</span>
             <div class="struct_member_name">mode</div> <td>
              <div class="type"></div><span class="code_prim">int32</span></td>
             <td></td>
@@ -886,11 +888,11 @@ The frequency and mode can be modulated at the parameterUpdateRate
       </div>
      </div>
      <div class="namespace" id="svf" href="#svf">
-      <h2>namespace std::filters::tpt::svf</h2>
+      <h2><span class="keyword">namespace </span>std::filters::tpt::svf</h2>
       <div class="comment">State variable filter implementation, suitable for modulation.
 </div>
       <div class="namespace" id="Mode2" href="#Mode2">
-       <h2>namespace std::filters::tpt::svf::Mode</h2>
+       <h2><span class="keyword">namespace </span>std::filters::tpt::svf::Mode</h2>
        <div class="variables">
         <h2>Constants</h2>
         <table class="variable_table">
@@ -943,7 +945,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
       <div class="processor" id="Processor2">
-       <h2>processor std::filters::tpt::svf::Processor</h2>
+       <h2><span class="keyword">processor </span>std::filters::tpt::svf::Processor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
         <div class="spec_members">
@@ -1073,7 +1075,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
        </div>
       </div>
       <div class="processor" id="MultimodeProcessor">
-       <h2>processor std::filters::tpt::svf::MultimodeProcessor</h2>
+       <h2><span class="keyword">processor </span>std::filters::tpt::svf::MultimodeProcessor</h2>
        <div class="specialisations">
         <h2>Specialisations</h2>
         <div class="spec_members">
@@ -1185,35 +1187,35 @@ The frequency and mode can be modulated at the parameterUpdateRate
           <th>Type</th>
           <th>Comment</th>
           <tr>
-           <td>
+           <td><span class="code_ident">CoefficientType</span>
             <div class="struct_member_name">d</div> <td>
              <div class="type"></div><span class="code_ident">CoefficientType</span></td>
             <td></td>
            </td>
           </tr>
           <tr>
-           <td>
+           <td><span class="code_ident">CoefficientType</span>
             <div class="struct_member_name">a</div> <td>
              <div class="type"></div><span class="code_ident">CoefficientType</span></td>
             <td></td>
            </td>
           </tr>
           <tr>
-           <td>
+           <td><span class="code_ident">CoefficientType</span>
             <div class="struct_member_name">g1</div> <td>
              <div class="type"></div><span class="code_ident">CoefficientType</span></td>
             <td></td>
            </td>
           </tr>
           <tr>
-           <td>
+           <td><span class="code_ident">FrameType</span><span class="code">[</span><span class="code_literal">2</span><span class="code">]</span>
             <div class="struct_member_name">z</div> <td>
              <div class="type"></div><span class="code_ident">FrameType</span><span class="code">[</span><span class="code_literal">2</span><span class="code">]</span></td>
             <td></td>
            </td>
           </tr>
           <tr>
-           <td>
+           <td><span class="code_prim">int32</span>
             <div class="struct_member_name">mode</div> <td>
              <div class="type"></div><span class="code_prim">int32</span></td>
             <td></td>
@@ -1258,7 +1260,7 @@ The frequency and mode can be modulated at the parameterUpdateRate
      </div>
     </div>
     <div class="namespace" id="dcblocker" href="#dcblocker">
-     <h2>namespace std::filters::dcblocker</h2>
+     <h2><span class="keyword">namespace </span>std::filters::dcblocker</h2>
      <div class="comment"><br>Highpass filter for blocking DC.
 An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html&#13;">https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 </a><br>The DC blocker is a small recursive filter specified by the difference equation:
@@ -1266,7 +1268,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 </code></pre>..where R is a parameter that is typically somewhere between 0.9 and 1
 <br></div>
      <div class="processor" id="Processor3">
-      <h2>processor std::filters::dcblocker::Processor</h2>
+      <h2><span class="keyword">processor </span>std::filters::dcblocker::Processor</h2>
       <div class="endpoints"></div>
       <div class="variables">
        <h2>Variables</h2>
@@ -1303,14 +1305,14 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
          <th>Type</th>
          <th>Comment</th>
          <tr>
-          <td>
+          <td><span class="code_ident">FrameType</span>
            <div class="struct_member_name">x1</div> <td>
             <div class="type"></div><span class="code_ident">FrameType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">FrameType</span>
            <div class="struct_member_name">y1</div> <td>
             <div class="type"></div><span class="code_ident">FrameType</span></td>
            <td></td>
@@ -1339,7 +1341,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
      </div>
     </div>
     <div class="namespace" id="butterworth" href="#butterworth">
-     <h2>namespace std::filters::butterworth</h2>
+     <h2><span class="keyword">namespace </span>std::filters::butterworth</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -1362,7 +1364,7 @@ An implementation of <a href="https://ccrma.stanford.edu/~jos/fp/DC_Blocker.html
 at runtime.
 <br></div>
      <div class="namespace" id="Mode3" href="#Mode3">
-      <h2>namespace std::filters::butterworth::Mode</h2>
+      <h2><span class="keyword">namespace </span>std::filters::butterworth::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
        <table class="variable_table">
@@ -1401,7 +1403,7 @@ at runtime.
       </div>
      </div>
      <div class="processor" id="Processor4">
-      <h2>processor std::filters::butterworth::Processor</h2>
+      <h2><span class="keyword">processor </span>std::filters::butterworth::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
        <div class="spec_members">
@@ -1513,14 +1515,14 @@ at runtime.
          <th>Type</th>
          <th>Comment</th>
          <tr>
-          <td>
+          <td><span class="code_ident">tpt</span><span class="code">::</span><span class="code_ident">onepole</span><span class="code">::</span><span class="code_ident">Implementation</span>
            <div class="struct_member_name">onePole</div> <td>
             <div class="type"></div><span class="code_ident">tpt</span><span class="code">::</span><span class="code_ident">onepole</span><span class="code">::</span><span class="code_ident">Implementation</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">tpt</span><span class="code">::</span><span class="code_ident">svf</span><span class="code">::</span><span class="code_ident">Implementation</span><span class="code">[</span><span class="code_ident">order</span><span class="code"> / </span><span class="code_literal">2</span><span class="code">]</span>
            <div class="struct_member_name">twoPole</div> <td>
             <div class="type"></div><span class="code_ident">tpt</span><span class="code">::</span><span class="code_ident">svf</span><span class="code">::</span><span class="code_ident">Implementation</span><span class="code">[</span><span class="code_ident">order</span><span class="code"> / </span><span class="code_literal">2</span><span class="code">]</span></td>
            <td></td>
@@ -1559,13 +1561,13 @@ at runtime.
      </div>
     </div>
     <div class="namespace" id="crossover" href="#crossover">
-     <h2>namespace std::filters::crossover</h2>
+     <h2><span class="keyword">namespace </span>std::filters::crossover</h2>
      <div class="comment"><br>4th Order two band crossover filter
 <br>This filter is implemented using the StateVariableFilter and outputs two streams which can be
 summed to produce a flat response. The crossover frequency can be modulated
 <br></div>
      <div class="processor" id="Processor5">
-      <h2>processor std::filters::crossover::Processor</h2>
+      <h2><span class="keyword">processor </span>std::filters::crossover::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
        <div class="spec_members">
@@ -1651,7 +1653,7 @@ summed to produce a flat response. The crossover frequency can be modulated
          <th>Type</th>
          <th>Comment</th>
          <tr>
-          <td>
+          <td><span class="code_ident">tpt</span><span class="code">::</span><span class="code_ident">svf</span><span class="code">::</span><span class="code_ident">Implementation</span><span class="code">[</span><span class="code_literal">2</span><span class="code">]</span>
            <div class="struct_member_name">filters</div> <td>
             <div class="type"></div><span class="code_ident">tpt</span><span class="code">::</span><span class="code_ident">svf</span><span class="code">::</span><span class="code_ident">Implementation</span><span class="code">[</span><span class="code_literal">2</span><span class="code">]</span></td>
            <td></td>
@@ -1685,7 +1687,7 @@ summed to produce a flat response. The crossover frequency can be modulated
      </div>
     </div>
     <div class="namespace" id="simper" href="#simper">
-     <h2>namespace std::filters::simper</h2>
+     <h2><span class="keyword">namespace </span>std::filters::simper</h2>
      <div class="comment"><br>Simper filter
 <br>This filter is based on the design by Andy Simper, and is an implementation
 of the State Variable filter providing many different operational modes.
@@ -1693,7 +1695,7 @@ It is documented here:
 <a href="https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf&#13;">https://cytomic.com/files/dsp/SvfLinearTrapOptimised2.pdf
 </a><br></div>
      <div class="namespace" id="Mode4" href="#Mode4">
-      <h2>namespace std::filters::simper::Mode</h2>
+      <h2><span class="keyword">namespace </span>std::filters::simper::Mode</h2>
       <div class="variables">
        <h2>Constants</h2>
        <table class="variable_table">
@@ -1830,7 +1832,7 @@ It is documented here:
       </div>
      </div>
      <div class="processor" id="Processor6">
-      <h2>processor std::filters::simper::Processor</h2>
+      <h2><span class="keyword">processor </span>std::filters::simper::Processor</h2>
       <div class="specialisations">
        <h2>Specialisations</h2>
        <div class="spec_members">
@@ -1994,63 +1996,63 @@ It is documented here:
          <th>Type</th>
          <th>Comment</th>
          <tr>
-          <td>
+          <td><span class="code_ident">FrameType</span>
            <div class="struct_member_name">ic1eq</div> <td>
             <div class="type"></div><span class="code_ident">FrameType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">FrameType</span>
            <div class="struct_member_name">ic2eq</div> <td>
             <div class="type"></div><span class="code_ident">FrameType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">CoefficientType</span>
            <div class="struct_member_name">a1</div> <td>
             <div class="type"></div><span class="code_ident">CoefficientType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">CoefficientType</span>
            <div class="struct_member_name">a2</div> <td>
             <div class="type"></div><span class="code_ident">CoefficientType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">CoefficientType</span>
            <div class="struct_member_name">a3</div> <td>
             <div class="type"></div><span class="code_ident">CoefficientType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">CoefficientType</span>
            <div class="struct_member_name">f0</div> <td>
             <div class="type"></div><span class="code_ident">CoefficientType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">CoefficientType</span>
            <div class="struct_member_name">f1</div> <td>
             <div class="type"></div><span class="code_ident">CoefficientType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_ident">CoefficientType</span>
            <div class="struct_member_name">f2</div> <td>
             <div class="type"></div><span class="code_ident">CoefficientType</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_prim">int32</span>
            <div class="struct_member_name">mode</div> <td>
             <div class="type"></div><span class="code_prim">int32</span></td>
            <td></td>
@@ -2143,8 +2145,8 @@ It is documented here:
     </div>
    </div>
    <div class="namespace" id="frequency7" href="#frequency7">
-    <h2>namespace std::frequency</h2>
-    <div class="comment"><br><module>Module: std.frequency</module>
+    <h2><span class="keyword">namespace </span>std::frequency</h2>
+    <div class="comment"><br>Module: std.frequency
 <br>Contains DFT implementations for complex and real numbers
 <br>The buffers can be either float32 or float64 (or complex32/complex64).
 Buffer sizes must be a power of 2.
@@ -2182,8 +2184,8 @@ and imaginary components, and the output array receives the real components.
     </div>
    </div>
    <div class="namespace" id="intrinsics" href="#intrinsics">
-    <h2>namespace std::intrinsics</h2>
-    <div class="comment"><br><module>Module: std.intrinsics</module>
+    <h2><span class="keyword">namespace </span>std::intrinsics</h2>
+    <div class="comment"><br>Module: std.intrinsics
 <br>Contains placeholders and reference implementations of basic functions.
 <br>The compiler treats the <code>intrinsics</code> namespace as a special-case, allowing its
 functions to act as if they&#39;re in the global namespace.
@@ -2449,11 +2451,11 @@ If the index lies beyond the range of the array, it will be wrapped.
     </div>
    </div>
    <div class="namespace" id="smoothing" href="#smoothing">
-    <h2>namespace std::smoothing</h2>
+    <h2><span class="keyword">namespace </span>std::smoothing</h2>
     <div class="comment">Utilities for smoothing non-audio signals, such as control parameters.
 </div>
     <div class="processor" id="SmoothedValueStream">
-     <h2>processor std::smoothing::SmoothedValueStream</h2>
+     <h2><span class="keyword">processor </span>std::smoothing::SmoothedValueStream</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -2535,28 +2537,28 @@ to get there, then repeatedly call getNext() to iterate to the target.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">value</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">target</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">increment</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">remainingSteps</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <td></td>
@@ -2593,9 +2595,9 @@ to reach it.
     </div>
    </div>
    <div class="namespace" id="levels" href="#levels">
-    <h2>namespace std::levels</h2>
+    <h2><span class="keyword">namespace </span>std::levels</h2>
     <div class="processor" id="ConstantGain">
-     <h2>processor std::levels::ConstantGain</h2>
+     <h2><span class="keyword">processor </span>std::levels::ConstantGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -2637,7 +2639,7 @@ See: DynamicGain, SmoothedGain
      </div>
     </div>
     <div class="processor" id="DynamicGain">
-     <h2>processor std::levels::DynamicGain</h2>
+     <h2><span class="keyword">processor </span>std::levels::DynamicGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -2671,7 +2673,7 @@ See: ConstantGain, SmoothedGain
      </div>
     </div>
     <div class="graph" id="SmoothedGain">
-     <h2>graph std::levels::SmoothedGain</h2>
+     <h2><span class="keyword">graph </span>std::levels::SmoothedGain</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -2721,7 +2723,7 @@ level is exposed via the &#39;volume&#39; input.
      </div>
     </div>
     <div class="processor" id="SmoothedGainParameter">
-     <h2>processor std::levels::SmoothedGainParameter</h2>
+     <h2><span class="keyword">processor </span>std::levels::SmoothedGainParameter</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -2794,7 +2796,7 @@ output stream of smoothed gain factors which can be applied to a signal.
     </div>
    </div>
    <div class="namespace" id="pan_law" href="#pan_law">
-    <h2>namespace std::pan_law</h2>
+    <h2><span class="keyword">namespace </span>std::pan_law</h2>
     <div class="functions">
      <h2>Functions</h2>
      <div class="function" id="linear"><span class="function_name">linear</span>
@@ -2814,8 +2816,8 @@ using a 3dB-centre pan-law.
     </div>
    </div>
    <div class="namespace" id="midi" href="#midi">
-    <h2>namespace std::midi</h2>
-    <div class="comment"><br><module>Module: std.midi</module>
+    <h2><span class="keyword">namespace </span>std::midi</h2>
+    <div class="comment"><br>Module: std.midi
 <br>Various utilities for handling raw MIDI data.
 <br>The classes in the standard library which deal with synthesisers have been designed
 to avoid raw MIDI messages, and instead to work with strongly-typed event objects
@@ -2823,7 +2825,7 @@ for note-ons/offs, pitch-bends, etc, which are vastly more usable than a 3-byte
 code that was designed for a 1980s serial link.
 <br></div>
     <div class="processor" id="MPEConverter">
-     <h2>processor std::midi::MPEConverter</h2>
+     <h2><span class="keyword">processor </span>std::midi::MPEConverter</h2>
      <div class="comment"><br>Accepts an input stream of raw MIDI MPE events and converts them to a stream
 of note event objects which can be more easily used by synthesiser classes.
 </div>
@@ -2848,7 +2850,7 @@ of note event objects which can be more easily used by synthesiser classes.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">message</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3058,11 +3060,11 @@ the natural order for a MIDI message.
     </div>
    </div>
    <div class="namespace" id="mixers" href="#mixers">
-    <h2>namespace std::mixers</h2>
-    <div class="comment"><br><module>Module: std.mixers</module>
+    <h2><span class="keyword">namespace </span>std::mixers</h2>
+    <div class="comment"><br>Module: std.mixers
 <br></div>
     <div class="processor" id="StereoToMono">
-     <h2>processor std::mixers::StereoToMono</h2>
+     <h2><span class="keyword">processor </span>std::mixers::StereoToMono</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3094,7 +3096,7 @@ its elements.
      </div>
     </div>
     <div class="processor" id="MonoToStereo">
-     <h2>processor std::mixers::MonoToStereo</h2>
+     <h2><span class="keyword">processor </span>std::mixers::MonoToStereo</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3126,7 +3128,7 @@ size 2 which contains two copies of the input value
      </div>
     </div>
     <div class="processor" id="DynamicSum">
-     <h2>processor std::mixers::DynamicSum</h2>
+     <h2><span class="keyword">processor </span>std::mixers::DynamicSum</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3159,7 +3161,7 @@ FrameType can be a float or float vector type.
      </div>
     </div>
     <div class="processor" id="ConstantSum">
-     <h2>processor std::mixers::ConstantSum</h2>
+     <h2><span class="keyword">processor </span>std::mixers::ConstantSum</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3208,7 +3210,7 @@ FrameType can be a float or float vector type.
      </div>
     </div>
     <div class="processor" id="Interpolator">
-     <h2>processor std::mixers::Interpolator</h2>
+     <h2><span class="keyword">processor </span>std::mixers::Interpolator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3255,11 +3257,11 @@ will act as a &quot;percentage wet&quot; control.
     </div>
    </div>
    <div class="namespace" id="noise" href="#noise">
-    <h2>namespace std::noise</h2>
-    <div class="comment"><br><module>Module: std.noise</module>
+    <h2><span class="keyword">namespace </span>std::noise</h2>
+    <div class="comment"><br>Module: std.noise
 <br></div>
     <div class="processor" id="White">
-     <h2>processor std::noise::White</h2>
+     <h2><span class="keyword">processor </span>std::noise::White</h2>
      <div class="comment">Simple white noise generator.
 See <a href="https://en.wikipedia.org/wiki/White_noise&#13;">https://en.wikipedia.org/wiki/White_noise
 </a>
@@ -3301,7 +3303,7 @@ See <a href="https://en.wikipedia.org/wiki/White_noise&#13;">https://en.wikipedi
      </div>
     </div>
     <div class="processor" id="Brown">
-     <h2>processor std::noise::Brown</h2>
+     <h2><span class="keyword">processor </span>std::noise::Brown</h2>
      <div class="comment">Brown (a.k.a. Brownian) noise generator.
 See <a href="https://en.wikipedia.org/wiki/Brownian_noise&#13;">https://en.wikipedia.org/wiki/Brownian_noise
 </a>
@@ -3385,7 +3387,7 @@ See <a href="https://en.wikipedia.org/wiki/Brownian_noise&#13;">https://en.wikip
      </div>
     </div>
     <div class="processor" id="Pink">
-     <h2>processor std::noise::Pink</h2>
+     <h2><span class="keyword">processor </span>std::noise::Pink</h2>
      <div class="comment">Pink noise generator
 See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia.org/wiki/Pink_noise
 </a>
@@ -3470,8 +3472,8 @@ See <a href="https://en.wikipedia.org/wiki/Pink_noise&#13;">https://en.wikipedia
     </div>
    </div>
    <div class="namespace" id="notes" href="#notes">
-    <h2>namespace std::notes</h2>
-    <div class="comment"><br><module>Module: std.notes</module>
+    <h2><span class="keyword">namespace </span>std::notes</h2>
+    <div class="comment"><br>Module: std.notes
 <br>These structs are used for events that model the start/stop/control of notes
 that are playing in synthesisers.
 <br>Unlike sending raw MIDI around, these are strongly typed and use floating point
@@ -3489,7 +3491,7 @@ being played.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">channel</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3502,7 +3504,7 @@ final matching NoteOff event.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">pitch</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3513,7 +3515,7 @@ final matching NoteOff event.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">velocity</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3532,7 +3534,7 @@ final matching NoteOff event.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">channel</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3543,7 +3545,7 @@ NoteOn to which it applies.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">pitch</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3554,7 +3556,7 @@ in case it&#39;s needed, it&#39;s included here.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">velocity</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3573,7 +3575,7 @@ in case it&#39;s needed, it&#39;s included here.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">channel</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3584,7 +3586,7 @@ NoteOn to which it applies.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">bendSemitones</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3603,7 +3605,7 @@ NoteOn to which it applies.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">channel</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3614,7 +3616,7 @@ NoteOn to which it applies.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">pressure</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3636,7 +3638,7 @@ NoteOn to which it applies.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">channel</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3647,7 +3649,7 @@ NoteOn to which it applies.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">slide</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3667,7 +3669,7 @@ with it depends on the instrument.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">channel</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3678,7 +3680,7 @@ NoteOn to which it applies.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">control</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -3689,7 +3691,7 @@ best used for MIDI controller numbers.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">value</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -3757,11 +3759,11 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
     </div>
    </div>
    <div class="namespace" id="oscillators" href="#oscillators">
-    <h2>namespace std::oscillators</h2>
-    <div class="comment"><br><module>Module: std.oscillators</module>
+    <h2><span class="keyword">namespace </span>std::oscillators</h2>
+    <div class="comment"><br>Module: std.oscillators
 <br></div>
     <div class="namespace" id="waveshape" href="#waveshape">
-     <h2>namespace std::oscillators::waveshape</h2>
+     <h2><span class="keyword">namespace </span>std::oscillators::waveshape</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3898,7 +3900,7 @@ it would need to be sped-up in order to achieve a target pitch and sample-rate.
      </div>
     </div>
     <div class="processor" id="Phasor">
-     <h2>processor std::oscillators::Phasor</h2>
+     <h2><span class="keyword">processor </span>std::oscillators::Phasor</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -3968,7 +3970,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="processor" id="Sine">
-     <h2>processor std::oscillators::Sine</h2>
+     <h2><span class="keyword">processor </span>std::oscillators::Sine</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -4038,7 +4040,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="processor" id="PolyblepOscillator">
-     <h2>processor std::oscillators::PolyblepOscillator</h2>
+     <h2><span class="keyword">processor </span>std::oscillators::PolyblepOscillator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -4133,7 +4135,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="processor" id="LFO">
-     <h2>processor std::oscillators::LFO</h2>
+     <h2><span class="keyword">processor </span>std::oscillators::LFO</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -4437,7 +4439,7 @@ The FrameType parameter could be a float or a float vector.
      </div>
     </div>
     <div class="namespace" id="std_oscillators_waveshape_specialised__K0a57" href="#std_oscillators_waveshape_specialised__K0a57">
-     <h2>namespace std::oscillators::waveshape</h2>
+     <h2><span class="keyword">namespace </span>std::oscillators::waveshape</h2>
      <div class="functions">
       <h2>Functions</h2>
       <div class="function" id="sine4"><span class="function_name">sine</span>
@@ -4567,14 +4569,14 @@ The FrameType parameter could be a float or a float vector.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">phase</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">increment</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <td></td>
@@ -4590,7 +4592,8 @@ The FrameType parameter could be a float or a float vector.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_ident">
+           <a href="#PhasorState">PhasorState</a></span>
           <div class="struct_member_name">phasor</div> <td>
            <div class="type"></div><span class="code_ident">
             <a href="#PhasorState">PhasorState</a></span></td>
@@ -4598,7 +4601,7 @@ The FrameType parameter could be a float or a float vector.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">accumulator</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <td></td>
@@ -4647,8 +4650,8 @@ The FrameType parameter could be a float or a float vector.
     </div>
    </div>
    <div class="namespace" id="random" href="#random">
-    <h2>namespace std::random</h2>
-    <div class="comment"><br><module>Module: std.random</module>
+    <h2><span class="keyword">namespace </span>std::random</h2>
+    <div class="comment"><br>Module: std.random
 <br>If you&#39;re writing code that needs to be cryptographically secure, then this is not the
 random number generation library that you want. The target audience for these classes
 are those who need quick-and-dirty RNGs for noise generation and similar non-critical
@@ -4680,7 +4683,7 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int64</span>
           <div class="struct_member_name">state</div> <td>
            <div class="type"></div><span class="code_prim">int64</span></td>
           <div class="comment">
@@ -4733,8 +4736,8 @@ See <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator&#13;">
     </div>
    </div>
    <div class="namespace" id="timeline" href="#timeline">
-    <h2>namespace std::timeline</h2>
-    <div class="comment"><br><module>Module: std.timeline</module>
+    <h2><span class="keyword">namespace </span>std::timeline</h2>
+    <div class="comment"><br>Module: std.timeline
 <br>This namespace contains various types and functions for dealing with tempos,
 positions and events that describe DAW-style timelines.
 <br></div>
@@ -4747,7 +4750,7 @@ positions and events that describe DAW-style timelines.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">float32</span>
           <div class="struct_member_name">bpm</div> <td>
            <div class="type"></div><span class="code_prim">float32</span></td>
           <div class="comment">
@@ -4766,14 +4769,14 @@ positions and events that describe DAW-style timelines.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">numerator</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <td></td>
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">denominator</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <td></td>
@@ -4793,7 +4796,7 @@ to tell it when the host&#39;s playback state changes.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int32</span>
           <div class="struct_member_name">flags</div> <td>
            <div class="type"></div><span class="code_prim">int32</span></td>
           <div class="comment">
@@ -4818,7 +4821,7 @@ update it with various measurements of positions along its timeline.
         <th>Type</th>
         <th>Comment</th>
         <tr>
-         <td>
+         <td><span class="code_prim">int64</span>
           <div class="struct_member_name">frameIndex</div> <td>
            <div class="type"></div><span class="code_prim">int64</span></td>
           <div class="comment">
@@ -4828,7 +4831,7 @@ update it with various measurements of positions along its timeline.
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float64</span>
           <div class="struct_member_name">quarterNote</div> <td>
            <div class="type"></div><span class="code_prim">float64</span></td>
           <div class="comment">
@@ -4839,7 +4842,7 @@ If a host doesn&#39;t count time in terms of beats, then this could be left as 0
          </td>
         </tr>
         <tr>
-         <td>
+         <td><span class="code_prim">float64</span>
           <div class="struct_member_name">barStartQuarterNote</div> <td>
            <div class="type"></div><span class="code_prim">float64</span></td>
           <div class="comment">
@@ -4913,8 +4916,8 @@ beats you are into the current bar.
     </div>
    </div>
    <div class="namespace" id="voices" href="#voices">
-    <h2>namespace std::voices</h2>
-    <div class="comment"><br><module>Module: std.voices</module>
+    <h2><span class="keyword">namespace </span>std::voices</h2>
+    <div class="comment"><br>Module: std.voices
 <br>This module demonstrates a simple voice-allocation algorithm.
 <br>The way it&#39;s structured is that you pass an incoming stream of note events to
 the voice allocator processor, and it redirects them to an array of destination
@@ -4924,7 +4927,7 @@ them together, and take care of ensuring that each target voice only receives
 the events from one channel at a time.
 <br></div>
     <div class="processor" id="VoiceAllocator">
-     <h2>processor std::voices::VoiceAllocator</h2>
+     <h2><span class="keyword">processor </span>std::voices::VoiceAllocator</h2>
      <div class="specialisations">
       <h2>Specialisations</h2>
       <div class="spec_members">
@@ -4966,35 +4969,35 @@ your own logic!
          <th>Type</th>
          <th>Comment</th>
          <tr>
-          <td>
+          <td><span class="code_prim">bool</span>
            <div class="struct_member_name">isActive</div> <td>
             <div class="type"></div><span class="code_prim">bool</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_prim">bool</span>
            <div class="struct_member_name">isReleasing</div> <td>
             <div class="type"></div><span class="code_prim">bool</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_prim">int32</span>
            <div class="struct_member_name">channel</div> <td>
             <div class="type"></div><span class="code_prim">int32</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_prim">int32</span>
            <div class="struct_member_name">age</div> <td>
             <div class="type"></div><span class="code_prim">int32</span></td>
            <td></td>
           </td>
          </tr>
          <tr>
-          <td>
+          <td><span class="code_prim">float32</span>
            <div class="struct_member_name">pitch</div> <td>
             <div class="type"></div><span class="code_prim">float32</span></td>
            <td></td>
@@ -5135,5 +5138,6 @@ your own logic!
      </div>
     </div>
    </div>
+  </div>
  </body>
 </html>
