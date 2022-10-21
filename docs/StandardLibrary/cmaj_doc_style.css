@@ -8,6 +8,10 @@
   :root { font-family: 'Inter var', sans-serif; }
 }
 
+/*.namespace{
+    background: rgba(0, 0, 0, 0.027);
+}*/
+
 h2 {
     padding: 5px;
     margin: 0px;
@@ -15,6 +19,7 @@ h2 {
 }
 .function,
 .comment{
+    /*border-bottom: 1px solid rgba(0, 0, 0, 0.057);*/
     color:rgb(88, 88, 88);
     font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
 }
@@ -31,6 +36,7 @@ h2 {
     font-size: 14px; 
     font-style: normal;
     color: rgb(88, 88, 88);
+    /*white-space: pre;*/
     margin: 20px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.057);
 }
