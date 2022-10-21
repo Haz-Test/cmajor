@@ -33,6 +33,7 @@
     margin-left: calc(
       (80% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
     );
+    margin-top: 30px;
   }
 }
 
