@@ -1,6 +1,11 @@
-:root {
+/*:root {
     --serif-font: BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --code-font: monaco, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}*/
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
 }
 
 /*.namespace{
