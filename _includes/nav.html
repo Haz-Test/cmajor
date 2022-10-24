@@ -93,11 +93,9 @@
               {%- if child.has_children -%}
                 <a href="#" class="nav-list-expander" aria-label="toggle links in {{ child.title }} category">
                   <svg viewBox="0 0 24 24"><use xlink:href="#svg-arrow-right"></use></svg>
-
-                  <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
-
                 </a>
               {%- endif -%}
+              <a href="{{ child.url | relative_url }}" class="nav-list-link{% if page.url == child.url %} active{% endif %}">{{ child.title }}</a>
               {%- if child.has_children -%}
                 {%- assign grandchildren_list = "" | split: "" -%}
                 {%- for grandparent_group in groups_list -%}
