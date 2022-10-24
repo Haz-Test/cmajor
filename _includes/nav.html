@@ -112,10 +112,6 @@
                   {%- unless grandchild.nav_exclude -%}
                   <li class="nav-list-item {% if page.url == grandchild.url %} active{% endif %}">
                     <a href="{{ grandchild.url | relative_url }}" class="nav-list-link{% if page.url == grandchild.url %} active{% endif %}">{{ grandchild.title }}</a>
-                    <a href="#" class="nav-list-expander" aria-label="toggle links in {{ child.title }} category">
-                      
-                    </a>
-                  
                   </li>
                   {%- endunless -%}
                 {%- endfor -%}
