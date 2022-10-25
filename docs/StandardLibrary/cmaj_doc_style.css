@@ -41,7 +41,7 @@ h2 {
     font-style: normal;
     color: rgb(88, 88, 88);
     /*white-space: pre;*/
-    margin: 40px;
+    margin: 250px;
     
 }
 .code_using{
@@ -76,7 +76,7 @@ module,
     padding: 2px;
     padding-bottom: 20px;
     margin: 0;
-    margin-left:-30px;
+    margin-left:-20px;
 }
 
 .variables{
