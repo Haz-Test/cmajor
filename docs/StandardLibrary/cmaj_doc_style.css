@@ -80,7 +80,7 @@ module,
 }
 
 .variables{
-    font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
+    font-family: inter;
     padding: 5px;
     margin: 0;
 }
