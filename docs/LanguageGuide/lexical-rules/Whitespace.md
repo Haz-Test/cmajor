@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Whitespace
-permalink: /docs/LanguageReference#whitespace
+permalink: #whitespace
 parent: Lexical Rules
 grand_parent: Language Reference
 nav_order: 1
