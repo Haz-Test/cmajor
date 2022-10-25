@@ -112,7 +112,7 @@
                   {%- unless grandchild.nav_exclude -%}
                   {%- assign active = true -%}
                   <li class="nav-list-item {% if page.url == grandchild.url %} active{% endif %}">
-                    <a href="{{ grandchild.url | relative_url }}" class="nav-list-link{% if page.url == grandchild.url %} active{% endif %}" class="nav-list-expander">{{ grandchild.title }}</a>
+                    <a href="{{ grandchild.url | relative_url }}" class="nav-list-link{% if page.url == grandchild.url %} active{% endif %}"class = "nav-list-link{% if url_parts[1] == grandchild.url %} active{% endif %}">{{ grandchild.title }}</a>
                   </li>
                   {%- endunless -%}
                 {%- endfor -%}
