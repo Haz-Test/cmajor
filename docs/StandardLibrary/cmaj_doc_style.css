@@ -8,26 +8,49 @@
   :root { font-family: 'Inter var', sans-serif; }
 }
 
-/*.namespace{
-    background: rgba(0, 0, 0, 0.027);
-}*/
+.namespaceTitle h2,.processorTitle h2{
+    background: rgba(0, 0, 0, 0.057);
+    font-size: 22px!important;
+}
 
 h2 {
     padding: 5px;
     margin: 0px;
-    background: rgba(0, 0, 0, 0.027);
+    font-size: 20px;
+    /*background: rgba(0, 0, 0, 0.027);*/
 }
 
+pre{
+    /*margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.endpoint{
+    list-style: none;
+    font-family: var(--code-font); 
+}
+.li{
+    list-style-type: circle;
+}
 .function{
     margin-left: 40px;
 }
 .function,
 .comment{
     /*border-bottom: 1px solid rgba(0, 0, 0, 0.057);*/
-    color:rgb(88, 88, 88);
-    font-family: inter;
+    /*color:rgb(88, 88, 88);*/
+    color:black;
+    font-family: Inter;
 }
-
+.moduleTitle h2{
+    font-size: 26px;
+}
 .module_type {
     opacity: 70%;
     font-style: italic;
@@ -66,9 +89,11 @@ module,
 
 .structs,
 .specialisations,
-.functions{
-    font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
+.functions,
+.endpoints{
+    font-family: Inter;
 }
+
 .function_name{
     display: block;
     color:black;
@@ -129,6 +154,9 @@ module,
     empty-cells: hide;
 }
 
-.hide_header{
-    visibility: collapse;
+.namespace,.processor,.comment,.specialisations{
+    /*background: rgba(0, 0, 0, 0.027);*/
+}
+.namespace{
+    background: rgba(0, 0, 0, 0.027);
 }
