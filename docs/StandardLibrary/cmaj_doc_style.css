@@ -7,6 +7,10 @@
 @supports (font-variation-settings: normal) {
   :root { font-family: 'Inter var', sans-serif; }
 }
+.namespaceTitle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 .namespaceTitle h2,.processorTitle h2{
     background: rgba(0, 0, 0, 0.057);
@@ -126,6 +130,7 @@ module,
     font-family: system-ui,-apple-system,blinkmacsystemfont,"Segoe UI",roboto,"Helvetica Neue",arial,sans-serif;
     font-size: 22px;
     color:rgba(0, 0, 0, 0.494);
+    margin-right: 7px;
 }
 .struct_member,
 .struct_name,
@@ -154,9 +159,17 @@ module,
     empty-cells: hide;
 }
 
-.namespace,.processor,.comment,.specialisations{
-    /*background: rgba(0, 0, 0, 0.027);*/
+.module{
+    border-top: 1px solid rgba(0, 0, 0, 0.31);
+    margin-top: 50px;
 }
-.namespace{
-    background: rgba(0, 0, 0, 0.027);
+
+.moduleTitle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#audio_data {
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    margin-top: 0px;
 }
