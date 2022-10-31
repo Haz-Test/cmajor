@@ -10,14 +10,14 @@
     flex-wrap: nowrap;
     position: fixed;
     width: $nav-width-md;
-    height: 98%;
+    height: 99%;
     flex-direction: column;
     border-right: $border $border-color;
     align-items: flex-end;
   }
 
   @include mq(lg) {
-    width: calc((80% - 890px) / 2 + #{$nav-width});
+    width: calc((80% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
     min-width: $nav-width;
   }
 }
@@ -31,7 +31,7 @@
 
   @include mq(lg) {
     margin-left: calc(
-      (80% - 890px) / 2 + #{$nav-width}
+      (80% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
     );
     margin-top: 30px;
   }
