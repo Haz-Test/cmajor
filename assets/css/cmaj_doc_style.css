@@ -47,10 +47,10 @@ pre{
 }
 .function,
 .comment{
-    /*border-bottom: 1px solid rgba(0, 0, 0, 0.057);*/
-    /*color:rgb(88, 88, 88);*/
     color:black;
     font-family: Inter;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
 }
 .moduleTitle h2{
     font-size: 26px;
@@ -172,4 +172,8 @@ module,
 #audio_data {
     border-top: 1px solid rgba(0, 0, 0, 0);
     margin-top: 0px;
+}
+.specialisations h2, .endpoints h2, .variables h2, .functions h2, .structs h2 {
+    font-size: 18px;
+    padding: 0 0 0.5em 0;
 }
