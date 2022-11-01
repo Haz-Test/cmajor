@@ -162,8 +162,8 @@ module {
     margin-top: 0px;
 }
 .specialisations h2, .endpoints h2, .variables h2, .functions h2, .structs h2 {
-    font-size: 18px;
-    padding: 0 0 0.5em 0;
+    font-size: 18px!important;
+    padding: 0 0 0.5em 0!important;
 }
 code .keyword{
     color:rgba(0, 0, 0, 0.728);
