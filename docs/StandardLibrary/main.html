@@ -32,8 +32,7 @@ fields which can hold the frame data and a sample rate. If you need a struct
 for audio data with more than 2 channels, you can just declare your own type
 using an appropriately-sized vector for the frames.
 <br></div>
-   </div>
-   <div class="namespace" id="audio_data" href="#audio_data">
+    <div class="namespace" id="audio_data" href="#audio_data"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::audio_data</h2>
     </div>
@@ -232,8 +231,7 @@ using an appropriately-sized vector for the frames.
 graph connections allow a delay to be added without needing to use
 an explicit processor - see the language guide for more details.
 <br></div>
-   </div>
-   <div class="namespace" id="delay" href="#delay">
+    <div class="namespace" id="delay" href="#delay"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::delay</h2>
     </div>
@@ -498,8 +496,7 @@ an explicit processor - see the language guide for more details.
     </div>
     <div class="comment"><br><br>Utilities for calculating and applying gain levels.
 <br></div>
-   </div>
-   <div class="namespace" id="envelopes" href="#envelopes">
+    <div class="namespace" id="envelopes" href="#envelopes"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::envelopes</h2>
     </div>
@@ -610,8 +607,7 @@ modified post construction.
       <li><code>reset()</code> which clears out any internal state, returning it to the state post creation
 </li></ul>
     </div>
-   </div>
-   <div class="namespace" id="filters" href="#filters">
+    <div class="namespace" id="filters" href="#filters"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::filters</h2>
     </div>
@@ -2083,8 +2079,7 @@ modified post construction.
 <br>The buffers can be either float32 or float64 (or complex32/complex64).
 Buffer sizes must be a power of 2.
 <br></div>
-   </div>
-   <div class="namespace" id="frequency7" href="#frequency7">
+    <div class="namespace" id="frequency7" href="#frequency7"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::frequency</h2>
     </div>
@@ -2140,8 +2135,7 @@ functions with optimised alternatives if possible, although many of the function
 also provide reference implementations to be used as a fallback when no native version
 is available.
 <br></div>
-   </div>
-   <div class="namespace" id="intrinsics" href="#intrinsics">
+    <div class="namespace" id="intrinsics" href="#intrinsics"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::intrinsics</h2>
     </div>
@@ -2517,12 +2511,16 @@ is available.
      </div>
     </div>
    </div>
-   <div class="namespace" id="smoothing" href="#smoothing">
+   <div class="module" id="smoothing" href="#smoothing">
+    <div class="moduleTitle">
+     <h2>std.levels</h2>
+    </div>
+    <div class="comment"><br><br>Utilities for calculating and applying smoothing ramps and gain levels.
+<br></div>
+    <div class="namespace" id="smoothing" href="#smoothing"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::smoothing</h2>
     </div>
-    <div class="comment">Utilities for smoothing non-audio signals, such as control parameters.
-</div>
     <div class="processor" id="SmoothedValueStream">
      <div class="processorTitle">
       <h2><span class="keyword">processor </span>std::smoothing::SmoothedValueStream</h2>
@@ -2591,7 +2589,8 @@ is available.
     <div class="structs">
      <h2>Structs</h2>
      <div class="struct" id="SmoothedValue"><span class="code">struct </span><span class="struct_name">SmoothedValue</span>
-      <div class="comment"><br>Holds a float value and is given a target to move towards over a given time.
+      <div class="comment"><br>Utilities for smoothing non-audio signals, such as control parameters.
+ Holds a float value and is given a target to move towards over a given time.
  Call setTarget() to tell the object where to go and how many steps to take
  to get there, then repeatedly call getNext() to iterate to the target.
 </div>
@@ -2900,8 +2899,7 @@ to avoid raw MIDI messages, and instead to work with strongly-typed event object
 for note-ons/offs, pitch-bends, etc, which are vastly more usable than a 3-byte
 code that was designed for a 1980s serial link.
 <br></div>
-   </div>
-   <div class="namespace" id="midi" href="#midi">
+    <div class="namespace" id="midi" href="#midi"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::midi</h2>
     </div>
@@ -3244,8 +3242,7 @@ code that was designed for a 1980s serial link.
      <h2>std.mixers</h2>
     </div>
     <div class="comment"><br><br></div>
-   </div>
-   <div class="namespace" id="mixers" href="#mixers">
+    <div class="namespace" id="mixers" href="#mixers"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::mixers</h2>
     </div>
@@ -3463,8 +3460,7 @@ code that was designed for a 1980s serial link.
      <h2>std.noise</h2>
     </div>
     <div class="comment"><br><br></div>
-   </div>
-   <div class="namespace" id="noise" href="#noise">
+    <div class="namespace" id="noise" href="#noise"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::noise</h2>
     </div>
@@ -3700,8 +3696,7 @@ data so are far nicer to work with.
 indicate which events should be applied to each of the active notes that are
 being played.
 <br></div>
-   </div>
-   <div class="namespace" id="notes" href="#notes">
+    <div class="namespace" id="notes" href="#notes"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::notes</h2>
     </div>
@@ -3998,8 +3993,7 @@ being played.
      <h2>std.oscillators</h2>
     </div>
     <div class="comment"><br><br></div>
-   </div>
-   <div class="namespace" id="oscillators" href="#oscillators">
+    <div class="namespace" id="oscillators" href="#oscillators"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::oscillators</h2>
     </div>
@@ -4981,8 +4975,7 @@ behave differently each time.
 </li>
      </ul>
     </div>
-   </div>
-   <div class="namespace" id="random" href="#random">
+    <div class="namespace" id="random" href="#random"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::random</h2>
     </div>
@@ -5067,8 +5060,7 @@ behave differently each time.
     <div class="comment"><br><br>This namespace contains various types and functions for dealing with tempos,
 positions and events that describe DAW-style timelines.
 <br></div>
-   </div>
-   <div class="namespace" id="timeline" href="#timeline">
+    <div class="namespace" id="timeline" href="#timeline"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::timeline</h2>
     </div>
@@ -5275,8 +5267,7 @@ processors which each handle a single voice.
 them together, and take care of ensuring that each target voice only receives
 the events from one channel at a time.
 <br></div>
-   </div>
-   <div class="namespace" id="voices" href="#voices">
+    <div class="namespace" id="voices" href="#voices"></div>
     <div class="namespaceTitle">
      <h2><span class="keyword">namespace </span>std::voices</h2>
     </div>
