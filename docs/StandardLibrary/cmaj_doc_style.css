@@ -14,6 +14,11 @@
 .namespaceTitle h2,.processorTitle h2{
     background: rgba(0, 0, 0, 0.027);
     font-size: 22px!important;
+    margin-bottom: 10px;
+}
+
+.processor,.namespace{
+    padding-left: 15px;
 }
 
 h2 {
