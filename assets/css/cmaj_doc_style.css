@@ -35,6 +35,11 @@ pre{
 .li{
     list-style-type: circle;
 }
+
+.main-content ul>li::before {
+    position: absolute;
+    margin-left: -2.7em;
+}
 .function{
     margin-left: 20px;
 }
@@ -148,7 +153,6 @@ module {
 .module{
     border-top: 1px solid rgba(0, 0, 0, 0.31);
     margin-top: 50px;
-    background: rgba(0, 0, 0, 0.027);
     text-indent: 1.5em;
 }
 
