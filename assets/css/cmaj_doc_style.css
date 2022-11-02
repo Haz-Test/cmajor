@@ -65,7 +65,7 @@ pre{
     font-style: normal;
     color: rgb(88, 88, 88);
     /*white-space: pre;*/
-    margin: 15px;
+    margin-left: -15px;
     margin-bottom: 20px;
     
 }
@@ -195,6 +195,7 @@ code {
 }
 .specialisation code {
     padding-left: 40px;
+    text-align: right;
     white-space: pre-wrap;
     display: inline-block;
 }
