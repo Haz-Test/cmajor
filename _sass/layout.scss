@@ -106,7 +106,6 @@
     height: $header-height;
     max-height: $header-height;
     border-bottom: $border $border-color;
-    padding-bottom: 40px;
   }
 }
 
@@ -124,7 +123,7 @@
 
   @include mq(md) {
     padding-top: $sp-2;
-    padding-bottom: $sp-2;
+    padding-bottom: 2.5rem;
   }
 }
 
