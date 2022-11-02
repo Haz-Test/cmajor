@@ -2,7 +2,7 @@
 layout: default
 title: Language Reference
 permalink: /docs/LanguageReference
-nav_order: 7
+nav_order: 2
 has_children: true
 has_toc: false
 ---
@@ -81,6 +81,10 @@ The rules for literals follow common conventions from the C/C++/Javascript famil
 0x12345_L   // 64-bit hex
 0b101101L   // 64-bit binary
 ```
+
+Currently only signed integers are supported, and will use a twos-complement representation.
+
+If a signed integer overflow occurs, the precise result will depend on the CPU, the runtime, and any compiler optimisations that were applied to the code while being built. It will however never cause an error or exception.
 
 ### Boolean Literals
 
@@ -743,7 +747,7 @@ namespace N
 
 ### `external` Constants
 
-The `external` keyword can be applied to variables declared in any namespace or processor. They cannot have an initial value, because their value will be supplied by the hosting environment that loads the proram. For patches, see the patch specification document for details of how external data can be provided.
+The `external` keyword can be applied to variables declared in any namespace or processor. They cannot have an initial value, because their value will be supplied by the hosting environment that loads the program. For patches, see the patch specification document for details of how external data can be provided.
 
 ```cpp
 namespace N
@@ -1283,7 +1287,7 @@ Multiple writes to the same output can be chained into a single statement, which
 
 ## Graphs
 
-A graph defines a processor which contains of a set of other processors, connected together.
+A graph is a collection of processors, and a description of how their endpoints are connected.
 
 A `graph` declaration contains:
 
@@ -1292,6 +1296,8 @@ A `graph` declaration contains:
 - A set of `connection` statements to define how the input and output nodes are connected to each other and to the graph's inputs and outputs.
 - Pure functions used by the graph connections
 - Global constant variables
+- Types (`struct`s, `using` declarations)
+- Optional event handlers for input endpoints - event handlers or connection routing can be provided for each input event endpoint, but not both
 
 For example:
 
@@ -1456,7 +1462,9 @@ The key to understanding this is to think about how a general audio model may lo
 
 Several processor nodes may graph together in clusters that are then fed into the main graph as one larger processor node. It can be as complicated or simple as a program requires.
 
-For more information, look at some of our example code patches and further documentation exploring this concept.
+It's important to note that although graphs seem like a higher-level abstraction than processors, they are *just as fast*! During compilation, the data-flow through graph connections becomes function calls, and the compiler optimises these as aggressively as hand-written functions. So for example, a graph containing a node which applies a gain-change to an input stream is quite likely to be reduced to a single assembly-language operation, just like a hand-written loop would be.
+
+For more examples, most of the example code patches use a mixture of graphs and processors.
 
 ### Delays and Feedback Loops
 

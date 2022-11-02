@@ -2,7 +2,7 @@
 layout: default
 title: Patch Format
 permalink: /docs/PatchFormat
-nav_order: 8
+nav_order: 4
 has_children: true
 has_toc: false
 ---
@@ -27,7 +27,7 @@ The `.cmajorpatch` file contains JSON to describe the properties of the patch.
 
 For example, the `HelloWorld.cmajorpatch` contains:
 
-```JSON
+```json
 {
     "CmajorVersion":    1,
     "ID":               "dev.cmajor.examples.helloworld",
@@ -61,7 +61,7 @@ The `source` property in the manifest tells the host which `.cmajor` files to co
 
 e.g.
 
-```JSON
+```json
     "source":   [ "src/MainProcessor.cmajor",
                   "src/Utilities.cmajor" ],
 ```
@@ -138,7 +138,7 @@ e.g. In the "Piano" example, `Piano.cmajor` declares an external variable which 
 
 The `Piano.cmajorpatch` has an "externals" property which gives the runtime a JSON value that should be loaded into the `piano::samples` variable:
 
-```JSON
+```json
     "externals": {
         "piano::samples": [ { "source": "piano_36.ogg",  "rootNote": 36 },
                             { "source": "piano_48.ogg",  "rootNote": 48 },
@@ -180,7 +180,7 @@ It can also load audio file data directly into a raw array, so this would also c
 
 and
 
-```JSON
+```json
     "externals": {
         "MyProcessor::audioData" : "piano_36.ogg",
     }
@@ -194,7 +194,7 @@ and
 
 To add a custom GUI to your patch, your `.cmajorpatch` file should include a `view` property, e.g.
 
-```JSON
+```json
   "view": {
     "html":      "patch_gui/index.html",
     "width":     800,
