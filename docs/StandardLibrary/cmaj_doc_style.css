@@ -220,11 +220,11 @@ code .keyword{
 code {
     color:black;
     font-size: 10.5pt;
-    font-family: monospace;
+    font-family: var(--code-font); 
     background-color: #f5f6fa00!important;
 }
 .specialisation code {
-    padding-left: 30pt;
+    padding-left: 16.78pt;
     text-align: left;
     white-space: pre-wrap;
     display: inline-block;
