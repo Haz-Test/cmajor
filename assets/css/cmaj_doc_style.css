@@ -86,12 +86,12 @@ pre{
 }
 
 .main-content ul{
-    padding-left: 45pt!important;
+    padding-left: 31pt!important;
 }
 
 .main-content ul>li::before {
     position: absolute;
-    margin-left: -30.2pt;
+    margin-left: -15.2pt;
 }
 .function{
     margin-left: 15pt;
