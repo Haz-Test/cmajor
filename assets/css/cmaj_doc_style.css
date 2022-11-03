@@ -86,7 +86,7 @@ pre{
 }
 
 .main-content ul{
-    padding-left: 0pt!important;
+    padding-left: 45pt!important;
 }
 
 .main-content ul>li::before {
@@ -110,7 +110,7 @@ pre{
 .function_name{
     display: block;
     color:black;
-    font-size: 15pt;
+    font-size: 13pt;
     font-weight: 500;
     font-family: var(--code-font);
     padding: 1.5pt;
@@ -121,7 +121,7 @@ pre{
 
 .function_decl code{
     font-family: var(--code-font);
-    font-size: 13pt; 
+    font-size: 11pt; 
     font-style: normal;
     /*white-space: pre;*/
     margin-top: 7pt;
@@ -185,6 +185,11 @@ module {
     display:inline-block;
     padding-bottom: 7pt;
     padding-left: 16.78pt;
+}
+
+.struct_table .code{
+    padding-bottom: 0pt;
+    padding-left: 0pt;
 }
 
 .custom_table{
