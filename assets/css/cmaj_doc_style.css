@@ -72,8 +72,8 @@ h2 {
 
 pre{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-left: 20pt;
+    padding-bottom: 5pt;
 }
 
 .endpoint{
