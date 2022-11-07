@@ -58,6 +58,7 @@
 
 .namespaceTitle a {
     float: right;
+    font-family: var(--code-font);
 }
 
 .specialisations h2, .endpoints h2, .variables h2, .functions h2, .structs h2 {
