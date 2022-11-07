@@ -49,7 +49,7 @@
     margin-bottom: 15pt;
 }
 
-.namespaceTitle h2,.processorTitle h2{
+.namespaceTitle h2,.processorTitle h2, .graphTitle h2{
     background: rgba(0, 0, 0, 0.027);
     font-size: 16pt!important;
     margin-bottom: 7.5pt;
