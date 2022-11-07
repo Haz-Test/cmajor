@@ -56,6 +56,10 @@
     padding-left: 15pt;
 }
 
+.namespaceTitle a {
+    float: right;
+}
+
 .specialisations h2, .endpoints h2, .variables h2, .functions h2, .structs h2 {
     font-size: 14pt!important;
     padding: 0 0 5.59pt 0!important;
