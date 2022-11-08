@@ -97,14 +97,34 @@
   }
 }
 
-  .site-nav::-webkit-scrollbar {
-    display: none;
-  }
+.site-nav::-webkit-scrollbar {
+  display: none;
+}
   
-  .site-nav {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+.site-nav {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* width */
+.site-nav::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.site-nav::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.site-nav::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.site-nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(114, 114, 114, 0.948);
+}
 
 .site-header {
   display: flex;
