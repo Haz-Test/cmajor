@@ -102,22 +102,18 @@
   scrollbar-width: none;
 }
 
-/* width */
 .site-nav::-webkit-scrollbar {
-  width: 10px;
+  width: 7pt;
 }
 
-/* Track */
 .site-nav::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 .site-nav::-webkit-scrollbar-thumb {
-  background: rgb(159, 157, 157);
+  background: #d3d1d1;
 }
 
-/* Handle on hover */
 .site-nav::-webkit-scrollbar-thumb:hover {
   background: rgb(159, 157, 157);
 }
