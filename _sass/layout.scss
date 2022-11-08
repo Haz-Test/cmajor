@@ -96,10 +96,6 @@
     flex: 1 1 auto;
   }
 }
-
-.site-nav::-webkit-scrollbar {
-  display: none;
-}
   
 .site-nav {
   -ms-overflow-style: none;
@@ -118,12 +114,12 @@
 
 /* Handle */
 .site-nav::-webkit-scrollbar-thumb {
-  background: #888;
+  background: rgb(159, 157, 157);
 }
 
 /* Handle on hover */
 .site-nav::-webkit-scrollbar-thumb:hover {
-  background: rgba(114, 114, 114, 0.948);
+  background: rgb(159, 157, 157);
 }
 
 .site-header {
