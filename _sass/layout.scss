@@ -97,6 +97,15 @@
   }
 }
 
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .site-nav {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
 .site-header {
   display: flex;
   min-height: $header-height;
