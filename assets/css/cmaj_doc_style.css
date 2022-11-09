@@ -98,9 +98,6 @@ pre{
     position: absolute;
     margin-left: -15.2pt;
 }
-.function{
-    margin-left: 15pt;
-}
 .function,
 .comment{
     color:black;
@@ -347,9 +344,6 @@ pre{
     position: absolute;
     margin-left: -15.2pt;
 }
-.function{
-    margin-left: 15pt;
-}
 .function,
 .comment{
     color:black;
@@ -470,7 +464,7 @@ th{
 }
 code .keyword{
     color:rgba(0, 0, 0, 0.728);
-    font-size: 14px;
+    font-size: 10.5pt;
     font-family: monospace;
 }
 code {
