@@ -18,7 +18,6 @@
     }
 
     .nav-list-link {
-      color: #111111;
       display: block;
       min-height: $nav-list-item-height-sm;
       padding-top: $sp-1;
@@ -53,7 +52,6 @@
       &.active {
         font-weight: 600;
         text-decoration: none;
-        color: #2C84FA;
       }
 
       &:hover,
@@ -79,7 +77,7 @@
       padding-right: #{$nav-list-item-height-sm / 4};
       padding-bottom: #{$nav-list-item-height-sm / 4};
       padding-left: #{$nav-list-item-height-sm / 4};
-      color: #111111;
+      color: $link-color;
 
       @include mq(md) {
         width: $nav-list-item-height;
@@ -114,11 +112,11 @@
         position: relative;
 
         .nav-list-link {
-          color: #111111;;
+          color: $nav-child-link-color;
         }
 
         .nav-list-expander {
-          color: #111111;
+          color: $nav-child-link-color;
         }
       }
     }
@@ -161,20 +159,7 @@
     }
   }
 }
-.nav-list-item:focus{
-  
-    > .nav-list-expander svg {
-      @if $nav-list-expander-right {
-        transform: rotate(-90deg);
-      } @else {
-        transform: rotate(90deg);
-      }
-    }
 
-    > .nav-list {
-      display: block;
-    }
-}
 .nav-list.nav-category-list {
   > .nav-list-item {
     margin: 0;
@@ -184,11 +169,11 @@
 
       > .nav-list-item {
         > .nav-list-link {
-          color: #111111;
+          color: $link-color;
         }
 
         > .nav-list-expander {
-          color: #111111;
+          color: $link-color;
         }
       }
     }
