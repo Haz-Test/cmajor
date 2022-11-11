@@ -38,10 +38,6 @@
     margin-bottom: 3pt;
 }
 
-.node, .connection{
-    padding-left: 16.78pt;
-}
-
 .specialisations h2:after, .endpoints h2:after, .variables h2:after, .functions h2:after, .structs h2:after, .nodes h2:after, .connections h2:after {
     content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
