@@ -306,14 +306,6 @@ code {
     font-family: var(--code-font);
 }
 
-.specialisations h2, .endpoints h2, .variables h2, .functions h2, .structs h2 {
-    font-size: 14pt!important;
-    padding: 0 0 5.59pt 0!important;
-    color: #2C84FA;
-    padding-left: 16.78pt!important;
-    padding-top: 3pt;
-}
-
 h2 {
     padding: 5pt;
     margin: 0pt;
