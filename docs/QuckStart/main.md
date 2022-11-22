@@ -116,13 +116,13 @@ To get started with a new patch, the `cmaj` app can generate the basic boilerpla
 $ cmaj create --name="Hello" MyNewPatchFolderName
 ```
 
-This creates a new folder containing a patch called "Hello" that can be explored, renamed and built upon. For in-depth details on how these files work, see the [Patch Format Guide](/PatchFormat)
+This creates a new folder containing a patch called "Hello" that can be explored, renamed and built upon. For in-depth details on how these files work, see the [Patch Format Guide](/docs/PatchFormat)
 
 -------------------------------------------------------------------------------
 
 ## Coding in Cmajor: High-Level Overview
 
-This is a very quick summary of the main concepts in Cmajor. For a deep dive on the language syntax, see the [language guide docs/lang](/LanguageReference) [language guide ../](../docs/LanguageReference)
+This is a very quick summary of the main concepts in Cmajor. For a deep dive on the language syntax, see the [language guide](../docs/LanguageReference)
 
 
 #### Programs vs Patches
