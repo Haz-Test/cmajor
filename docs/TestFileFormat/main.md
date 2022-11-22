@@ -225,4 +225,4 @@ function getDefaultEngineOptions()
 function getEngineName()
 ```
 
-The script also has access to the javascript bindings to create and render Cmajor processors - for details, see the [Script File Format](./Cmaj%20Script%20File%20Format.md).
+The script also has access to the javascript bindings to create and render Cmajor processors.
