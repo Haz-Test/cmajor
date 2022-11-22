@@ -116,7 +116,7 @@ To get started with a new patch, the `cmaj` app can generate the basic boilerpla
 $ cmaj create --name="Hello" MyNewPatchFolderName
 ```
 
-This creates a new folder containing a patch called "Hello" that can be explored, renamed and built upon. For in-depth details on how these files work, see the [Patch Format Guide](./Cmaj%20Patch%20Format.md)
+This creates a new folder containing a patch called "Hello" that can be explored, renamed and built upon. For in-depth details on how these files work, see the [Patch Format Guide](/PatchFormat)
 
 -------------------------------------------------------------------------------
 
