@@ -122,7 +122,7 @@ This creates a new folder containing a patch called "Hello" that can be explored
 
 ## Coding in Cmajor: High-Level Overview
 
-This is a very quick summary of the main concepts in Cmajor. For a deep dive on the language syntax, see the [language guide docs/lang](docs/LanguageReference) [language guide ../](../LanguageReference)
+This is a very quick summary of the main concepts in Cmajor. For a deep dive on the language syntax, see the [language guide docs/lang](/LanguageReference) [language guide ../](../docs/LanguageReference)
 
 
 #### Programs vs Patches
